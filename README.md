@@ -4,8 +4,8 @@
 
 ---
 
-Главная - index.html (\_header.scss, \_hero.scss, \_service-maintenance.scss, \_cost-of-work.scss, \_sale-of-spare-parts.scss, ) |
-Услуга - service.html |
+Главная - index.html (\_first-header.scss, \_hero.scss, \_service-maintenance.scss, \_cost-of-work.scss, \_sale-of-spare-parts.scss, ) |
+Услуга - service.html (\_second-header.scss) |
 Оформление заказа - ordering.html |
 Новости - news-list.html |
 Новость - news-item.html |
