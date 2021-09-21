@@ -8,7 +8,16 @@
         "../sass/utils/_base.scss",
         "../sass/layout/_first_header.scss",
         "../sass/layout/_second_header.scss",
-        "../sass/layout/_footer.scss"
+        "../sass/layout/_footer.scss",
+        "../sass/style-pages/index/_hero.scss",
+        "../sass/style-pages/index/_service-maintenance.scss",
+        "../sass/style-pages/index/_cost-of-work.scss",
+        "../sass/style-pages/index/_sale-of-spare-parts.scss",
+        "../sass/style-pages/index/_popular-categories.scss",
+        "../sass/style-pages/index/_parts-in-stock.scss",
+        "../sass/style-pages/index/_free-consultation.scss",
+        "../sass/style-pages/index/_our-clients.scss",
+        "../sass/style-pages/index/_gallery.scss"
     ],
     "names": [],
     "file": "main.min.css"
