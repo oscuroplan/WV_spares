@@ -7,6 +7,11 @@
 //   font-size: 14px;
 //   line-height: 1.71;
 // }
+@import "../fonts/stylesheet.css" screen;
+body {
+  font-family: ‘Gilroy’;
+  font-weight: 500;
+}
 
 ul {
   margin: 0px;
