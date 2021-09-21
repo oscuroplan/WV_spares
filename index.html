@@ -11,7 +11,39 @@
     <header></header>
     <main>
       <section class="free-consultation">
-        <div class="container"></div>
+        <div class="container">
+          <h2>Беспланая консультация инженера</h2>
+          <p>
+            Оставьте заявку на сервисное обслуживание, мы свяжемся с Вами и
+            оперативно рассчитаем стоимость работ
+          </p>
+          <form
+            action="#"
+            class="form-call-back"
+            name="form-call-back"
+            autocomplete="on"
+          >
+            <label class="form-field">
+              <span class="form-field-input-wrapper">
+                <input
+                  type="tel"
+                  name="contact-tel"
+                  placeholder="Ваш телефон"
+                  class="form-field__contact-input"
+                  required=""
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="8096-111-11-11"
+                />
+                <svg class="form-field__contact-icon" width="22" height="22">
+                  <use href="#"></use>
+                </svg>
+              </span>
+            </label>
+            <button type="submit" class="btn form-call-back__btn">
+              <span class="form-call-back__btn--color">Заказать звонок</span>
+            </button>
+          </form>
+        </div>
       </section>
     </main>
     <footer></footer>

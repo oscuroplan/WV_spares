@@ -261,28 +261,77 @@ summary {
   display: list-item;
 }
 
-ul {
-  margin: 0px;
-  list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+body {
+  margin: 0px;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.container {
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.invisible-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.free-consultation {
+  height: 391px;
+  background-image: url("../images/bg-nature.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
