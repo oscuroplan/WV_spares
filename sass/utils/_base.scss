@@ -1,41 +1,68 @@
-// body {
-//   background-color: #ffffff;
-//   color: $primaryTextColor;
+// Глобальные стили тегов
 
-//   font-family: $Roboto, $SansSerif;
-//   letter-spacing: -0.015em;
-//   font-size: 14px;
-//   line-height: 1.71;
-// }
+// Обнулить всё
 
-ul {
-  margin: 0px;
-  list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+body {
+  margin: 0px;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 a {
   text-decoration: none;
 }
 
-// .container {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+// Глобальные селекторы
+
+.container {
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+
+  max-width: 480px;
+  padding: 0px 15px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+// Невидимый Заголовок
+
+.invisible-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
