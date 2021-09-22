@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link href="../fonts/stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="second-header">
+        <div class="container">
+            <a href="../index.html" class="second-header__logo">
+                <img class="second-header__logo--image" src="../images/logo.png" alt="Логотип">
+            </a>
+            <div class="second-header__wrap">
+                <nav class="second-header__nav">
+                    <ul class="second-header__list">
+                        <li class="second-header__item">
+                            <a href="../index.html" class="second-header__link">Главная</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="#" class="second-header__link second-header__link--current">Каталог</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="#" class="second-header__link">О компании</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="#" class="second-header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="second-header__contacts">
+                    <a href="tel:+78006966699" class="second-header__phone">
+                        +7 (800) 696-66-99
+                    </a>
+                    <p class="second-header__callback">
+                        Бесплатный звонок по России
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="catalog">
+            <div class="container">
+                <p class="catalog__way"><span class="catalog__way--green">Главная/</span>Каталог</p>
+                <h1 class="catalog__title">Каталог</h1>
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <article class="catalog-card">
+                            <img class="catalog-card__image" src="../images/avto_1.jpg" alt="Vogele" width="356">
+                            <h2 class="catalog-card__title"> <a href="#">Vogele super 1/2/3 series</a> </h2>
+                            <ul>
+                                <li class="catalog-card__product"><a href="#">Запчасти для Асфальтоукладчика</a></li>
+                                <li class="catalog-card__product"><a href="#">Центральный путь управления</a></li>
+                                <li class="catalog-card__product"><a href="#">Выносной пульт управления</a></li>
+                                <li class="catalog-card__product"><a href="#">Микрокотроллеры (мозги)</a></li>
+                                <li class="catalog-card__product"><a href="#">Датчики Ультразвуковые</a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="catalog__item">
+                        <article class="catalog-card">
+                            <img class="catalog-card__image" src="../images/avto_2.jpg" alt="Volvo">
+                            <h2 class="catalog-card__title"> <a href="#">Volvo</a> </h2>
+                            <ul>
+                                <li class="catalog-card__product"><a href="#">Центральный путь управления</a></li>
+                                <li class="catalog-card__product"><a href="#">Боковой пульт управления</a></li>
+                                <li class="catalog-card__product"><a href="#">Датчики</a></li>
+                                <li class="catalog-card__product"><a href="#">Запчасти для дорожной фрезы</a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="catalog__item">
+                        <article class="catalog-card">
+                            <img class="catalog-card__image" src="../images/avto_3.jpg" alt="Wirtgen">
+                            <h2 class="catalog-card__title"> <a href="#">Wirtgen</a> </h2>
+                            <ul>
+                                <li class="catalog-card__product"><a href="#">Пульты управления</a></li>
+                                <li class="catalog-card__product"><a href="#">Монитор</a></li>
+                                <li class="catalog-card__product"><a href="#">Микрокотроллеры</a></li>
+                                <li class="catalog-card__product"><a href="#">Запчасти для другой спецтехники</a></li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="section-products">
+            <div class="container">
+
+                <div class="filter">
+                    <p>Сортировать по:</p>
+
+                    <ul class="filter__list">
+                        <li class="filter__item"><button type="button" class="filter__button">Новизне</button></li>
+                        <li class="filter__item"><button type="button" class="filter__button">Возрастанию цены</button>
+                        </li>
+                        <li class="filter__item"><button type="button" class="filter__button">Убыванию цены</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="grid">
+                    <li class="grid__item">
+                        <article class="product">
+                            <img class="product__image" src="../images/catalog/product_photo.jpg " alt="Фото товара">
+                            <h3 class="product__name">Кабель системы нивелирования moba</h3>
+                            <p class="product__price">16 990 руб.</p>
+                            <button type="button" class="product__button" aria-label="More details">Подробнее</button>
+                        </article>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

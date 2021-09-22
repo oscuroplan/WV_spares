@@ -333,6 +333,123 @@ ul {
   overflow: hidden;
 }
 
+.container {
+  outline: 1px solid greenyellow;
+}
+
+.second-header {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.second-header__logo--image {
+  position: absolute;
+  top: 27px;
+  width: 143px;
+  height: 143px;
+}
+
+.second-header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 274px;
+}
+
+.second-header__item {
+  margin-right: 20px;
+}
+
+.second-header__item::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 43px;
+  margin-right: 20px;
+  background-image: url("../images/slash.png");
+  -webkit-transform: translateY(calc(100% / 3));
+          transform: translateY(calc(100% / 3));
+}
+
+.second-header__link {
+  padding-top: 42px;
+  padding-bottom: 45px;
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+}
+
+.second-header__link {
+  position: relative;
+}
+
+.second-header__link--current {
+  font-weight: 700;
+}
+
+.second-header__link--current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #f59701;
+}
+
+.second-header__contacts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.second-header__contacts > a {
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1;
+}
+
+.second-header__callback {
+  margin-top: 10px;
+  color: #838383;
+  font-family: "Gilroy";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: right;
+}
+
+.second-header__phone::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+  background-image: url("../images/phone_2.png");
+  -webkit-transform: translateY(calc(100% / 4));
+          transform: translateY(calc(100% / 4));
+}
+
 .free-consultation {
   height: 391px;
   background-image: url("../images/bg-nature.png");
@@ -348,5 +465,15 @@ ul {
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-card__image {
+  width: 356px;
+}
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
