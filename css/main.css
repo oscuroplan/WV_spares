@@ -7,7 +7,7 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import d:\Projects\2021\WV Запчасти\WV_spares\fonts\stylesheet.css screen;
+@import "../fonts/stylesheet.css" screen;
 *,
 ::before,
 ::after {
@@ -90,7 +90,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -172,9 +172,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -227,7 +227,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -277,7 +277,6 @@ body {
 body {
   margin: 0px;
 }
-
 body.modal-open {
   overflow: hidden;
 }
@@ -310,13 +309,11 @@ ul {
   max-width: 480px;
   padding: 0px 15px;
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -341,4 +338,319 @@ ul {
   background-position: center;
   background-size: cover;
 }
-/*# sourceMappingURL=main.css.map */
+
+.news-list {
+  margin: 19px 0 73px 0;
+}
+
+.separate {
+  color: #15bf69;
+}
+
+.news-list__link {
+  color: #15bf69;
+  margin-bottom: 34px;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-list__link-active {
+  color: #a5a6a6;
+}
+
+.news-list__title {
+  margin-bottom: 48px;
+  color: #000000;
+  font-family: "Gilroy - Extrabold";
+  font-size: 29px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 35.33px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.news-list__title::before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 6px;
+  background-color: #f59701;
+}
+
+.news-list__subtitle {
+  margin-bottom: 11px;
+  margin-top: 12px;
+  text-align: center;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-list__thumb {
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.news-list__desc {
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-list__subtitle:hover,
+.news-list__subtitle:focus {
+  color: #15bf69;
+}
+
+.news-list__data {
+  color: #15bf69;
+  font-family: "Gilroy - Semibold";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-list__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 23px;
+  border-radius: 2px;
+  background-color: #e8faf1;
+  border: inherit;
+  width: 71px;
+  height: 23px;
+  color: #15bf69;
+  font-family: Gilroy;
+  font-size: 11px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-list__btn:hover,
+.news-list__btn:focus {
+  background-color: #15bf69;
+  color: #ffffff;
+}
+
+.news-list__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 869px) {
+  .news-list__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .news-list__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 479px) {
+  .news-list__list {
+    grid-template-columns: 1fr;
+  }
+}
+.pagging {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagging__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagging__list li {
+  margin: 0 4.5px;
+}
+
+.pagging__item {
+  width: 21px;
+  height: 21px;
+  color: #383838;
+  font-family: "Gilroy - Semibold";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 17.33px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #f0f0f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pagging__item:hover, .pagging__item:focus {
+  background-color: #f59701;
+  color: #ffffff;
+}
+.pagging__item-active {
+  background-color: #f59701;
+  color: #ffffff;
+}
+
+.pagging__arrow {
+  max-width: 13px;
+  max-height: 8px;
+}
+
+.news-item__title {
+  color: #000000;
+  font-family: "Gilroy - Extrabold";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 29.33px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-item__data {
+  /* Style for "16.09.21" */
+  width: 35px;
+  height: 9px;
+  color: #15bf69;
+  font-family: "Gilroy - Semibold";
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-item__text {
+  width: 667px;
+  height: 177px;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.67px;
+  text-align: left;
+}
+
+.news-item__desc {
+  font-weight: 700;
+}
+
+.news-item__link {
+  color: #15bf69;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.news-item__subtitle {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 29.33px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.news-item__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-item__gallery-item {
+  max-width: 181px;
+}
+
+.news-item__gallery-item + .news-item__gallery-item {
+  margin-left: 25px;
+}
+
+.news-item__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 39px;
+  max-width: 387px;
+}/*# sourceMappingURL=main.css.map */
