@@ -7,7 +7,7 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import d:\Projects\2021\WV Запчасти\WV_spares\fonts\stylesheet.css screen;
+@import url(d:\Projects\2021\WV Запчасти\WV_spares\fonts\stylesheet.css);
 *,
 ::before,
 ::after {
@@ -340,5 +340,14 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.free-consultation__title {
+  font-family: Gilroy;
+  font-size: 19px;
+  line-height: 53px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
 }
 /*# sourceMappingURL=main.css.map */
