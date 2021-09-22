@@ -23,9 +23,7 @@ $colors: (
   //Ссылки в футере
   "backgroundFilter": #e9faf2,
   //Фон в фильтре (Страница категория)
-  "backgroundInput": #f4f4f4,
-  //Фон инпута (страница контакты)
-  "",
+  "backgroundInput": #f4f4f4 //Фон инпута (страница контакты),
 );
 @function getColor($key) {
   @return map-get($colors, $key);
