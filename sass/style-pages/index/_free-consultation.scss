@@ -4,4 +4,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 19px;
+    line-height: 53px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000000;
+  }
 }
