@@ -25,6 +25,7 @@
 }
 
 .news-list__title {
+  position: relative;
   margin-bottom: 48px;
   color: getColor("darkText");
   font-family: "Gilroy - Extrabold";
@@ -38,6 +39,10 @@
   letter-spacing: normal;
   line-height: normal;
   &::before {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transform: translateY(50%);
     content: "";
     display: block;
     width: 31px;

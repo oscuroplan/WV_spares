@@ -1,4 +1,7 @@
 .news-item__title {
+  position: relative;
+  margin-left: 38px;
+  margin-top: 51px;
   color: getColor("darkText");
   font-family: "Gilroy - Extrabold";
   font-size: 25px;
@@ -10,9 +13,19 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  &::before {
+    position: absolute;
+    left: -38px;
+    top: 31%;
+    transform: translateY(50%);
+    content: "";
+    width: 31px;
+    height: 6px;
+    background-color: getColor("secondaryAccent");
+  }
 }
 .news-item__data {
-  /* Style for "16.09.21" */
+  margin-top: 12px;
   width: 35px;
   height: 9px;
   color: getColor("accent");
@@ -28,13 +41,14 @@
   line-height: normal;
 }
 .news-item__text {
-  width: 667px;
-  height: 177px;
-  color: #000000;
+  margin-top: 31px;
+  color: getColor("darkText");
   font-size: 11px;
   font-weight: 400;
   line-height: 16.67px;
   text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
 }
 .news-item__desc {
   font-weight: 700;
@@ -45,6 +59,8 @@
   text-decoration: underline;
 }
 .news-item__subtitle {
+  margin-top: 31px;
+  margin-bottom: 23px;
   color: getColor("darkText");
   font-family: Gilroy;
   font-size: 19px;
@@ -57,8 +73,38 @@
   letter-spacing: normal;
   line-height: normal;
 }
+.news-item__item {
+  position: relative;
+  margin-left: 11px;
+  color: getColor("darkText");
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &::before {
+    position: absolute;
+    left: -11px;
+    top: 18%;
+    transform: translateY(50%);
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: getColor("secondaryAccent");
+  }
+}
 .news-item__gallery {
   display: flex;
+  margin-top: 40px;
 }
 .news-item__gallery-item {
   max-width: 181px;
@@ -68,7 +114,6 @@
 }
 .news-item__box {
   display: flex;
-  justify-content: start;
   margin-top: 39px;
   max-width: 387px;
 }
