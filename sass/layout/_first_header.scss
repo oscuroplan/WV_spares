@@ -1,17 +1,34 @@
 .first-header-container {
   position: relative;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .first-header {
   padding-top: 30px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f1efef;
+  }
 }
 .first-header__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  padding: 0 115px;
+  padding: 0 130px;
+  @media screen and (max-width: 1199px) {
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
 }
 .first-header__search {
   position: relative;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .first-header__search-field {
   font-family: "Glroy";
@@ -40,6 +57,11 @@
   background-position: 52%;
   cursor: pointer;
 }
+.first-header__mail {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .first-header__mail-img {
   width: 33px;
   height: 37px;
@@ -66,6 +88,11 @@
   font-weight: 400;
   color: getColor("menuBgc");
 }
+.first-header__phone {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 .first-header__phone-img {
   width: 30px;
   height: 36px;
@@ -84,6 +111,11 @@
   line-height: 19px;
   font-weight: 400;
   color: getColor("textHeader");
+}
+.first-header__cart {
+  @media screen and (max-width: 1199px) {
+    margin: 0 44px;
+  }
 }
 .first-header__cart-img {
   width: 37px;
@@ -105,6 +137,9 @@
   line-height: 21px;
   font-weight: 400;
   color: getColor("textHeader");
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .first-header__card-price {
   display: block;
@@ -113,6 +148,9 @@
   line-height: 21px;
   font-weight: 700;
   color: getColor("textHeader");
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .first-header__cart-count {
   width: 21px;
@@ -132,7 +170,16 @@
 
 .first-header__bottom {
   background-color: getColor("darkText");
-  padding: 20px 345px;
+  padding: 20px 35px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.first-header__nav {
+  max-width: 920px;
+  display: block;
+  margin: 0 auto;
 }
 .first-header__nav ul {
   display: flex;
@@ -166,9 +213,25 @@
   padding: 20px 0;
 }
 .logo {
-  width: 142px;
-  height: 142px;
+  width: 129px;
+  height: 129px;
   position: absolute;
   top: 23px;
-  left: -46px;
+  left: 0;
+  @media screen and (max-width: 1199px) {
+    display: inline-block;
+    position: static;
+  }
+  @media screen and (max-width: 767px) {
+    width: 82px;
+    height: 82px;
+  }
+}
+.menu-btn {
+  display: none;
+  background: transparent;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
 }

@@ -13,6 +13,10 @@
   <body>
     <header class="first-header">
       <div class="container first-header-container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+
         <div class="first-header__top">
           <form class="first-header__search">
             <input
@@ -62,10 +66,22 @@
               <span class="first-header__card-price">на 3 258 руб.</span>
             </div>
           </div>
-        </div>
-
-        <div class="logo">
-          <img src="./images/logo.png" alt="" />
+          <!-- _____________кнопка мобильного меню__________ -->
+          <button
+            type="button"
+            class="menu-btn menu-button--open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-icon"
+              width="22"
+              height="20"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/mobile-menu.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <div class="first-header__bottom">
@@ -391,5 +407,7 @@
       </section>
     </main>
     <footer></footer>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
