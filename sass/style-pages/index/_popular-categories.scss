@@ -1,0 +1,117 @@
+.container {
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
+}
+.popular-categories__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-top: 50px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 43px;
+  }
+}
+.popular-categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 50px;
+  }
+}
+.popular-categories__item {
+  width: 100%;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 14px) / 2);
+    margin-bottom: 14px;
+    &:not(:nth-child(2n)) {
+      margin-right: 14px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 66px) / 3);
+    &:not(:last-child) {
+      margin-right: 66px;
+    }
+  }
+}
+.popular-categories__block {
+  max-width: 356px;
+  height: 268px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: 10px auto;
+  &:hover,
+  &:focus {
+    background-color: #14bf69;
+    opacity: 0.7;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 356px;
+  }
+}
+.popular-categories__block-title {
+  font-family: Gilroy;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: getColor("darkText");
+  padding-top: 47px;
+  padding-left: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 19px;
+    padding-left: 40px;
+  }
+}
+.popular-categories__block-list {
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-top: 29px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+}
+.popular-categories__block-link {
+  color: getColor("darkText");
+}
+.popular-categories__button {
+  color: #fff;
+  background-color: getColor("accent");
+  margin: 50px auto;
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  display: block;
+}
+.popular-categories__block:hover .popular-categories__block-link,
+.popular-categories__block:focus .popular-categories__block-link {
+  color: #ffffff;
+}
+.popular-categories__block:hover .popular-categories__block-title,
+.popular-categories__block:focus .popular-categories__block-title {
+  color: #ffffff;
+}
+.popular-categories__block-link:hover,
+.popular-categories__block-link:focus {
+  font-weight: bold;
+}
