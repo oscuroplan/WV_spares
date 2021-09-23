@@ -4,12 +4,140 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>WV Запчасти</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+
     <link href="./fonts/stylesheet.css" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
+    <header class="first-header">
+      <div class="container first-header-container">
+        <div class="first-header__top">
+          <form class="first-header__search">
+            <input
+              type="search"
+              placeholder="Поиск"
+              class="first-header__search-field"
+            />
+            <button type="submit" class="first-header__search-btn"></button>
+          </form>
+
+          <div class="first-header__mail">
+            <div class="first-header__mail-img">
+              <img src="./images/header_mail.png" alt="" />
+            </div>
+            <div class="first-header__mail-content">
+              <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                autoservice@cv.ru
+              </a>
+
+              <span class="first-header__mail-text"> сотрудничество </span>
+            </div>
+          </div>
+
+          <div class="first-header__phone">
+            <div class="first-header__phone-img">
+              <img src="./images/header_phone.png" alt="" />
+            </div>
+            <div class="first-header__phone-content">
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+            </div>
+          </div>
+
+          <div class="first-header__cart">
+            <div class="first-header__cart-img">
+              <a href="#"
+                ><img src="./images/header_shopping_cart.png" alt=""
+              /></a>
+              <span class="first-header__cart-count">1</span>
+            </div>
+            <div class="first-header__cart-content">
+              <span class="first-header__card-text">Корзина</span>
+              <span class="first-header__card-price">на 3 258 руб.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+      </div>
+      <div class="first-header__bottom">
+        <nav class="first-header__nav">
+          <ul id="menu-verhnee-menju" class="">
+            <li
+              id="menu-item-83"
+              class="
+                menu-item menu-item-type-taxonomy
+                menu-item-object-product_cat
+                menu-item-83
+              "
+            >
+              <a href="#">Главная</a>
+            </li>
+            <li
+              id="menu-item-30014"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30014
+              "
+            >
+              <a href="#">Каталог</a>
+            </li>
+            <li
+              id="menu-item-30015"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30015
+              "
+            >
+              <a href="#">Сервисное обслуживание</a>
+            </li>
+            <li
+              id="menu-item-30017"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30017
+              "
+            >
+              <a href="#">Новости</a>
+            </li>
+            <li
+              id="menu-item-87"
+              class="
+                menu-item
+                menu-item-type-post_type
+                menu-item-object-page menu-item-87
+              "
+            >
+              <a href="#">О компании</a>
+            </li>
+            <li
+              id="menu-item-88"
+              class="
+                menu-item
+                menu-item-type-post_type
+                menu-item-object-page menu-item-88
+              "
+            >
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <!-- Популярные категории -->
       <section class="popular-categories">
