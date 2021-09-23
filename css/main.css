@@ -863,19 +863,43 @@ ul {
   max-width: 447px;
 }
 
+.form-field {
+  display: block;
+}
+
+.form-field .form-field__contact-input {
+  min-width: 254px;
+  height: 48px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+}
+
+.form-call-back__btn {
+  background-color: #15bf69;
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+}
+
 .our-clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .our-clients__item {
-  border: solid 1px;
-  float: inherit;
+  outline: 1px solid red;
+  height: 100%;
 }
 
 .our-clients__item:not(:nth-child(6n + 3)) {

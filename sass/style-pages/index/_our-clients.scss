@@ -2,15 +2,15 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
   }
   // &__item:not(:nth-child(6n + 6)) {
   //   margin-right: 10px;
   // }
 
   &__item {
-    border: solid 1px;
-    float: inherit;
+    outline: 1px solid red;
+    height: 100%;
   }
   &__item:not(:nth-child(6n + 3)) {
     width: 200px;
