@@ -9,9 +9,212 @@
     <link href="./fonts/stylesheet.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Ссылка -->
-    <a href="./pages/catalog.html">Каталог</a>
-    <header></header>
+    <header class="first-header">
+      <div class="container first-header-container">
+        <!-- _____________лого__________ -->
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+
+        <div class="first-header__top">
+          <!-- _____________кнопка поиска__________ -->
+          <form class="first-header__search">
+            <input
+              type="search"
+              placeholder="Поиск"
+              class="first-header__search-field"
+            />
+            <button type="submit" class="first-header__search-btn"></button>
+          </form>
+          <!-- _____________почта__________ -->
+          <div class="first-header__mail">
+            <div class="first-header__mail-img">
+              <img src="./images/header_mail.png" alt="" />
+            </div>
+            <div class="first-header__mail-content">
+              <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                autoservice@cv.ru
+              </a>
+
+              <span class="first-header__mail-text"> сотрудничество </span>
+            </div>
+          </div>
+          <!-- _____________телефон__________ -->
+          <div class="first-header__phone">
+            <div class="first-header__phone-img">
+              <img src="./images/header_phone.png" alt="" />
+            </div>
+            <div class="first-header__phone-content">
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+            </div>
+          </div>
+          <!-- _____________корзна__________ -->
+          <div class="first-header__cart">
+            <div class="first-header__cart-img">
+              <a href="#"
+                ><img src="./images/header_shopping_cart.png" alt=""
+              /></a>
+              <span class="first-header__cart-count">1</span>
+            </div>
+            <div class="first-header__cart-content">
+              <span class="first-header__card-text">Корзина</span>
+              <span class="first-header__card-price">на 3 258 руб.</span>
+            </div>
+          </div>
+          <!-- _____________кнопка мобильного меню__________ -->
+          <button
+            type="button"
+            class="menu-btn menu-button--open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-icon"
+              width="22"
+              height="20"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/mobile-menu.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="first-header__bottom">
+        <!-- _____________навигация__________ -->
+        <nav class="first-header__nav">
+          <ul id="menu-verhnee-menju" class="">
+            <li
+              id="menu-item-83"
+              class="
+                menu-item menu-item-type-taxonomy
+                menu-item-object-product_cat
+                menu-item-83
+              "
+            >
+              <a href="#">Главная</a>
+            </li>
+            <li
+              id="menu-item-30014"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30014
+              "
+            >
+              <a href="#">Каталог</a>
+            </li>
+            <li
+              id="menu-item-30015"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30015
+              "
+            >
+              <a href="#">Сервисное обслуживание</a>
+            </li>
+            <li
+              id="menu-item-30017"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30017
+              "
+            >
+              <a href="#">Новости</a>
+            </li>
+            <li
+              id="menu-item-87"
+              class="
+                menu-item
+                menu-item-type-post_type
+                menu-item-object-page menu-item-87
+              "
+            >
+              <a href="#">О компании</a>
+            </li>
+            <li
+              id="menu-item-88"
+              class="
+                menu-item
+                menu-item-type-post_type
+                menu-item-object-page menu-item-88
+              "
+            >
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Мобильное меню -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-close js-close-menu">
+          <svg class="menu-close__icon" width="40" height="40">
+            <use href="./images/mobile-close.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu">
+          <ul class="mobile-menu__navigation">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Сервисное обслуживание</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <!-- _____________почта__________ -->
+          <div class="first-header__mail--mobile">
+            <div class="first-header__mail-img">
+              <img src="./images/header_mail.png" alt="" />
+            </div>
+            <div class="first-header__mail-content">
+              <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                autoservice@cv.ru
+              </a>
+
+              <span class="first-header__mail-text"> сотрудничество </span>
+            </div>
+          </div>
+          <!-- _____________телефон__________ -->
+          <div class="first-header__phone--mobile">
+            <div class="first-header__phone-img">
+              <img src="./images/header_phone.png" alt="" />
+            </div>
+            <div class="first-header__phone-content">
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
       <!-- Продажа запасных частей-->
       <section class="sale">
@@ -182,7 +385,7 @@
             autocomplete="on"
           >
             <label class="form-field">
-              <span class="form-field-input-wrapper">
+              <span class="form-field__input-wrapper">
                 <input
                   type="tel"
                   name="contact-tel"
@@ -192,14 +395,11 @@
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                   title="8096-111-11-11"
                 />
-                <svg class="form-field__contact-icon" width="22" height="22">
-                  <use href="#"></use>
-                </svg>
               </span>
+              <button type="submit" class="btn form-call-back__btn">
+                <span class="form-call-back__btn--color">Заказать звонок</span>
+              </button>
             </label>
-            <button type="submit" class="btn form-call-back__btn">
-              <span class="form-call-back__btn--color">Заказать звонок</span>
-            </button>
 
             <label class="modal__checkbox-label">
               <input
@@ -209,10 +409,9 @@
                 value="accept"
                 required
               />
-              <span class="modal__icon-check"></span>
               <span class="modal__checkbox-text">
                 Соглашаюсь с рассылкой и принимаю
-                <a href="#" class="modal__contract-link">Условия договора</a>
+                <a href="#" class="modal__contract-link">условия договора</a>
               </span>
             </label>
           </form>
@@ -223,92 +422,92 @@
       <section class="our-clients">
         <div class="container">
           <h2 class="our-clients__title">Наши клиенты</h2>
-          <div class="our-clients__grid">
-            <figure class="our-clients__grid-item grid__item--1">
+          <ul class="our-clients__list">
+            <li class="our-clients__item">
               <img
                 src="./images/mtc.png"
                 class="grid__img"
                 alt="Логотип компании MTC"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--2">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/telesat.png"
                 class="grid__img"
                 alt="Логотип компании Телесат"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--3">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/eaj.png"
                 class="grid__img"
                 alt="Логотип компании EAJ"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--4">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/peak.png"
                 class="grid__img"
                 alt="Логотип компании PEAK"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--5">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/solvo.png"
                 class="grid__img"
                 alt="Логотип компании SOLVO"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--6">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/medicus.png"
                 class="grid__img"
                 alt="Логотип компании Medicus"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--7">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/audit.png"
                 class="grid__img"
-                alt="Логотип компании Audotorium"
+                alt="Логотип компании Auditorium"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--8">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/teleat.png"
                 class="grid__img"
                 alt="Логотип компании Telesat"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--9">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/rockhead.png"
                 class="grid__img"
                 alt="Логотип компании Rock&Head"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--10">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/globakgrocery.png"
                 class="grid__img"
                 alt="Логотип компании The Global Grocery"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--11">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/obw.png"
                 class="grid__img"
                 alt="Логотип компании The DataBase World"
               />
-            </figure>
-            <figure class="our-clients__grid-item grid__item--12">
+            </li>
+            <li class="our-clients__item">
               <img
                 src="./images/trigon.png"
                 class="grid__img"
                 alt="Логотип компании Тригон"
               />
-            </figure>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="gallery">
@@ -318,5 +517,12 @@
       </section>
     </main>
     <footer></footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
