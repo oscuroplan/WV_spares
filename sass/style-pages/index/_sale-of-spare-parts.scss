@@ -1,0 +1,86 @@
+/*.container {
+  padding: 0px 15px;
+}*/
+.sale__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 43px;
+  }
+  &::before {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    transform: translateY(50%);
+    content: "";
+    width: 26px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+    @media screen and (min-width: 768px) {
+      width: 46px;
+      height: 9px;
+    }
+    @media screen and (min-width: 1200px) {
+      left: 250px;
+    }
+  }
+}
+.sale__list {
+  width: calc((100% - 30px) / 2);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+.sale__block {
+  @media screen and (min-width: 768px) {
+    max-width: 170px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+.sale__text {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: getColor("darkText");
+  text-align: center;
+}
+.sale__wrap {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 9px solid getColor("accent");
+  height: 136px;
+  width: 136px;
+  margin: 38px auto;
+}
+.sale__button {
+  background-color: getColor("accent");
+  margin: 50px auto;
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  display: block;
+}
+.sale__button-link {
+  color: getColor("ligthText");
+}
