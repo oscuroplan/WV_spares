@@ -1,6 +1,21 @@
 .our-clients {
-  display: flex;
-  &__item:not(:nth-child(3)) {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  // &__item:not(:nth-child(6n + 6)) {
+  //   margin-right: 10px;
+  // }
+
+  &__item {
+    border: solid 1px;
+    float: inherit;
+  }
+  &__item:not(:nth-child(6n + 3)) {
     width: 200px;
+  }
+  &__item:nth-child(6n + 3) {
+    width: 140px;
   }
 }
