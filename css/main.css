@@ -408,7 +408,7 @@ ul {
 .first-header__search-btn {
   padding: 22px 19px;
   background-color: #23dc7f;
-  background-image: url(../../images/search.png);
+  background-image: url(../images/search.png);
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -586,7 +586,7 @@ ul {
   content: "";
   display: inline-block;
   background-color: transparent;
-  background-image: url(../../images/header_dots.png);
+  background-image: url(../images/header_dots.png);
   width: 10px;
   height: 10px;
   margin-left: 40px;
