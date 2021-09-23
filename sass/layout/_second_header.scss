@@ -1,9 +1,12 @@
 .container {
-  outline: 1px solid greenyellow;
+  outline: 1px solid red;
 }
 .second-header {
+  position: relative;
+  height: 100px;
   border-bottom: 1px solid #e3e3e3;
 }
+
 .second-header__logo--image {
   position: absolute;
   top: 27px;
@@ -12,45 +15,57 @@
 }
 
 .second-header__wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 .second-header__list {
   display: flex;
-  margin-left: 274px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 274px;
+  }
 }
 .second-header__item {
   margin-right: 20px;
 
-  &::before {
+  &:not(:last-child):after {
     content: "";
-
     display: inline-block;
     width: 7px;
     height: 43px;
     margin-right: 20px;
-    background-image: url("../images/slash.png");
+    background-image: url("../images/catalog_images/slash.png");
 
     transform: translateY(calc(100% / 3));
   }
 }
-.second-header__link {
-  padding-top: 42px;
+.second-header__item > a {
+  padding-top: 45px;
   padding-bottom: 45px;
   color: #000000;
   font-family: "Gilroy";
-  font-size: 16px;
-  font-weight: 500;
   font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
   letter-spacing: normal;
   line-height: 27px;
+  position: relative;
 }
 .second-header__link {
-  position: relative;
   &--current {
     font-weight: 700;
   }
+
   &--current::after {
     content: "";
     position: absolute;
@@ -62,6 +77,9 @@
   }
 }
 .second-header__contacts {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -73,6 +91,15 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 1;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 9px;
+    background-image: url("../images/catalog_images/phone_2.png");
+    transform: translateY(calc(100% / 4));
+  }
 }
 
 .second-header__callback {
@@ -85,13 +112,4 @@
   letter-spacing: normal;
   line-height: 1;
   text-align: right;
-}
-.second-header__phone::before {
-  content: "";
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  margin-right: 9px;
-  background-image: url("../images/phone_2.png");
-  transform: translateY(calc(100% / 4));
 }

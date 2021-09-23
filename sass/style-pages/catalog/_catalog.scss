@@ -1,6 +1,277 @@
-.catalog-card__image {
-  width: 356px;
+.catalog {
+  padding-top: 28px;
+  padding-bottom: 91px;
+}
+.breadcrumbs {
+  margin-top: 50px;
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 51px 274px;
+  }
+}
+.breadcrumbs span {
+  margin: 0 3px;
+
+  color: #14bf69;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.69;
+}
+.breadcrumbs .breadcrumbs--current {
+  color: #a5a6a6;
+}
+.catalog__title {
+  margin-bottom: 72px;
+
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  letter-spacing: normal;
+  line-height: 1.23;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-10px);
+    margin-right: 24px;
+
+    width: 46px;
+    height: 9px;
+    background-color: getColor("secondaryAccent");
+  }
 }
 .catalog__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin: -33px;
+  }
+}
+.catalog__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 33px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 33px;
+    flex-basis: calc((100% - (33px * 6)) / 3);
+  }
+}
+.catalog-card {
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  // background-image: url("../images/catalog_images/avtobrand_1.png");
+  // background-repeat: no-repeat;
+  // background-position: bottom;
+
+  &:hover {
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
+
+    background-color: #14bf69;
+    a {
+      color: #fff;
+    }
+  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   background-image: url("../images/catalog_images/avtobrand_1.png");
+  // }
+}
+// .catalog-card__title {
+//   margin-bottom: 27px;
+// }
+.catalog-card__meta {
+  padding: 28px 40px 44px 40px;
+}
+
+.catalog-card__title > a {
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+
+  letter-spacing: normal;
+  line-height: 2.8;
+  text-align: left;
+  text-transform: uppercase;
+}
+.catalog-card__product > a {
+  position: relative;
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.8;
+  text-align: left;
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -40px;
+      top: 4px;
+      // display: inline-block;
+      // transform: translateY(-4px);
+      margin-right: 12px;
+
+      width: 29px;
+      height: 8px;
+      background-color: getColor("secondaryAccent");
+    }
+  }
+}
+.catalog-card__label {
+  position: absolute;
+  color: transparent;
+  bottom: 20px;
+  left: 20px;
+  z-index: 0;
+}
+// Кнопки фильтра
+.catalog-filter {
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.81;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+.catalog-filter__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 60px;
+  }
+}
+.catalog-filter__item {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
+  }
+}
+.catalog-filter__button {
+  padding: 9px;
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.81;
+
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #e8faf1;
+    color: #14bf69;
+  }
+}
+// Карточки товара
+.catalog-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    margin: -15px;
+  }
+}
+.catalog-grid__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - (15px * 6)) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (15px * 8)) / 4);
+  }
+}
+.catalog-product {
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #cdcece;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: box-shadow 250ms linear;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 37px 2px rgba(127, 127, 128, 0.15);
+  }
+}
+.catalog-product__name {
+  padding: 17px 25px 25px 20px;
+
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+.catalog-product__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px 25px 20px;
+}
+.catalog-product__price {
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: normal;
+  line-height: 1.41;
+}
+.catalog-product__button {
+  color: #14bf69;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+
+  background-color: #e8faf1;
+  cursor: pointer;
+  padding: 10px 9px 8px 12px;
+  border: 0px;
+  border-radius: 3px;
+
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #14bf69;
+    color: #fff;
+  }
 }
