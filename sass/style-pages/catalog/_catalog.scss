@@ -22,6 +22,7 @@
 .breadcrumbs .breadcrumbs--current {
   color: #a5a6a6;
 }
+// Заголовок
 .catalog__title {
   margin-bottom: 72px;
 
@@ -45,6 +46,7 @@
     background-color: getColor("secondaryAccent");
   }
 }
+// Карточки каталога
 .catalog__list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -69,8 +71,6 @@
   border-radius: 20px;
   background-color: #f2f2f2;
   // background-image: url("../images/catalog_images/avtobrand_1.png");
-  // background-repeat: no-repeat;
-  // background-position: bottom;
 
   &:hover {
     box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
