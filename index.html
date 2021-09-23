@@ -13,12 +13,165 @@
     <a href="./pages/catalog.html">Каталог</a>
     <header></header>
     <main>
+      <!-- Продажа запасных частей-->
+      <section class="sale">
+        <div class="container">
+          <h2 class="sale__title">Продажа запасных частей</h2>
+          <ul class="sale__list">
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <svg></svg>
+              </div>
+              <p class="sale__text">Большой ассортимент запчастей на складе</p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap"></div>
+              <p class="sale__text">
+                Оперативный <br />
+                поиск <br />
+                и доставка
+              </p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <svg></svg>
+              </div>
+              <p class="sale__text">
+                Только проверенные европейские производители
+              </p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <svg></svg>
+              </div>
+              <p class="sale__text">
+                Всегда в наличии контрактные комплектующие
+              </p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <svg></svg>
+              </div>
+              <p class="sale__text">
+                Консультация сервисного инженера бесплатно
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="sale__button">
+            <a href="#" class="sale__button-link">Оставить заявку</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- Популярные категории -->
+      <section class="popular-categories">
+        <div class="container">
+          <h2 class="popular-categories__title">Популярные категории</h2>
+          <ul class="popular-categories__list">
+            <li class="popular-categories__item">
+              <div class="popular-categories__block">
+                <h3 class="popular-categories__block-title">
+                  Vogele super 1/2/3 series
+                </h3>
+                <ul class="popular-categories__block-list">
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Запчасти для Асфальтоукладчика</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Центральный пульт управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Выносной пульт управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Микроконтроллеры (мозг)</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Датчики Ультразвуковые</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="popular-categories__item">
+              <div class="popular-categories__block">
+                <h3 class="popular-categories__block-title">Volvo</h3>
+                <ul class="popular-categories__block-list">
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Центральный пульт управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Боковой пульт управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Датчики</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Запчасти для дорожной фрезы</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="popular-categories__item">
+              <div class="popular-categories__block">
+                <h3 class="popular-categories__block-title">WIRTGEN</h3>
+                <ul class="popular-categories__block-list">
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Пульты управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Монитор</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Микроконтроллеры</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Запчасти для другой спецтехники</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="popular-categories__button">
+            <a href="#" class="popular-categories__button-link"
+              >Перейти в каталог</a
+            >
+          </button>
+        </div>
+      </section>
+
+      <!--Бесплатная консультация инженера -->
       <section class="free-consultation">
         <div class="container">
           <h2 class="free-consultation__title">
             Беспланая консультация инженера
           </h2>
-          <p>
+          <p class="free-consultation__subtitle">
             Оставьте заявку на сервисное обслуживание, мы свяжемся с Вами и
             оперативно рассчитаем стоимость работ
           </p>
@@ -47,7 +200,120 @@
             <button type="submit" class="btn form-call-back__btn">
               <span class="form-call-back__btn--color">Заказать звонок</span>
             </button>
+
+            <label class="modal__checkbox-label">
+              <input
+                type="checkbox"
+                name="terms-contract"
+                class="modal__checkbox"
+                value="accept"
+                required
+              />
+              <span class="modal__icon-check"></span>
+              <span class="modal__checkbox-text">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="modal__contract-link">Условия договора</a>
+              </span>
+            </label>
           </form>
+        </div>
+      </section>
+
+      <!-- наши клиенты -->
+      <section class="our-clients">
+        <div class="container">
+          <h2 class="our-clients__title">Наши клиенты</h2>
+          <div class="our-clients__grid">
+            <figure class="our-clients__grid-item grid__item--1">
+              <img
+                src="./images/mtc.png"
+                class="grid__img"
+                alt="Логотип компании MTC"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--2">
+              <img
+                src="./images/telesat.png"
+                class="grid__img"
+                alt="Логотип компании Телесат"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--3">
+              <img
+                src="./images/eaj.png"
+                class="grid__img"
+                alt="Логотип компании EAJ"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--4">
+              <img
+                src="./images/peak.png"
+                class="grid__img"
+                alt="Логотип компании PEAK"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--5">
+              <img
+                src="./images/solvo.png"
+                class="grid__img"
+                alt="Логотип компании SOLVO"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--6">
+              <img
+                src="./images/medicus.png"
+                class="grid__img"
+                alt="Логотип компании Medicus"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--7">
+              <img
+                src="./images/audit.png"
+                class="grid__img"
+                alt="Логотип компании Audotorium"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--8">
+              <img
+                src="./images/teleat.png"
+                class="grid__img"
+                alt="Логотип компании Telesat"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--9">
+              <img
+                src="./images/rockhead.png"
+                class="grid__img"
+                alt="Логотип компании Rock&Head"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--10">
+              <img
+                src="./images/globakgrocery.png"
+                class="grid__img"
+                alt="Логотип компании The Global Grocery"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--11">
+              <img
+                src="./images/obw.png"
+                class="grid__img"
+                alt="Логотип компании The DataBase World"
+              />
+            </figure>
+            <figure class="our-clients__grid-item grid__item--12">
+              <img
+                src="./images/trigon.png"
+                class="grid__img"
+                alt="Логотип компании Тригон"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">Галерея</h2>
         </div>
       </section>
     </main>
