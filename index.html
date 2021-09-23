@@ -9,10 +9,212 @@
     <link href="./fonts/stylesheet.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <!-- Ссылка -->
-      <a href="./pages/catalog.html">Каталог</a>
+    <header class="first-header">
+      <div class="container first-header-container">
+        <!-- _____________лого__________ -->
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+
+        <div class="first-header__top">
+          <!-- _____________кнопка поиска__________ -->
+          <form class="first-header__search">
+            <input
+              type="search"
+              placeholder="Поиск"
+              class="first-header__search-field"
+            />
+            <button type="submit" class="first-header__search-btn"></button>
+          </form>
+          <!-- _____________почта__________ -->
+          <div class="first-header__mail">
+            <div class="first-header__mail-img">
+              <img src="./images/header_mail.png" alt="" />
+            </div>
+            <div class="first-header__mail-content">
+              <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                autoservice@cv.ru
+              </a>
+
+              <span class="first-header__mail-text"> сотрудничество </span>
+            </div>
+          </div>
+          <!-- _____________телефон__________ -->
+          <div class="first-header__phone">
+            <div class="first-header__phone-img">
+              <img src="./images/header_phone.png" alt="" />
+            </div>
+            <div class="first-header__phone-content">
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+            </div>
+          </div>
+          <!-- _____________корзна__________ -->
+          <div class="first-header__cart">
+            <div class="first-header__cart-img">
+              <a href="#"
+                ><img src="./images/header_shopping_cart.png" alt=""
+              /></a>
+              <span class="first-header__cart-count">1</span>
+            </div>
+            <div class="first-header__cart-content">
+              <span class="first-header__card-text">Корзина</span>
+              <span class="first-header__card-price">на 3 258 руб.</span>
+            </div>
+          </div>
+          <!-- _____________кнопка мобильного меню__________ -->
+          <button
+            type="button"
+            class="menu-btn menu-button--open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-icon"
+              width="22"
+              height="20"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/mobile-menu.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="first-header__bottom">
+        <!-- _____________навигация__________ -->
+        <nav class="first-header__nav">
+          <ul id="menu-verhnee-menju" class="">
+            <li
+              id="menu-item-83"
+              class="
+                menu-item menu-item-type-taxonomy
+                menu-item-object-product_cat
+                menu-item-83
+              "
+            >
+              <a href="#">Главная</a>
+            </li>
+            <li
+              id="menu-item-30014"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30014
+              "
+            >
+              <a href="#">Каталог</a>
+            </li>
+            <li
+              id="menu-item-30015"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30015
+              "
+            >
+              <a href="#">Сервисное обслуживание</a>
+            </li>
+            <li
+              id="menu-item-30017"
+              class="
+                menu-item
+                menu-item-type-custom
+                menu-item-object-custom
+                menu-item-30017
+              "
+            >
+              <a href="#">Новости</a>
+            </li>
+            <li
+              id="menu-item-87"
+              class="
+                menu-item
+                menu-item-type-post_type
+                menu-item-object-page menu-item-87
+              "
+            >
+              <a href="#">О компании</a>
+            </li>
+            <li
+              id="menu-item-88"
+              class="
+                menu-item
+                menu-item-type-post_type
+                menu-item-object-page menu-item-88
+              "
+            >
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Мобильное меню -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-close js-close-menu">
+          <svg class="menu-close__icon" width="40" height="40">
+            <use href="./images/mobile-close.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu">
+          <ul class="mobile-menu__navigation">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Сервисное обслуживание</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <!-- _____________почта__________ -->
+          <div class="first-header__mail--mobile">
+            <div class="first-header__mail-img">
+              <img src="./images/header_mail.png" alt="" />
+            </div>
+            <div class="first-header__mail-content">
+              <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                autoservice@cv.ru
+              </a>
+
+              <span class="first-header__mail-text"> сотрудничество </span>
+            </div>
+          </div>
+          <!-- _____________телефон__________ -->
+          <div class="first-header__phone--mobile">
+            <div class="first-header__phone-img">
+              <img src="./images/header_phone.png" alt="" />
+            </div>
+            <div class="first-header__phone-content">
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <!-- Продажа запасных частей-->
       <section class="sale">
@@ -315,5 +517,12 @@
       </section>
     </main>
     <footer></footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
