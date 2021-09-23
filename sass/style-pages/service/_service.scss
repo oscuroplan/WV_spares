@@ -1,0 +1,112 @@
+// Секция service-page
+
+.service-page {
+  background-image: url(/images/service/bg-service-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1800px;
+  max-height: 590px;
+}
+
+.service-page__cover {
+  max-width: 50%;
+}
+.service-page__title {
+  font-weight: 800;
+  font-family: Gilroy;
+  font-size: 43px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 53px;
+  text-align: left;
+  color: getColor("darkText");
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  &--accent-color {
+    color: getColor("accent");
+  }
+}
+.service-page__text {
+  color: getColor("darkText");
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+// Секция customer-reviews
+
+.customer-reviews__title {
+  position: relative;
+  margin-left: 38px;
+  color: getColor("darkText");
+  font-family: Gilroy;
+  font-size: 43px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 52.97px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  &::before {
+    position: absolute;
+    top: 42%;
+    margin-left: -38px;
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 6px;
+    background-color: getColor("secondaryAccent");
+  }
+}
+.customer-reviews__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+// @media (max-width: 869px) {
+//   .customer-reviews__list {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .customer-reviews__list {
+//     grid-template-columns: 1fr 1fr;
+//   }
+// }
+// @media (max-width: 479px) {
+//   .customer-reviews__list {
+//     grid-template-columns: 1fr;
+//   }
+// }
+.customer-reviews__item {
+  position: relative;
+  max-width: 274px;
+  max-height: 153px;
+}
+.customer-reviews__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}

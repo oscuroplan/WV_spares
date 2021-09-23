@@ -7,6 +7,7 @@
 .news-list__link {
   color: getColor("accent");
   margin-bottom: 34px;
+  font-family: Gilroy;
   font-size: 11px;
   font-weight: 500;
   font-style: normal;
@@ -26,9 +27,10 @@
 
 .news-list__title {
   position: relative;
+  margin-left: 38px;
+  font-family: Gilroy;
   margin-bottom: 48px;
   color: getColor("darkText");
-  font-family: "Gilroy - Extrabold";
   font-size: 29px;
   font-weight: 400;
   font-style: normal;
@@ -40,11 +42,10 @@
   line-height: normal;
   &::before {
     position: absolute;
-    top: 20%;
-    left: 0;
-    transform: translateY(50%);
+    top: 42%;
+    margin-left: -38px;
     content: "";
-    display: block;
+    display: inline-block;
     width: 31px;
     height: 6px;
     background-color: getColor("secondaryAccent");
@@ -54,6 +55,7 @@
   margin-bottom: 11px;
   margin-top: 12px;
   text-align: center;
+  font-family: Gilroy;
   color: getColor("darkText");
   font-size: 12px;
   font-weight: 700;
@@ -71,6 +73,7 @@
 }
 .news-list__desc {
   margin-bottom: 15px;
+  font-family: Gilroy;
   color: getColor("darkText");
   font-size: 10px;
   font-weight: 400;
@@ -88,7 +91,7 @@
 }
 .news-list__data {
   color: getColor("accent");
-  font-family: "Gilroy - Semibold";
+  font-family: Gilroy;
   font-size: 9px;
   font-weight: 400;
   font-style: normal;
@@ -109,8 +112,8 @@
   border: inherit;
   width: 71px;
   height: 23px;
-  color: getColor("accent");
   font-family: Gilroy;
+  color: getColor("accent");
   font-size: 11px;
   font-weight: 700;
   font-style: normal;
@@ -164,8 +167,8 @@
 .pagging__item {
   width: 21px;
   height: 21px;
+  font-family: Gilroy;
   color: getColor("textHeader");
-  font-family: "Gilroy - Semibold";
   font-size: 10px;
   font-weight: 400;
   font-style: normal;

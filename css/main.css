@@ -89,7 +89,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -171,9 +171,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -226,7 +226,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -276,7 +276,6 @@ body {
 body {
   margin: 0px;
 }
-
 body.modal-open {
   overflow: hidden;
 }
@@ -309,13 +308,11 @@ ul {
   max-width: 480px;
   padding: 0px 15px;
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -341,7 +338,6 @@ ul {
   padding-top: 73px;
   padding-bottom: 69px;
 }
-
 .free-consultation__title {
   font-family: Gilroy;
   font-size: 19px;
@@ -353,7 +349,6 @@ ul {
   color: #000000;
   margin-bottom: 33px;
 }
-
 .free-consultation__subtitle {
   font-family: Gilroy;
   font-size: 16px;
@@ -366,12 +361,9 @@ ul {
 }
 
 .our-clients__grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: (5vw)[8];
-      grid-template-rows: repeat(8, 5vw);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
   grid-gap: 15px;
 }
 
@@ -383,11 +375,9 @@ ul {
 }
 
 .grid__item--1 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   grid-row-end: 3;
 }
 
@@ -402,6 +392,7 @@ ul {
 .news-list__link {
   color: #15bf69;
   margin-bottom: 34px;
+  font-family: Gilroy;
   font-size: 11px;
   font-weight: 500;
   font-style: normal;
@@ -422,9 +413,10 @@ ul {
 
 .news-list__title {
   position: relative;
+  margin-left: 38px;
+  font-family: Gilroy;
   margin-bottom: 48px;
   color: #000000;
-  font-family: "Gilroy - Extrabold";
   font-size: 29px;
   font-weight: 400;
   font-style: normal;
@@ -435,15 +427,12 @@ ul {
   letter-spacing: normal;
   line-height: normal;
 }
-
 .news-list__title::before {
   position: absolute;
-  top: 20%;
-  left: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  top: 42%;
+  margin-left: -38px;
   content: "";
-  display: block;
+  display: inline-block;
   width: 31px;
   height: 6px;
   background-color: #f59701;
@@ -453,6 +442,7 @@ ul {
   margin-bottom: 11px;
   margin-top: 12px;
   text-align: center;
+  font-family: Gilroy;
   color: #000000;
   font-size: 12px;
   font-weight: 700;
@@ -472,6 +462,7 @@ ul {
 
 .news-list__desc {
   margin-bottom: 15px;
+  font-family: Gilroy;
   color: #000000;
   font-size: 10px;
   font-weight: 400;
@@ -491,7 +482,7 @@ ul {
 
 .news-list__data {
   color: #15bf69;
-  font-family: "Gilroy - Semibold";
+  font-family: Gilroy;
   font-size: 9px;
   font-weight: 400;
   font-style: normal;
@@ -519,8 +510,8 @@ ul {
   border: inherit;
   width: 71px;
   height: 23px;
-  color: #15bf69;
   font-family: Gilroy;
+  color: #15bf69;
   font-size: 11px;
   font-weight: 700;
   font-style: normal;
@@ -538,34 +529,26 @@ ul {
 }
 
 .news-list__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
 
 @media (max-width: 869px) {
   .news-list__list {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 @media (max-width: 768px) {
   .news-list__list {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 479px) {
   .news-list__list {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
-
 .pagging {
   margin-top: 20px;
   display: -webkit-box;
@@ -598,8 +581,8 @@ ul {
 .pagging__item {
   width: 21px;
   height: 21px;
+  font-family: Gilroy;
   color: #383838;
-  font-family: "Gilroy - Semibold";
   font-size: 10px;
   font-weight: 400;
   font-style: normal;
@@ -618,12 +601,10 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .pagging__item:hover, .pagging__item:focus {
   background-color: #f59701;
   color: #ffffff;
 }
-
 .pagging__item-active {
   background-color: #f59701;
   color: #ffffff;
@@ -634,142 +615,101 @@ ul {
   max-height: 8px;
 }
 
-.news-item__title {
-  position: relative;
-  margin-left: 38px;
-  margin-top: 51px;
+.service-page {
+  background-image: url(/images/service/bg-service-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1800px;
+  max-height: 590px;
+}
+
+.service-page__cover {
+  max-width: 50%;
+}
+
+.service-page__title {
+  font-weight: 800;
+  font-family: Gilroy;
+  font-size: 43px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 53px;
+  text-align: left;
   color: #000000;
-  font-family: "Gilroy - Extrabold";
-  font-size: 25px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.service-page__title--accent-color {
+  color: #15bf69;
+}
+
+.service-page__text {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 29.33px;
+  line-height: 27px;
   text-align: left;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
 }
 
-.news-item__title::before {
+.customer-reviews__title {
+  position: relative;
+  margin-left: 38px;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 43px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 52.97px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.customer-reviews__title::before {
   position: absolute;
-  left: -38px;
-  top: 31%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  top: 42%;
+  margin-left: -38px;
   content: "";
+  display: inline-block;
   width: 31px;
   height: 6px;
   background-color: #f59701;
 }
 
-.news-item__data {
-  margin-top: 12px;
-  width: 35px;
-  height: 9px;
-  color: #15bf69;
-  font-family: "Gilroy - Semibold";
-  font-size: 11px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 16px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+.customer-reviews__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
 }
 
-.news-item__text {
-  margin-top: 31px;
-  color: #000000;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 16.67px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-}
-
-.news-item__desc {
-  font-weight: 700;
-}
-
-.news-item__link {
-  color: #15bf69;
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-.news-item__subtitle {
-  margin-top: 31px;
-  margin-bottom: 23px;
-  color: #000000;
-  font-family: Gilroy;
-  font-size: 19px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 29.33px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-}
-
-.news-item__item {
+.customer-reviews__item {
   position: relative;
-  margin-left: 11px;
-  color: #000000;
-  font-size: 11px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 20px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  max-width: 274px;
+  max-height: 153px;
 }
 
-.news-item__item:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.news-item__item::before {
+.customer-reviews__btn {
   position: absolute;
-  left: -11px;
-  top: 18%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  content: "";
-  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 50%;
-  width: 5px;
-  height: 5px;
-  background-color: #f59701;
-}
-
-.news-item__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 40px;
-}
-
-.news-item__gallery-item {
-  max-width: 181px;
-}
-
-.news-item__gallery-item + .news-item__gallery-item {
-  margin-left: 25px;
-}
-
-.news-item__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 39px;
-  max-width: 387px;
-}
-/*# sourceMappingURL=main.css.map */
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}/*# sourceMappingURL=main.css.map */
