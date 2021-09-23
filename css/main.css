@@ -898,6 +898,8 @@ ul {
 }
 
 .our-clients__item {
+  display: inline-block;
+  vertical-align: top;
   outline: 1px solid red;
   height: 100%;
 }
