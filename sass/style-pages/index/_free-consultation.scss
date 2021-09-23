@@ -32,3 +32,24 @@
     max-width: 447px;
   }
 }
+.form-field {
+  display: block;
+  .form-field__contact-input {
+    min-width: 254px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+  }
+}
+
+.form-call-back__btn {
+  background-color: getColor("accent");
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  color: getColor("ligthText");
+}
