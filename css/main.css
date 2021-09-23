@@ -529,30 +529,14 @@ ul {
   max-width: 447px;
 }
 
-.our-clients__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: (5vw)[8];
-      grid-template-rows: repeat(8, 5vw);
-  grid-gap: 15px;
+.our-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.grid__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.grid__item--1 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 3;
+.our-clients__item:not(:nth-child(3)) {
+  width: 200px;
 }
 
 .news-list {
