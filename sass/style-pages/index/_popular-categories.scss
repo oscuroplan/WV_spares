@@ -9,10 +9,28 @@
   line-height: 53px;
   font-weight: 800;
   color: getColor("darkText");
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
   @media screen and (min-width: 768px) {
     font-size: 43px;
+  }
+  &::before {
+    position: absolute;
+    left: -5px;
+    top: 68px;
+    transform: translateY(50%);
+    content: "";
+    width: 26px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+    @media screen and (min-width: 768px) {
+      left: 70px;
+      width: 46px;
+      height: 9px;
+    }
+    @media screen and (min-width: 1200px) {
+      left: 290px;
+    }
   }
 }
 .popular-categories__list {
@@ -47,13 +65,12 @@
 .popular-categories__block {
   max-width: 356px;
   height: 268px;
-  background-color: #f2f2f2;
+  background-color: getColor("accent");
   border-radius: 20px;
   margin: 10px auto;
   &:hover,
   &:focus {
     background-color: #14bf69;
-    opacity: 0.7;
   }
   @media screen and (min-width: 768px) {
     margin: 0;
@@ -91,7 +108,6 @@
   color: getColor("darkText");
 }
 .popular-categories__button {
-  color: #fff;
   background-color: getColor("accent");
   margin: 50px auto;
   padding: 15px 57px;
@@ -102,6 +118,9 @@
   border: none;
   text-align: center;
   display: block;
+}
+.popular-categories__button-link {
+  color: getColor("ligthText");
 }
 .popular-categories__block:hover .popular-categories__block-link,
 .popular-categories__block:focus .popular-categories__block-link {
@@ -114,4 +133,26 @@
 .popular-categories__block-link:hover,
 .popular-categories__block-link:focus {
   font-weight: bold;
+}
+.popular-categories__block-item:hover .popular-categories__block-link,
+.popular-categories__block-item:focus .popular-categories__block-link {
+  font-weight: bold;
+  &::before {
+    position: absolute;
+    content: "";
+    transform: translate(-150%, 120%);
+    width: 20px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+    @media screen and (min-width: 768px) {
+      width: 29px;
+      height: 8px;
+      transform: translate(-140%, 95%);
+    }
+    @media screen and (min-width: 1200px) {
+      width: 29px;
+      height: 8px;
+      transform: translate(-137%, 95%);
+    }
+  }
 }
