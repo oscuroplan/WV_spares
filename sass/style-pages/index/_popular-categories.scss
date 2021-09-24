@@ -47,6 +47,7 @@
 }
 .popular-categories__item {
   width: 100%;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 14px) / 2);
     margin-bottom: 14px;
@@ -63,12 +64,13 @@
 }
 .popular-categories__block {
   max-width: 356px;
+  position: relative;
   height: 268px;
   background-image: linear-gradient(to top, #f2f2f2 97%, #15bf69 3%);
   border-radius: 20px;
   margin: 10px auto;
   opacity: 1;
-  position: relative;
+  z-index: 100;
   &:hover,
   &:focus {
     background: #15bf69;
@@ -81,6 +83,7 @@
     width: 356px;
   }
 }
+
 .popular-categories__block-title {
   font-family: Gilroy;
   font-size: 17px;
@@ -101,14 +104,20 @@
   font-weight: 500;
   padding-left: 30px;
   padding-top: 29px;
+
   @media screen and (min-width: 768px) {
     font-size: 16px;
     padding-left: 40px;
   }
 }
-.popular-categories__block-link {
-  color: getColor("darkText");
+.popular-categories__block-item {
   z-index: 1;
+  opacity: 1;
+}
+.popular-categories__block-link {
+  display: block;
+  color: getColor("darkText");
+  opacity: 1;
 }
 .popular-categories__button {
   background-color: getColor("accent");
@@ -136,12 +145,12 @@
 .popular-categories__block-link:hover,
 .popular-categories__block-link:focus {
   font-weight: bold;
-  z-index: 3;
+  z-index: 2;
+  opacity: 1;
 }
 .popular-categories__block-item:hover .popular-categories__block-link,
 .popular-categories__block-item:focus .popular-categories__block-link {
   font-weight: bold;
-
   &::before {
     position: absolute;
     content: "";
@@ -149,6 +158,7 @@
     width: 20px;
     height: 7px;
     background-color: getColor("secondaryAccent");
+    opacity: 1;
 
     @media screen and (min-width: 768px) {
       width: 29px;
@@ -163,12 +173,23 @@
   }
 }
 .popular-categories__label-one {
-  width: 96.5%;
-  position: absolute;
+  width: 96%;
   color: transparent;
-  transform: translate(5px, -45px);
+  transform: translate(15px, -50px);
   opacity: 0.5;
-  z-index: 1;
-  margin-bottom: 20px;
-  margin-left: 7px;
+  z-index: 0;
+}
+.popular-categories__label-two {
+  width: 97%;
+  color: transparent;
+  transform: translate(11px, -10px);
+  opacity: 0.5;
+  z-index: 0;
+}
+.popular-categories__label-three {
+  width: 100%;
+  color: transparent;
+  transform: translate(31px, -20px);
+  opacity: 0.5;
+  z-index: 0;
 }

@@ -238,7 +238,7 @@
       </section>
       <!-- Продажа запасных частей-->
       <section class="sale">
-        <div class="container">
+        <div class="container sale__wrap-box">
           <h2 class="sale__title">Продажа запасных частей</h2>
           <ul class="sale__list">
             <li class="sale__block">
@@ -301,6 +301,7 @@
             <a href="#" class="sale__button-link">Оставить заявку</a>
           </button>
         </div>
+        <div class="circle"></div>
       </section>
 
       <!-- Популярные категории -->
@@ -313,6 +314,7 @@
                 <h3 class="popular-categories__block-title">
                   Vogele super 1/2/3 series
                 </h3>
+                <div class="one">
                 <ul class="popular-categories__block-list">
                   <li class="popular-categories__block-item">
                     <a href="#" class="popular-categories__block-link"
@@ -345,6 +347,7 @@
                   src="../images/catalog_images/avtobrand_1.png"
                   alt="Vogele brand"
                 />
+                </div>
               </div>
             </li>
             <li class="popular-categories__item">
@@ -373,7 +376,7 @@
                   </li>
                 </ul>
                 <img
-                  class="popular-categories__label"
+                  class="popular-categories__label-two"
                   src="../images/catalog_images/avtobrand_2.png"
                   alt="Volvo brand"
                 />
@@ -405,7 +408,7 @@
                   </li>
                 </ul>
                 <img
-                  class="popular-categories__label"
+                  class="popular-categories__label-three"
                   src="../images/catalog_images/avtobrand_3.png"
                   alt="Wirtgen brand"
                 />
@@ -424,9 +427,8 @@
       <section class="stock">
         <div class="container">
           <h2 class="stock__title">Запчасти в наличии и под заказ</h2>
-          <div class="slider">
-            <ul class="stock__list">
-              <li class="stock__item slider__item">
+            <div class="stock__list slider">
+              <div class="stock__item slider__item">
                 <article class="stock__product">
                   <img
                     class="stock__image"
@@ -446,8 +448,8 @@
                     </button>
                   </div>
                 </article>
-              </li>
-              <li class="stock__item slider__item">
+              </div>
+              <div class="stock__item slider__item">
                 <article class="stock__product">
                   <img
                     class="stock__image"
@@ -467,8 +469,8 @@
                     </button>
                   </div>
                 </article>
-              </li>
-              <li class="stock__item slider__item">
+              </div>
+              <div class="stock__item slider__item">
                 <article class="stock__product">
                   <img
                     class="stock__image"
@@ -488,8 +490,8 @@
                     </button>
                   </div>
                 </article>
-              </li>
-              <li class="stock__item slider__item">
+              </div>
+              <div class="stock__item slider__item">
                 <article class="stock__product">
                   <img
                     class="stock__image"
@@ -509,8 +511,8 @@
                     </button>
                   </div>
                 </article>
-              </li>
-              <li class="stock__item slider__item">
+              </div>
+              <div class="stock__item slider__item">
                 <article class="stock__product">
                   <img
                     class="stock__image"
@@ -530,8 +532,8 @@
                     </button>
                   </div>
                 </article>
-              </li>
-              <li class="stock__item slider__item">
+              </div>
+              <div class="stock__item slider__item">
                 <article class="stock__product">
                   <img
                     class="stock__image"
@@ -551,28 +553,34 @@
                     </button>
                   </div>
                 </article>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </div>
         </div>
-        <!-- <ul class="stock__list">
-            <li class="stock__item">
-              <article class="stock__product">
-                <img class="stock__image" src="./images/cable-system.png" alt="Фото товара"
-                  width="271px" />
-                <h3 class="stock__name">
-                  Кабель системы нивелирования moba
-                </h3>
+      </section>
+
+
+     <!-- <section class="stock">
+        <div class="container">
+          <h2 class="stock__title">Запчасти в наличии и под заказ</h2>
+          <div class="slider">
+            
+            <div class="stock__list">
+              <div class="stock__product">
+                <div class="stock__image">
+                  <img src="./images/cable-system.png" alt="Фото товара" width="271px" height="200px">
+                </div>
+                <h3 class="stock__name">Кабель системы нивелирования moba</h3>
                 <div class="stock__wrap">
                   <p class="stock__price">16 990 руб.</p>
-                  <button type="button" class="stock__button" aria-label="More details">
+                  <button type="button" class="stock__button slider__btn" aria-label="More details">
                     Подробнее
                   </button>
                 </div>
-              </article>
-            </li>
-          </ul> -->
-      </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
       <!--Бесплатная консультация инженера -->
       <section class="free-consultation">

@@ -41,6 +41,8 @@
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 150px) / 5);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
