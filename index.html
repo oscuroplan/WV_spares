@@ -414,6 +414,57 @@
           </div>
         </div>
       </section>
+      <!--Стоимость работ-->
+      <section class="cost">
+        <div class="container cost-container">
+          <h2 class="cost__title">Узнайте стоимость работ</h2>
+          <p class="cost__text">
+            Оставьте заявку на сервисное обслуживание, мы свяжемся с Вами и оперативно рассчитаем стоимость работ
+          </p>
+          <form
+            action="#"
+            class="form-call-back"
+            name="form-call-back"
+            autocomplete="on"
+          >
+            <label class="form-field cost__form-field">
+              <span class="form-field__input-wrapper">
+                <input
+                  type="tel"
+                  name="contact-tel"
+                  placeholder="Ваш телефон"
+                  class="form-field__contact-input cost__input"
+                  required=""
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="8096-111-11-11"
+                />
+                <span class="cost__input-icon"></span>
+              </span>
+              <button type="submit" class="btn form-call-back__btn">
+                <span class="form-call-back__btn--color">Заказать звонок</span>
+              </button>
+            </label>
+
+            <label class="cost__checkbox-label">
+              <input
+                type="checkbox"
+                name="terms-contract"
+                class="cost__checkbox"
+                value="accept"
+                required
+              />
+              <span class="cost__chekbox-icon"></span>
+              <span class="cost__checkbox-text">
+                Вы соглашаетесь на
+                <a href="#" class="cost__contract-link">условия обработки персональных данных</a>
+              </span>
+            </label>
+          </form>
+          <div class="cost__circle">
+            <img src="./images/index_service_orange.png" alt="">
+          </div>
+        </div>
+      </section>
       <!-- Продажа запасных частей-->
       <section class="sale">
         <div class="container">

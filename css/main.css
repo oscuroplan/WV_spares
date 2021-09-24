@@ -1292,6 +1292,128 @@ ul {
   left: -139px;
 }
 
+.cost {
+  background-image: url(../images/index_cost_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.container.cost-container {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.cost__title {
+  font-family: Gilroy;
+  font-size: 43px;
+  line-height: 53px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 33px;
+}
+
+.cost__text {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000000;
+  width: 38%;
+  margin-bottom: 37px;
+}
+
+.cost__input {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #878888;
+  padding-left: 45px;
+  margin-right: 18px;
+  outline: none;
+  -webkit-transition: 250ms border linear;
+  transition: 250ms border linear;
+}
+
+.cost__input-icon {
+  background-image: url(../../../images/index_cost_phone.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 11px;
+  width: 22px;
+  height: 12px;
+}
+
+.cost__form-field {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.cost__form-field:focus-within .cost__input {
+  border: 1px solid #14bf69;
+}
+
+.cost__checkbox-text {
+  font-family: Gilroy;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #828282;
+}
+
+.cost__checkbox-text .cost__contract-link {
+  font-weight: 500;
+  color: #15bf69;
+  border-bottom: 1px dashed #14bf69;
+}
+
+.cost__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.cost__chekbox-icon {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  margin-right: 10px;
+  -webkit-transition: 250ms -webkit-transform linear;
+  transition: 250ms -webkit-transform linear;
+  transition: 250ms transform linear;
+  transition: 250ms transform linear, 250ms -webkit-transform linear;
+}
+
+.cost__checkbox:checked + .cost__chekbox-icon {
+  background-color: #f59701;
+  border-color: #f59701;
+  background-image: url(../images/chekbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cost__circle {
+  position: absolute;
+  top: -35px;
+  right: -242px;
+}
+
 .sale__title {
   font-family: Gilroy;
   font-size: 36px;
