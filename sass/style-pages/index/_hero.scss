@@ -1,0 +1,76 @@
+.hero {
+  background-image: url(../images/hero_bg.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  @media screen and (max-width: 767px) {
+    background: none;
+  }
+}
+.container.hero-container {
+  padding-bottom: 115px;
+  padding-left: 30px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 25px;
+  }
+}
+.hero__title {
+  font-family: Gilroy;
+  font-size: 43px;
+  line-height: 53px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-bottom: 50px;
+  width: 50%;
+  padding-top: 70px;
+
+  span {
+    color: getColor("accent");
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 31px;
+    margin-bottom: 21px;
+    width: 43%;
+    padding-top: 33px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    width: 100%;
+  }
+}
+.hero__text {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: getColor("darkText");
+  margin-bottom: 40px;
+
+  width: 38%;
+  @media screen and (max-width: 1199px) {
+    font-size: 15px;
+    width: 32%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.hero__btn {
+  background-color: getColor("accent");
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  color: getColor("ligthText");
+  transition: 250ms background-color linear;
+
+  &:hover {
+    background-color: #19ad62;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 15px 20px;
+  }
+}
