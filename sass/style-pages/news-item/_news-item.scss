@@ -4,8 +4,8 @@
   margin-top: 51px;
   color: getColor("darkText");
   font-family: Gilroy;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 800;
   font-style: normal;
   letter-spacing: normal;
   line-height: 29.33px;
@@ -13,16 +13,24 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
   &::before {
     position: absolute;
-    left: -38px;
+    margin-left: -38px;
     top: 42%;
     content: "";
-    width: 31px;
-    height: 6px;
+    width: 26px;
+    height: 5px;
     background-color: getColor("secondaryAccent");
+    @media screen and (min-width: 768px) {
+      width: 31px;
+      height: 6px;
+    }
   }
 }
+
 .news-item__data {
   margin-top: 12px;
   width: 35px;

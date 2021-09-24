@@ -9,12 +9,15 @@
 }
 
 .service-page__cover {
-  max-width: 50%;
+  @media screen and (min-width: 768px) {
+    max-width: 50%;
+  }
 }
 .service-page__title {
+  margin-bottom: 57px;
   font-weight: 800;
   font-family: Gilroy;
-  font-size: 43px;
+  font-size: 33px;
   font-style: normal;
   letter-spacing: normal;
   line-height: 53px;
@@ -26,12 +29,16 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  @media screen and (min-width: 768px) {
+    font-size: 43px;
+  }
 
   &--accent-color {
     color: getColor("accent");
   }
 }
 .service-page__text {
+  margin-bottom: 40px;
   color: getColor("darkText");
   font-family: Gilroy;
   font-size: 16px;
@@ -43,6 +50,102 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  max-width: 405px;
+}
+
+// Секция features
+
+.container--flex {
+  display: flex;
+}
+.features__box {
+  max-width: 50%;
+
+  & > div {
+    max-width: 408px;
+    max-height: 357px;
+  }
+}
+.features__case {
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  z-index: 1;
+}
+.features__text {
+  max-width: 700px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: getColor("darkText");
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  @media screen and (min-width: 768) {
+    font-size: 16px;
+  }
+}
+.features__item {
+  position: relative;
+  margin-left: 11px;
+  color: getColor("darkText");
+  font-size: 11px;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &::before {
+    position: absolute;
+    left: -11px;
+    top: 42%;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: getColor("secondaryAccent");
+  }
+}
+// Секция Как мы работаем
+
+.we-work__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 43px;
+  }
+  &::before {
+    position: absolute;
+    top: 42%;
+    margin-left: -40px;
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 6px;
+    background-color: getColor("secondaryAccent");
+    @media screen and (min-width: 768px) {
+      width: 46px;
+      height: 9px;
+      margin-left: -60px;
+    }
+  }
 }
 
 // Секция customer-reviews
@@ -50,6 +153,7 @@
 .customer-reviews__title {
   position: relative;
   margin-left: 38px;
+  margin-bottom: 60px;
   color: getColor("darkText");
   font-family: Gilroy;
   font-size: 43px;
@@ -134,6 +238,8 @@ ul.slick-dots li button {
   overflow: hidden;
   width: 12px;
   height: 12px;
+}
+ul.slick-dots li button:last-child {
 }
 ul li.slick-active button {
   background-color: getColor("accent");
