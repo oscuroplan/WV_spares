@@ -275,3 +275,45 @@
     color: #fff;
   }
 }
+// Навигация по страницам
+.pagging {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.pagging__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagging__list li:first-child {
+  margin-left: 0;
+}
+.pagging__list li {
+  margin: 0 9px;
+}
+.pagging__item._active {
+  background-color: #f59701;
+  border-color: #f59701;
+  color: #fff;
+}
+.pagging__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 5px;
+  border: 1px solid #f0f0f2;
+  font-family: "Gilroy", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 26px;
+  color: #383838;
+
+  transition: all 0.25s linear;
+}
