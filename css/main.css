@@ -2740,23 +2740,53 @@ ul li.slick-active button {
 
 .catalog-card {
   position: relative;
-  height: 100%;
+  overflow: hidden;
+  height: 460px;
   border-radius: 20px;
-  background-color: #f2f2f2;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(97%, #f2f2f2), color-stop(3%, #14bf69));
+  background-image: linear-gradient(to top, #f2f2f2 97%, #14bf69 3%);
 }
 
 .catalog-card:hover {
   -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
           box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
-  background-color: #14bf69;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(97%, #14bf69), color-stop(3%, #f59701));
+  background-image: linear-gradient(to top, #14bf69 97%, #f59701 3%);
 }
 
 .catalog-card:hover a {
   color: #fff;
 }
 
+.catalog-card:hover .catalog-card__label--color {
+  background-color: #f59701;
+}
+
+.catalog-card:hover .catalog-card__label {
+  opacity: 0.2;
+}
+
+.catalog-card__label--color {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: #14bf69;
+  top: 0;
+  left: 0;
+}
+
+.catalog-card__label {
+  position: absolute;
+  opacity: 0.7;
+  bottom: 20px;
+  left: 20px;
+}
+
 .catalog-card__meta {
+  position: absolute;
+  top: 200px;
   padding: 28px 40px 44px 40px;
+  z-index: 1;
 }
 
 .catalog-card__title > a {
@@ -2792,14 +2822,6 @@ ul li.slick-active button {
   width: 29px;
   height: 8px;
   background-color: #f59701;
-}
-
-.catalog-card__label {
-  position: absolute;
-  color: transparent;
-  bottom: 20px;
-  left: 20px;
-  z-index: 0;
 }
 
 .catalog-filter {
@@ -2976,5 +2998,68 @@ ul li.slick-active button {
 .catalog-product__button:hover, .catalog-product__button:focus {
   background-color: #14bf69;
   color: #fff;
+}
+
+.pagging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.pagging__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagging__list li:first-child {
+  margin-left: 0;
+}
+
+.pagging__list li {
+  margin: 0 9px;
+}
+
+.pagging__item._active {
+  background-color: #f59701;
+  border-color: #f59701;
+  color: #fff;
+}
+
+.pagging__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #f0f0f2;
+  font-family: "Gilroy", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 26px;
+  color: #383838;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 /*# sourceMappingURL=main.css.map */
