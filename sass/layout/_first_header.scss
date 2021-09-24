@@ -6,6 +6,17 @@
     justify-content: space-between;
   }
 }
+.current-menu-item {
+  &::before {
+    content: "";
+    height: 3px;
+    background-color: getColor("secondaryAccent");
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: calc(100% - 45px);
+  }
+}
 .first-header {
   padding-top: 30px;
   @media screen and (max-width: 1199px) {
@@ -56,6 +67,11 @@
   border-bottom-right-radius: 5px;
   background-position: 52%;
   cursor: pointer;
+  transition: 250ms background-color linear;
+
+  &:hover {
+    background-color: #2ac677;
+  }
 }
 .first-header__mail {
   @media screen and (max-width: 1199px) {
@@ -80,6 +96,11 @@
   line-height: 21px;
   font-weight: 700;
   color: getColor("textHeader");
+  transition: 250ms color linear;
+
+  &:hover {
+    color: getColor("accent");
+  }
 }
 .first-header__mail-text {
   font-family: Gilroy;
@@ -111,6 +132,11 @@
   line-height: 19px;
   font-weight: 400;
   color: getColor("textHeader");
+  transition: 250ms color linear;
+
+  &:hover {
+    color: getColor("accent");
+  }
 }
 .first-header__cart {
   @media screen and (max-width: 1199px) {
@@ -188,6 +214,7 @@
 }
 .first-header__nav li {
   margin-left: 10px;
+  position: relative;
   &::after {
     content: "";
     display: inline-block;
@@ -196,7 +223,7 @@
     width: 10px;
     height: 10px;
 
-    margin-left: 40px;
+    margin-left: 30px;
   }
   &:last-child::after {
     content: "";
@@ -211,6 +238,11 @@
   font-weight: 500;
   color: getColor("ligthText");
   padding: 20px 0;
+  transition: 250ms color linear;
+
+  &:hover {
+    color: getColor("secondaryAccent");
+  }
 }
 .logo {
   width: 129px;
