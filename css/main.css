@@ -902,6 +902,107 @@ ul {
   text-align: right;
 }
 
+.hero {
+  background-image: url(../images/hero_bg.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background: none;
+  }
+}
+
+.container.hero-container {
+  padding-bottom: 115px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .container.hero-container {
+    padding-bottom: 25px;
+  }
+}
+
+.hero__title {
+  font-family: Gilroy;
+  font-size: 43px;
+  line-height: 53px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 50px;
+  width: 50%;
+  padding-top: 70px;
+}
+
+.hero__title span {
+  color: #15bf69;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 31px;
+    margin-bottom: 21px;
+    width: 43%;
+    padding-top: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+    width: 100%;
+  }
+}
+
+.hero__text {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 40px;
+  width: 38%;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__text {
+    font-size: 15px;
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__text {
+    width: 100%;
+  }
+}
+
+.hero__btn {
+  background-color: #15bf69;
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: 250ms background-color linear;
+  transition: 250ms background-color linear;
+}
+
+.hero__btn:hover {
+  background-color: #19ad62;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__btn {
+    padding: 15px 20px;
+  }
+}
+
 /*.container {
   padding: 0px 15px;
 }*/
