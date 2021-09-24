@@ -12,11 +12,13 @@
 
 <body>
     <header class="second-header">
-        <div class="container">
-            <a href="../index.html" class="second-header__logo">
-                <img class="second-header__logo--image" src="../images/catalog_images/logo.png" alt="Логотип">
-            </a>
+        <div class="container second-header__container">
+            <!-- Логотип -->
+            <div class="second-header__logo">
+                <img  src="../images/catalog_images/logo.png" alt="Логотип">
+            </div>
             <div class="second-header__wrap">
+                <!-- Навигация -->
                 <nav class="second-header__nav">
                     <ul class="second-header__list">
                         <li class="second-header__item">
@@ -33,28 +35,94 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- Контакты -->
                 <div class="second-header__contacts">
-                    <a href="tel:+78006966699" class="second-header__phone">
+                    <div class="second-header__phone">
+                        <img class="second-header__phone-image" src="../images/catalog_images/phone_2.png" alt="Иконка телефона"/> 
+                        <a href="tel:+78006966699">
                         +7 (800) 696-66-99
-                    </a>
-                    <p class="second-header__callback">
-                        Бесплатный звонок по России
-                    </p>
+                        </a>
+                    </div>
+                    <p class="second-header__callback">Бесплатный звонок по России</p>
+                </div> 
+            </div>
+            <!--Кнопка мобильного меню-->
+            <div class="second-header__button">
+            <button type="button" class="menu-btn menu-button--open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="22" height="20" aria-label="Переключатель мобильного меню">
+                    <use href="../images/mobile-menu.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
+            </div>
+            <!-- Мобильное меню -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-close js-close-menu">
+                    <svg class="menu-close__icon" width="40" height="40">
+                        <use href="../images/mobile-close.svg#icon-close"></use>
+                    </svg>
+                </button>
+            
+                <div class="mobile-menu">
+                    <ul class="mobile-menu__navigation">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Сервисное обслуживание</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+            
+                    <!-- _____________почта__________ -->
+                    <div class="first-header__mail--mobile">
+                        <div class="first-header__mail-img">
+                            <img src="../images/header_mail.png" alt="" />
+                        </div>
+                        <div class="first-header__mail-content">
+                            <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                                autoservice@cv.ru
+                            </a>
+            
+                            <span class="first-header__mail-text"> сотрудничество </span>
+                        </div>
+                    </div>
+                    <!-- _____________телефон__________ -->
+                    <div class="first-header__phone--mobile">
+                        <div class="first-header__phone-img">
+                            <img src="../images/header_phone.png" alt="" />
+                        </div>
+                        <div class="first-header__phone-content">
+                            <a href="tel:+74958602332" class="first-header__phone-link">+7 (495) <b> 860-23-32</b></a>
+                            <a href="tel:+74958602332" class="first-header__phone-link">+7 (495) <b> 860-23-32</b></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
-    <main>
 
+    <main>
         <section class="catalog">
             <div class="container">
+                <!-- Breadcrumbs -->
                 <div class="breadcrumbs">
                     <span><a href="../index.html"><span>Главная</span></a></span>
                     <span>/</span>
                     <span class="breadcrumbs--current">Каталог</span>
                 </div>
-               
+                <!-- Заголовок -->
                 <h1 class="catalog__title">Каталог</h1>
+                <!-- Каталог -->
                 <ul class="catalog__list">
                     <li class="catalog__item">
                         <article class="catalog-card">
@@ -110,7 +178,7 @@
         </section>
         <section class="section-products">
             <div class="container">
-
+                <!-- Карточки товара -->
                 <div class="catalog-filter">
                     <p>Сортировать по:</p>
                     <ul class="catalog-filter__list">
@@ -309,6 +377,11 @@
     <footer>
 
     </footer>
+    <!-- Скрипты -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="../JS/mobile-menu.js "></script>
 </body>
 
 </html>
