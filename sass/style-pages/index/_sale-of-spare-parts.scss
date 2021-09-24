@@ -1,6 +1,3 @@
-/*.container {
-  padding: 0px 15px;
-}*/
 .sale__title {
   font-family: Gilroy;
   font-size: 36px;
@@ -15,9 +12,7 @@
   }
   &::before {
     position: absolute;
-    left: 15px;
-    top: 20px;
-    transform: translateY(50%);
+    transform: translate(-130%, 300%);
     content: "";
     width: 26px;
     height: 7px;
@@ -25,9 +20,10 @@
     @media screen and (min-width: 768px) {
       width: 46px;
       height: 9px;
+      transform: translate(-150%, 250%);
     }
     @media screen and (min-width: 1200px) {
-      left: 250px;
+      transform: translate(-160%, 245%);
     }
   }
 }

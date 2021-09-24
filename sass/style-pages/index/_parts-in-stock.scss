@@ -1,0 +1,191 @@
+.stock__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-top: 94px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 67px;
+  @media screen and (min-width: 768px) {
+    font-size: 43px;
+  }
+  &::before {
+    position: absolute;
+    transform: translate(-130%, 300%);
+    content: "";
+    width: 26px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+    @media screen and (min-width: 768px) {
+      width: 46px;
+      height: 9px;
+      transform: translate(-150%, 250%);
+    }
+    @media screen and (min-width: 1200px) {
+      transform: translate(-160%, 245%);
+    }
+  }
+}
+
+.stock__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 271px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - (15px * 4)) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (15px * 8)) / 4);
+  }
+}
+.stock__product {
+  width: 271px;
+  border-radius: 10px;
+  border: 1px solid #cdcece;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.stock__name {
+  padding: 17px 25px 25px 20px;
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+.stock__wrap {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 25px 20px;
+}
+.stock__price {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: normal;
+  line-height: 1.41;
+  color: getColor("darkText");
+}
+.stock__product {
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #cdcece;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.stock__name {
+  padding: 17px 25px 25px 20px;
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+.stock__price {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: normal;
+  line-height: 1.41;
+  color: getColor("darkText");
+}
+*/
+
+//slider
+ul.slick-dots {
+  margin: 30px 0 0 0;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+}
+ul.slick-dots li {
+  display: inline-block;
+  margin: 0 11px;
+}
+ul.slick-dots li button {
+  border: none;
+  background-color: #e8faf1;
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+}
+ul li.slick-active button {
+  background-color: #14bf69;
+  width: 12px;
+  height: 12px;
+}
+
+.stock__list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    margin: -15px;
+  }
+}
+.slider__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+/*
+.stock__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - (15px * 4)) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (15px * 8)) / 4);
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}*/
+
+.stock__button {
+  color: getColor("accent");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  background-color: getColor("backgroundFilter");
+  cursor: pointer;
+  padding: 10px 9px 8px 12px;
+  border: 0px;
+  border-radius: 3px;
+  transition: background-color 250ms linear, color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: getColor("accent");
+    color: getColor("ligthText");
+  }
+}
