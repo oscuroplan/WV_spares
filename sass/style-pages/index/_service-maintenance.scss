@@ -1,0 +1,111 @@
+.container.service-container {
+  padding-top: 80px;
+}
+.service-box {
+  width: 403px;
+  height: 268px;
+  display: inline-block;
+  background-image: linear-gradient(to top, #f2f2f2 97%, #15bf69 3%);
+  border-radius: 20px;
+  padding-left: 40px;
+}
+.service-box__title {
+  font-family: Gilroy;
+  font-size: 25px;
+  line-height: 53px;
+  font-weight: 800;
+  color: getColor("darkText");
+  padding-top: 35px;
+}
+.service-box__link {
+  font-family: Gilroy;
+  font-size: 17px;
+  line-height: 34px;
+  font-weight: 500;
+  color: getColor("darkText");
+  transition: 250ms all linear;
+
+  &:hover {
+    color: getColor("accent");
+    font-weight: 700;
+  }
+}
+// TABS
+
+.tabs {
+  max-width: 700px;
+  margin: 0 0 30px;
+  display: inline-block;
+}
+.tabs__caption {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  margin: -1px 0 0 -1px;
+}
+.tabs__caption li:last-child:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: -2px;
+  z-index: -1;
+  height: 5px;
+  background: #7dca86;
+}
+.tabs__caption:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tabs__caption li {
+  padding: 9px 15px;
+  margin: 1px 0 0 1px;
+  background: #f2f2f2;
+  color: #9e9d9d;
+  position: relative;
+  border: solid #61af6a;
+  border-width: 2px 2px 0;
+  border-radius: 5px 5px 0 0;
+  font-family: Gilroy;
+  font-size: 17px;
+  line-height: 27px;
+}
+.tabs__caption li:not(.active) {
+  cursor: pointer;
+}
+.tabs__caption li:not(.active):hover {
+  background: #7dca86;
+  border-color: #7dca86;
+}
+.tabs__caption .active {
+  border-color: #7dca86;
+  font-weight: 600;
+
+  font-weight: 700;
+  color: #010101;
+}
+.tabs__caption .active:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #fff;
+}
+.tabs__content {
+  display: none;
+  background: #fff;
+  border: 2px solid #7dca86;
+  border-radius: 0 5px 5px 5px;
+  padding: 7px 15px;
+}
+.tabs__content.active {
+  display: block;
+}
