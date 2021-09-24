@@ -1385,6 +1385,13 @@ ul {
   border: none;
   text-align: center;
   color: #fff;
+  -webkit-transition: 250ms background-color linear;
+  transition: 250ms background-color linear;
+  cursor: pointer;
+}
+
+.cost__form-field .cost__btn:hover {
+  background-color: #1baa62;
 }
 
 @media screen and (max-width: 767px) {
@@ -1439,6 +1446,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {

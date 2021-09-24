@@ -68,9 +68,15 @@ transition: 250ms border linear;
     border: none;
     text-align: center;
     color: #fff;
+    transition: 250ms background-color linear;
+    cursor: pointer;
+    &:hover {
+        background-color: #1baa62;
+    }
     @media screen and (max-width:767px) {
         padding: 15px 64px;
     }
+
 }
 .cost__input-icon {
     background-image: url(../images/index_cost_phone.png);
@@ -80,6 +86,7 @@ transition: 250ms border linear;
     left: 11px;
     width: 22px;
     height: 12px;
+    
 }
 .cost__form-field {
     margin-bottom: 35px;
@@ -106,6 +113,7 @@ border-bottom: 1px dashed #14bf69;
 .cost__checkbox-label {
     display: flex;
     align-items: center;
+    cursor: pointer;
     @media screen and (max-width:767px) {
         display: block;
     }
