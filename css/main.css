@@ -351,6 +351,16 @@ ul {
   }
 }
 
+.current-menu-item::before {
+  content: "";
+  height: 3px;
+  background-color: #f59701;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: calc(100% - 45px);
+}
+
 .first-header {
   padding-top: 30px;
 }
@@ -417,6 +427,12 @@ ul {
   border-bottom-right-radius: 5px;
   background-position: 52%;
   cursor: pointer;
+  -webkit-transition: 250ms background-color linear;
+  transition: 250ms background-color linear;
+}
+
+.first-header__search-btn:hover {
+  background-color: #2ac677;
 }
 
 @media screen and (max-width: 1199px) {
@@ -445,6 +461,12 @@ ul {
   line-height: 21px;
   font-weight: 700;
   color: #383838;
+  -webkit-transition: 250ms color linear;
+  transition: 250ms color linear;
+}
+
+.mail-box__link:hover {
+  color: #15bf69;
 }
 
 .first-header__mail-text {
@@ -481,6 +503,12 @@ ul {
   line-height: 19px;
   font-weight: 400;
   color: #383838;
+  -webkit-transition: 250ms color linear;
+  transition: 250ms color linear;
+}
+
+.first-header__phone-link:hover {
+  color: #15bf69;
 }
 
 @media screen and (max-width: 1199px) {
@@ -580,6 +608,7 @@ ul {
 
 .first-header__nav li {
   margin-left: 10px;
+  position: relative;
 }
 
 .first-header__nav li::after {
@@ -589,7 +618,7 @@ ul {
   background-image: url(../images/header_dots.png);
   width: 10px;
   height: 10px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .first-header__nav li:last-child::after {
@@ -605,6 +634,12 @@ ul {
   font-weight: 500;
   color: #ffffff;
   padding: 20px 0;
+  -webkit-transition: 250ms color linear;
+  transition: 250ms color linear;
+}
+
+.first-header__nav a:hover {
+  color: #f59701;
 }
 
 .logo {
