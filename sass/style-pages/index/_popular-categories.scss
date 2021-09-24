@@ -9,27 +9,26 @@
   line-height: 53px;
   font-weight: 800;
   color: getColor("darkText");
-  padding-top: 50px;
+  margin-top: 100px;
   text-align: center;
+  position: relative;
   @media screen and (min-width: 768px) {
     font-size: 43px;
   }
   &::before {
     position: absolute;
-    left: -5px;
-    top: 68px;
-    transform: translateY(50%);
+    transform: translate(-130%, 300%);
     content: "";
     width: 26px;
     height: 7px;
     background-color: getColor("secondaryAccent");
     @media screen and (min-width: 768px) {
-      left: 70px;
       width: 46px;
       height: 9px;
+      transform: translate(-150%, 250%);
     }
     @media screen and (min-width: 1200px) {
-      left: 290px;
+      transform: translate(-160%, 245%);
     }
   }
 }
@@ -69,6 +68,7 @@
   border-radius: 20px;
   margin: 10px auto;
   opacity: 1;
+  position: relative;
   &:hover,
   &:focus {
     background: #15bf69;
@@ -157,4 +157,12 @@
       transform: translate(-137%, 95%);
     }
   }
+}
+.popular-categories__label {
+  position: absolute;
+  color: transparent;
+  margin-top: 20px;
+  transform: translate(100px, 20px);
+  opacity: 0.3;
+  z-index: 0;
 }
