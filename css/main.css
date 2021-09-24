@@ -1038,6 +1038,236 @@ ul {
   }
 }
 
+.container.service-container {
+  padding: 80px 30px 0 30px;
+  position: relative;
+  z-index: 999;
+}
+
+.container.service-container::before {
+  content: "";
+  display: block;
+  background-image: url(../images/index_service_car.png);
+  width: 365px;
+  height: 211px;
+  position: absolute;
+  z-index: -1;
+  left: -169px;
+  top: 200px;
+}
+
+.container.service-container::after {
+  content: "";
+  display: block;
+  background-image: url(../images/index_service_instr.png);
+  background-repeat: no-repeat;
+  width: 117px;
+  height: 124px;
+  position: absolute;
+  z-index: -1;
+  right: -40px;
+  top: 173px;
+}
+
+@media screen and (max-width: 767px) {
+  .container.service-container::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container.service-container {
+    padding: 80px 15px 0 7px;
+  }
+}
+
+.service-box {
+  max-width: 403px;
+  height: 268px;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(97%, #f2f2f2), color-stop(3%, #15bf69));
+  background-image: linear-gradient(to top, #f2f2f2 97%, #15bf69 3%);
+  border-radius: 20px;
+  padding-left: 40px;
+  vertical-align: top;
+  margin-right: 80px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .service-box {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-box {
+    min-width: 300px;
+  }
+}
+
+.service-box__title {
+  font-family: Gilroy;
+  font-size: 25px;
+  line-height: 53px;
+  font-weight: 800;
+  color: #000000;
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  .service-box__title {
+    line-height: 40px;
+  }
+}
+
+.service-box__link {
+  font-family: Gilroy;
+  font-size: 17px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #000000;
+  -webkit-transition: 250ms all linear;
+  transition: 250ms all linear;
+}
+
+.service-box__link:hover {
+  color: #15bf69;
+  font-weight: 700;
+}
+
+.tabs {
+  max-width: 640px;
+  margin: 0 0 30px;
+  display: inline-block;
+}
+
+.tabs__caption {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  margin: -1px 0 0 -1px;
+}
+
+.tabs__caption li:last-child:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: -2px;
+  z-index: -1;
+  height: 5px;
+  background: #7dca86;
+}
+
+.tabs__caption:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tabs__caption li {
+  padding: 13px 63px;
+  margin: 1px 0 0 1px;
+  background: #f2f2f2;
+  color: #9e9d9d;
+  position: relative;
+  border-width: 2px 2px 0;
+  border-radius: 18px 18px 0 0;
+  font-family: Gilroy;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+@media screen and (max-width: 767px) {
+  .tabs__caption li {
+    background: transparent;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.tabs__caption li:not(.active) {
+  cursor: pointer;
+  -webkit-transition: 250ms all linear;
+  transition: 250ms all linear;
+}
+
+.tabs__caption li:not(.active):hover {
+  background: #7dca86;
+  color: #fff;
+}
+
+.tabs__caption .active {
+  font-weight: 600;
+  background: #fff;
+  font-weight: 700;
+  color: #010101;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(87%, #fff), color-stop(3%, #15bf69));
+  background-image: linear-gradient(to top, #fff 87%, #15bf69 3%);
+}
+
+.tabs__caption .active:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #fff;
+}
+
+.tabs__content {
+  display: none;
+  background: #fff;
+  border-radius: 0 5px 5px 5px;
+  padding: 40px;
+}
+
+.tabs__content.active {
+  display: block;
+}
+
+.tabs__content-list {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.tabs__content-list:last-child {
+  margin-right: 0;
+}
+
+.tabs__content-link {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #000000;
+  -webkit-transition: 250ms color linear;
+  transition: 250ms color linear;
+}
+
+.tabs__content-link:hover {
+  color: #15bf69;
+}
+
+.circle-orange {
+  position: absolute;
+  top: 156px;
+  left: 442px;
+}
+
+.circle-green {
+  position: absolute;
+  top: -41px;
+  left: -139px;
+}
+
 .sale__title {
   font-family: Gilroy;
   font-size: 36px;
