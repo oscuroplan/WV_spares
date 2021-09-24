@@ -108,6 +108,7 @@
 }
 .popular-categories__block-link {
   color: getColor("darkText");
+  z-index: 1;
 }
 .popular-categories__button {
   background-color: getColor("accent");
@@ -135,10 +136,12 @@
 .popular-categories__block-link:hover,
 .popular-categories__block-link:focus {
   font-weight: bold;
+  z-index: 3;
 }
 .popular-categories__block-item:hover .popular-categories__block-link,
 .popular-categories__block-item:focus .popular-categories__block-link {
   font-weight: bold;
+
   &::before {
     position: absolute;
     content: "";
@@ -146,6 +149,7 @@
     width: 20px;
     height: 7px;
     background-color: getColor("secondaryAccent");
+
     @media screen and (min-width: 768px) {
       width: 29px;
       height: 8px;
@@ -158,11 +162,13 @@
     }
   }
 }
-.popular-categories__label {
+.popular-categories__label-one {
+  width: 96.5%;
   position: absolute;
   color: transparent;
-  margin-top: 20px;
-  transform: translate(100px, 20px);
-  opacity: 0.3;
-  z-index: 0;
+  transform: translate(5px, -45px);
+  opacity: 0.5;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-left: 7px;
 }
