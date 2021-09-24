@@ -1,14 +1,57 @@
 .container.service-container {
-  padding-top: 80px;
+  padding: 80px 30px 0 30px;
+  position: relative;
+  z-index: 999;
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(../images/index_service_car.png);
+    width: 365px;
+    height: 211px;
+    position: absolute;
+    z-index: -1;
+    left: -169px;
+    top: 200px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    background-image: url(../images/index_service_instr.png);
+    background-repeat: no-repeat;
+    width: 117px;
+    height: 124px;
+    position: absolute;
+    z-index: -1;
+    right: -40px;
+    top: 173px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding: 80px 15px 0 7px;
+  }
 }
 .service-box {
-  width: 403px;
+  max-width: 403px;
   height: 268px;
   display: inline-block;
   background-image: linear-gradient(to top, #f2f2f2 97%, #15bf69 3%);
   border-radius: 20px;
   padding-left: 40px;
+  vertical-align: top;
+  margin-right: 80px;
+  padding-right: 30px;
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    min-width: 300px;
+  }
 }
+
 .service-box__title {
   font-family: Gilroy;
   font-size: 25px;
@@ -16,7 +59,11 @@
   font-weight: 800;
   color: getColor("darkText");
   padding-top: 35px;
+  @media screen and (max-width: 767px) {
+    line-height: 40px;
+  }
 }
+
 .service-box__link {
   font-family: Gilroy;
   font-size: 17px;
@@ -33,7 +80,7 @@
 // TABS
 
 .tabs {
-  max-width: 700px;
+  max-width: 640px;
   margin: 0 0 30px;
   display: inline-block;
 }
@@ -64,31 +111,36 @@
   clear: both;
 }
 .tabs__caption li {
-  padding: 9px 15px;
+  padding: 13px 63px;
   margin: 1px 0 0 1px;
   background: #f2f2f2;
   color: #9e9d9d;
   position: relative;
-  border: solid #61af6a;
   border-width: 2px 2px 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 18px 18px 0 0;
   font-family: Gilroy;
   font-size: 17px;
   line-height: 27px;
+  @media screen and(max-width:767px) {
+    background: transparent;
+    width: 100%;
+    text-align: left;
+  }
 }
 .tabs__caption li:not(.active) {
   cursor: pointer;
+  transition: 250ms all linear;
 }
 .tabs__caption li:not(.active):hover {
   background: #7dca86;
-  border-color: #7dca86;
+  color: #fff;
 }
 .tabs__caption .active {
-  border-color: #7dca86;
   font-weight: 600;
-
+  background: #fff;
   font-weight: 700;
   color: #010101;
+  background-image: linear-gradient(to top, #fff 87%, #15bf69 3%);
 }
 .tabs__caption .active:after {
   content: "";
@@ -102,10 +154,38 @@
 .tabs__content {
   display: none;
   background: #fff;
-  border: 2px solid #7dca86;
   border-radius: 0 5px 5px 5px;
-  padding: 7px 15px;
+  padding: 40px;
 }
 .tabs__content.active {
   display: block;
+}
+
+.tabs__content-list {
+  display: inline-block;
+  margin-right: 60px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.tabs__content-link {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 500;
+  color: getColor("darkText");
+  transition: 250ms color linear;
+  &:hover {
+    color: getColor("accent");
+  }
+}
+.circle-orange {
+  position: absolute;
+  top: 156px;
+  left: 442px;
+}
+.circle-green {
+  position: absolute;
+  top: -41px;
+  left: -139px;
 }
