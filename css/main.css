@@ -1369,6 +1369,7 @@ ul {
 .news-list__link {
   color: #15bf69;
   margin-bottom: 34px;
+  font-family: Gilroy;
   font-size: 11px;
   font-weight: 500;
   font-style: normal;
@@ -1389,11 +1390,11 @@ ul {
 
 .news-list__title {
   position: relative;
+  font-family: Gilroy;
   margin-bottom: 48px;
   color: #000000;
-  font-family: "Gilroy - Extrabold";
   font-size: 29px;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   letter-spacing: normal;
   line-height: 35.33px;
@@ -1405,12 +1406,10 @@ ul {
 
 .news-list__title::before {
   position: absolute;
-  top: 20%;
-  left: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  top: 42%;
+  margin-left: -38px;
   content: "";
-  display: block;
+  display: inline-block;
   width: 31px;
   height: 6px;
   background-color: #f59701;
@@ -1420,6 +1419,7 @@ ul {
   margin-bottom: 11px;
   margin-top: 12px;
   text-align: center;
+  font-family: Gilroy;
   color: #000000;
   font-size: 12px;
   font-weight: 700;
@@ -1439,6 +1439,7 @@ ul {
 
 .news-list__desc {
   margin-bottom: 15px;
+  font-family: Gilroy;
   color: #000000;
   font-size: 10px;
   font-weight: 400;
@@ -1486,8 +1487,8 @@ ul {
   border: inherit;
   width: 71px;
   height: 23px;
-  color: #15bf69;
   font-family: Gilroy;
+  color: #15bf69;
   font-size: 11px;
   font-weight: 700;
   font-style: normal;
@@ -1565,8 +1566,8 @@ ul {
 .pagging__item {
   width: 21px;
   height: 21px;
+  font-family: Gilroy;
   color: #383838;
-  font-family: "Gilroy - Semibold";
   font-size: 10px;
   font-weight: 400;
   font-style: normal;
@@ -1606,9 +1607,9 @@ ul {
   margin-left: 38px;
   margin-top: 51px;
   color: #000000;
-  font-family: "Gilroy - Extrabold";
-  font-size: 25px;
-  font-weight: 400;
+  font-family: Gilroy;
+  font-size: 22px;
+  font-weight: 800;
   font-style: normal;
   letter-spacing: normal;
   line-height: 29.33px;
@@ -1618,16 +1619,27 @@ ul {
   line-height: normal;
 }
 
+@media screen and (min-width: 768px) {
+  .news-item__title {
+    font-size: 25px;
+  }
+}
+
 .news-item__title::before {
   position: absolute;
-  left: -38px;
-  top: 31%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  margin-left: -38px;
+  top: 42%;
   content: "";
-  width: 31px;
-  height: 6px;
+  width: 26px;
+  height: 5px;
   background-color: #f59701;
+}
+
+@media screen and (min-width: 768px) {
+  .news-item__title::before {
+    width: 31px;
+    height: 6px;
+  }
 }
 
 .news-item__data {
@@ -1635,7 +1647,7 @@ ul {
   width: 35px;
   height: 9px;
   color: #15bf69;
-  font-family: "Gilroy - Semibold";
+  font-family: "Gilroy";
   font-size: 11px;
   font-weight: 400;
   font-style: normal;
@@ -1649,6 +1661,7 @@ ul {
 
 .news-item__text {
   margin-top: 31px;
+  font-family: Gilroy;
   color: #000000;
   font-size: 11px;
   font-weight: 400;
@@ -1689,6 +1702,7 @@ ul {
   margin-left: 11px;
   color: #000000;
   font-size: 11px;
+  font-family: Gilroy;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -1706,9 +1720,7 @@ ul {
 .news-item__item::before {
   position: absolute;
   left: -11px;
-  top: 18%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  top: 42%;
   content: "";
   display: block;
   border-radius: 50%;
@@ -1738,6 +1750,271 @@ ul {
   display: flex;
   margin-top: 39px;
   max-width: 387px;
+}
+
+.service-page {
+  background-image: url(/images/service/bg-service-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1800px;
+  max-height: 590px;
+}
+
+@media screen and (min-width: 768px) {
+  .service-page__cover {
+    max-width: 50%;
+  }
+}
+
+.service-page__title {
+  margin-bottom: 57px;
+  font-weight: 800;
+  font-family: Gilroy;
+  font-size: 33px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 53px;
+  text-align: left;
+  color: #000000;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .service-page__title {
+    font-size: 43px;
+  }
+}
+
+.service-page__title--accent-color {
+  color: #15bf69;
+}
+
+.service-page__text {
+  margin-bottom: 40px;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  max-width: 405px;
+}
+
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features__box {
+  max-width: 50%;
+}
+
+.features__box > div {
+  max-width: 408px;
+  max-height: 357px;
+}
+
+.features__case {
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  z-index: 1;
+}
+
+.features__text {
+  max-width: 700px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+@media screen and (min-width: 768) {
+  .features__text {
+    font-size: 16px;
+  }
+}
+
+.features__item {
+  position: relative;
+  margin-left: 11px;
+  color: #000000;
+  font-size: 11px;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.features__item::before {
+  position: absolute;
+  left: -11px;
+  top: 42%;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #f59701;
+}
+
+.we-work__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: #000000;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .we-work__title {
+    font-size: 43px;
+  }
+}
+
+.we-work__title::before {
+  position: absolute;
+  top: 42%;
+  margin-left: -40px;
+  content: "";
+  display: inline-block;
+  width: 31px;
+  height: 6px;
+  background-color: #f59701;
+}
+
+@media screen and (min-width: 768px) {
+  .we-work__title::before {
+    width: 46px;
+    height: 9px;
+    margin-left: -60px;
+  }
+}
+
+.customer-reviews__title {
+  position: relative;
+  margin-left: 38px;
+  margin-bottom: 60px;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 43px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 52.97px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.customer-reviews__title::before {
+  position: absolute;
+  top: 42%;
+  margin-left: -38px;
+  content: "";
+  display: inline-block;
+  width: 31px;
+  height: 6px;
+  background-color: #f59701;
+}
+
+.customer-reviews__item {
+  position: relative;
+  max-width: 274px;
+  max-height: 153px;
+}
+
+.customer-reviews__item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.customer-reviews__text {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.customer-reviews__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+ul.slick-dots {
+  margin: 30px 0 0 0;
+  text-align: center;
+  display: block;
+  margin: 128px auto;
+}
+
+ul.slick-dots li {
+  display: inline-block;
+  margin: 0 9px;
+}
+
+ul.slick-dots li button {
+  border: none;
+  background-color: #e8faf1;
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+}
+
+ul li.slick-active button {
+  background-color: #15bf69;
+  width: 12px;
+  height: 12px;
 }
 
 .catalog {
