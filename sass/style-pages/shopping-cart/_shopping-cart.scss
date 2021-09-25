@@ -90,10 +90,35 @@ font-size: 15px;
 line-height: 43px;
 font-weight: 400;
 color: #292929;
+cursor: pointer;
     &::before {
         content: '';
         display: inline-block;
         background-image: url(../images/shopping-cart/shop_cart_delete.png);
+        width: 14px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    transition: 250ms color linear;
+
+&:hover {
+    color: #13af61;
+}
+}
+.shop-cart__btn {
+    background: transparent;
+    font-family: Gilroy;
+font-size: 15px;
+line-height: 43px;
+font-weight: 700;
+color: #14bf69;
+float: right;
+cursor: pointer;
+    &::before {
+        content: '';
+        display: inline-block;
+        background-image: url(../images/shopping-cart/shop_cart_delete_green.png);
         width: 14px;
         height: 18px;
         vertical-align: middle;
@@ -176,6 +201,11 @@ border-radius: 3px;
 padding: 17px 58px;
 margin-top: 40px;
 cursor: pointer;
+transition: 250ms background-color linear;
+
+&:hover {
+    background-color: #13af61;
+}
 }
 
 
@@ -216,6 +246,11 @@ color: #14bf69;
 background-color: #e8faf1;
 border-radius: 5px 0 0 5px;
 border-right: 1px solid #eae5e5;
+transition: 250ms background-color linear;
+
+&:hover {
+    background-color: #dcf0e6;
+}
   }
   .plus-btn  {
     font-family: Gilroy;
@@ -226,9 +261,29 @@ color: #14bf69;
 background-color: #e8faf1;
 border-radius: 0 5px 5px 0;
 border-left: 1px solid #eae5e5;
+transition: 250ms background-color linear;
+
+&:hover {
+    background-color: #dcf0e6;
+}
   }
    
   button:focus,
   input:focus {
     outline:0;
+  }
+
+  .shop-cart__circle-orange {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 20px;
+      right: 0;
+  }
+  .shop-cart__circle-green {
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      bottom: 80px;
+      right: 0;
   }
