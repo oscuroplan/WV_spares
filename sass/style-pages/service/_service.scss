@@ -1,36 +1,40 @@
 // Секция service-page
 
 .service-page {
-  background-image: url(/images/service/bg-service-page.jpg);
+  background-image: url(../images/service/bg-service-page.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1800px;
-  max-height: 590px;
+  background-position-x: center;
+  @media screen and (max-width: 767px) {
+    background: none;
+  }
 }
 
-.service-page__cover {
-  @media screen and (min-width: 768px) {
-    max-width: 50%;
+.container__service-page {
+  padding-bottom: 115px;
+  padding-left: 30px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
   }
 }
 .service-page__title {
-  margin-bottom: 57px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+  width: 50%;
   font-weight: 800;
   font-family: Gilroy;
-  font-size: 33px;
-  font-style: normal;
-  letter-spacing: normal;
+  font-size: 43px;
   line-height: 53px;
   text-align: left;
   color: getColor("darkText");
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  @media screen and (min-width: 768px) {
-    font-size: 43px;
+  @media screen and (max-width: 1199px) {
+    font-size: 31px;
+    margin-bottom: 21px;
+    width: 43%;
+    padding-top: 33px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    width: 100%;
   }
 
   &--accent-color {
@@ -43,65 +47,76 @@
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 27px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   max-width: 405px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 15px;
+    width: 32%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 // Секция features
 
-.container--flex {
+.container__features {
   display: flex;
-}
-.features__box {
-  max-width: 50%;
-
-  & > div {
-    max-width: 408px;
-    max-height: 357px;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
-.features__case {
-  position: absolute;
-  bottom: 0%;
-  left: 0px;
-  z-index: 1;
+.features__box {
+  padding-left: 72px;
+  max-width: 701px;
+  @media screen and (max-width: 767px) {
+    padding-left: 0%;
+  }
 }
+// .features__box {
+//   max-width: 50%;
+
+//   & > div {
+//     max-width: 408px;
+//     max-height: 357px;
+//   }
+// }
+// .features__case {
+//   position: absolute;
+//   bottom: 0%;
+//   left: 0px;
+//   z-index: 1;
+// }
 .features__text {
   max-width: 700px;
   margin-top: 10px;
   margin-bottom: 30px;
   color: getColor("darkText");
   font-family: Gilroy;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   text-align: left;
-  @media screen and (min-width: 768) {
-    font-size: 16px;
+  @media screen and (max-width: 767) {
+    font-size: 12px;
   }
 }
 .features__item {
   position: relative;
   margin-left: 11px;
   color: getColor("darkText");
-  font-size: 11px;
+  font-size: 16px;
   font-family: Gilroy;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 20px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  @media screen and (max-width: 767) {
+    font-size: 12px;
+  }
   &:not(:last-child) {
     margin-bottom: 8px;
   }
@@ -115,6 +130,23 @@
     width: 5px;
     height: 5px;
     background-color: getColor("secondaryAccent");
+  }
+}
+.features__cover {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(../images/service/line@1.5x.jpg);
+    background-repeat: no-repeat;
+    width: 365px;
+    height: 211px;
+    position: absolute;
+    z-index: -1;
+    left: -169px;
+    top: 200px;
   }
 }
 // Секция Как мы работаем
@@ -158,13 +190,8 @@
   font-family: Gilroy;
   font-size: 43px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 52.97px;
   text-align: center;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   &::before {
     position: absolute;
     top: 42%;
@@ -194,13 +221,8 @@
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 24px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 .customer-reviews__btn {
   position: absolute;
