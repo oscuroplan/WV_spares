@@ -28,146 +28,6 @@
     }
   }
 }
-
-.stock__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 271px;
-
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    margin: 15px;
-    flex-basis: calc((100% - (15px * 4)) / 2);
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - (15px * 8)) / 4);
-  }
-}
-.stock__product {
-  width: 271px;
-  border-radius: 10px;
-  border: 1px solid #cdcece;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-.stock__name {
-  padding: 17px 25px 25px 20px;
-  color: getColor("darkText");
-  font-family: "Gilroy", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: normal;
-  line-height: 1.5;
-}
-.stock__wrap {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 25px 25px 20px;
-}
-.stock__price {
-  font-family: "Gilroy", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  letter-spacing: normal;
-  line-height: 1.41;
-  color: getColor("darkText");
-}
-.stock__product {
-  height: 100%;
-  border-radius: 10px;
-  border: 1px solid #cdcece;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-.stock__name {
-  padding: 17px 25px 25px 20px;
-  color: getColor("darkText");
-  font-family: "Gilroy", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: normal;
-  line-height: 1.5;
-}
-
-.stock__price {
-  font-family: "Gilroy", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  letter-spacing: normal;
-  line-height: 1.41;
-  color: getColor("darkText");
-}
-
-//slider
-ul.slick-dots {
-  margin: 30px 0 0 0;
-  text-align: center;
-  display: block;
-  margin: 0px auto;
-}
-ul.slick-dots li {
-  display: inline-block;
-  margin: 0 11px;
-}
-ul.slick-dots li button {
-  border: none;
-  background-color: #e8faf1;
-  outline: none;
-  cursor: pointer;
-  font-size: 0;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 12px;
-  height: 12px;
-}
-ul li.slick-active button {
-  background-color: #14bf69;
-  width: 12px;
-  height: 12px;
-}
-
-.stock__list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 40px;
-  @media screen and (min-width: 768px) {
-    justify-content: flex-start;
-    margin: -15px;
-  }
-}
-.slider__item {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-/*
-.stock__item {
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    margin: 15px;
-    flex-basis: calc((100% - (15px * 4)) / 2);
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - (15px * 8)) / 4);
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
-}*/
-
 .stock__button {
   color: getColor("accent");
   font-family: "Gilroy", sans-serif;
@@ -187,4 +47,93 @@ ul li.slick-active button {
     background-color: getColor("accent");
     color: getColor("ligthText");
   }
+}
+.stock__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    margin: -15px;
+  }
+}
+.stock__item {
+  width: 271px;
+  /*@media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }*/
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - (10px * 4)) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (20px * 8)) / 4);
+  }
+}
+.stock__product {
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #cdcece;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.stock__name {
+  padding: 17px 25px 25px 20px;
+  color: getColor("darkText");
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+.stock__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 25px 20px;
+}
+.stock__price {
+  color: getColor("darkText");
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: normal;
+  line-height: 1.41;
+}
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (20px * 8)) / 4);
+  }
+}
+ul.slick-dots {
+  text-align: center;
+  display: block;
+  margin-bottom: 95px;
+}
+ul.slick-dots li {
+  display: inline-block;
+  margin: 0 9px;
+}
+ul.slick-dots li button {
+  border: none;
+  background-color: getColor("backgroundBtn");
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+}
+ul li.slick-active button {
+  background-color: getColor("accent");
+  width: 12px;
+  height: 12px;
 }
