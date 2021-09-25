@@ -8,6 +8,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
+    @media screen and (max-width:1199px) {
+        display: block;
+    }
 }
 .shop-cart__list-box {
     display: inline-block;
@@ -33,6 +36,12 @@ margin-top: 20px;
 .shop-cart__item {
     display: flex;
     margin-bottom: 100px;
+    &:last-child {
+        margin-bottom: 20px;
+    }
+    @media screen and (max-width:767px) {
+        margin-bottom: 40px;
+    }
 }
 .shop-cart__img {
     width: 196px;
@@ -41,6 +50,9 @@ margin-top: 20px;
     overflow: hidden;
     display: inline-block;
     margin-right: 53px;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 .shop-cart__content {
     display: flex;
@@ -50,6 +62,9 @@ margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+    }
 }
 .shop-cart__content-bottom {
     display: flex;
@@ -81,12 +96,16 @@ font-size: 19px;
 line-height: 30px;
 font-weight: 800;
 color: getColor('darkText');
-margin-right: 160px;
+margin-right: 50px;
+@media screen and (max-width:767px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
 }
 .shop-cart__delete {
     background: transparent;
     font-family: Gilroy;
-font-size: 15px;
+font-size: 14px;
 line-height: 43px;
 font-weight: 400;
 color: #292929;
@@ -124,6 +143,9 @@ cursor: pointer;
         vertical-align: middle;
         margin-right: 5px;
     }
+    @media screen and (max-width:767px){
+        padding-bottom: 10px;
+    }
 }
 .shop-cart__content-price {
     text-align: center;
@@ -133,6 +155,10 @@ cursor: pointer;
   background-color: #e8faf1;
   max-width: 363px;
   max-height: 289px;
+  @media screen and (max-width:767px) {
+      max-height: 381px;
+      padding-top: 45px;
+}
 }
 .shop-cart__cost-box > div {
     display: flex;
@@ -147,18 +173,27 @@ font-size: 21px;
 font-weight: 600;
 color: #1f1f1f;
 margin-right: 120px;
+@media screen and (max-width:767px){
+    margin-right: 77px;
+}
 }
 .shop-cart__total-price {
 font-family: Gilroy;
 font-size: 23px;
 font-weight: 600;
 color: #1f1f1f;
+@media screen and (max-width:767px){
+    font-size: 21px;
+}
 }
 .shop-cart__goods-text {
 font-family: Gilroy;
 font-size: 15px;
 font-weight: 400;
 color: #000000;
+@media screen and (max-width:767px){
+    margin-right: 36px;
+}
 }
 .shop-cart__goods-price {
     font-family: Gilroy;
@@ -206,12 +241,16 @@ transition: 250ms background-color linear;
 &:hover {
     background-color: #13af61;
 }
+@media screen and (max-width:767px){
+    padding: 8px 52px;
+    font-size: 14px;
+}
 }
 
 
 
 .quantity {
-    padding-top: 20px;
+    padding: 20px 0;
     margin-right: 60px;
     display: flex;
     align-items: center;
@@ -279,6 +318,9 @@ transition: 250ms background-color linear;
       position: absolute;
       top: 20px;
       right: 0;
+      @media screen and (max-width:1199px) {
+        display: none;
+    }
   }
   .shop-cart__circle-green {
       width: 44px;
@@ -286,4 +328,7 @@ transition: 250ms background-color linear;
       position: absolute;
       bottom: 80px;
       right: 0;
+      @media screen and (max-width:1199px) {
+        display: none;
+    }
   }
