@@ -1,0 +1,250 @@
+.card__section {
+  padding-top: 28px;
+  padding-bottom: 100px;
+}
+.card__grid {
+  display: grid;
+  grid-template-columns: 590px auto;
+  gap: 58px;
+}
+.card__subname {
+  margin-top: 25px;
+  margin-bottom: 19px;
+
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 38px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.15;
+  text-align: left;
+}
+.card__article {
+  margin-bottom: 38px;
+  color: #9b9b9a;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 2.9;
+  text-align: left;
+}
+.card__info {
+  margin-bottom: 42px;
+  display: flex;
+  align-items: baseline;
+}
+.card__price {
+  color: #a9a9a8;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.43;
+  text-align: center;
+  text-decoration: line-through;
+  &--final {
+    margin-right: 20px;
+    color: #1f1f1f;
+    font-family: Gilroy;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+}
+.card__discripion {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  &--gray {
+    color: #9b9b9a;
+  }
+  &--green {
+    color: #14bf69;
+  }
+}
+
+.card__discripion {
+  margin-bottom: 47px;
+}
+.card__discripion p {
+  margin-bottom: 20px;
+}
+.card__discripion p:last-child {
+  margin-bottom: 0px;
+}
+.card__order {
+  display: flex;
+}
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 254px;
+  height: 48px;
+  border-radius: 3px;
+
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+
+  &--buy {
+    background-color: #14bf69;
+    color: #ffffff;
+    margin-right: 10px;
+    &:hover,
+    &:focus {
+      background-color: #f59701;
+    }
+  }
+  &--order {
+    background-color: #e8faf1;
+    color: #14bf69;
+    &:hover,
+    &:focus {
+      background-color: #14bf69;
+      color: #ffffff;
+    }
+  }
+}
+.card__picture {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card__label--bg {
+  position: absolute;
+  top: -12px;
+  left: -8px;
+  width: 78px;
+}
+.card__label--text {
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  z-index: 20;
+
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+}
+// Слайдер 1
+.card-slider .slick-list {
+  overflow: hidden;
+}
+.card-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.card-slider__item img {
+  width: 85px;
+  height: 65px;
+  border-radius: 10px;
+}
+.card-slider {
+  position: relative;
+  padding: 0 30px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.card-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -5.5px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 11px;
+  height: 19px;
+}
+.card-slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../images/catalog_images/previous.png") 0 0 / 100% no-repeat;
+}
+.card-slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../images/catalog_images/next.png") 0 0 / 100% no-repeat;
+}
+// Рекомендации
+.recomendation__container {
+  padding-bottom: 117px;
+}
+.recomendation-slider .slick-list {
+  overflow: hidden;
+}
+.recomendation-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.recomendation-slider {
+  position: relative;
+  padding: 0 0;
+}
+.recomendation-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -17px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #cdcece;
+}
+.recomendation-slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../images/catalog_images/previous.png") 0 0 / 100% no-repeat;
+  background-size: 7px 13px;
+  background-position: 40% 50%;
+  background-color: #fff;
+}
+.recomendation-slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../images/catalog_images/next.png") 0 0 / 100% no-repeat;
+  background-size: 7px 13px;
+  background-position: 50% 50%;
+  background-color: #fff;
+}
+// Кнопки в карточке
+.recomendation-card__button {
+  color: #14bf69;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+
+  width: 107px;
+  height: 34px;
+  background-color: #e8faf1;
+  cursor: pointer;
+  padding: 10px 9px 8px 12px;
+  border: 0px;
+  border-radius: 3px;
+
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #14bf69;
+    color: #fff;
+  }
+}
