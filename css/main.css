@@ -4648,6 +4648,12 @@ input:focus {
   display: flex;
 }
 
+@media screen and (max-width: 1199px) {
+  .order__content-wrap {
+    display: block;
+  }
+}
+
 .ordering__back {
   font-family: Gilroy;
   font-size: 16px;
@@ -4837,12 +4843,25 @@ input:focus {
   margin-right: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .form-group-top {
+    margin-right: 10px;
+    margin-bottom: 70px;
+  }
+}
+
 .custom-radio-btn-top {
   background-color: #e8faf1;
   padding: 19px 148px 19px 33px;
   border-radius: 10px;
   -webkit-transition: 250ms background-color linear;
   transition: 250ms background-color linear;
+}
+
+@media screen and (max-width: 1199px) {
+  .custom-radio-btn-top {
+    padding: 19px 120px 19px 33px;
+  }
 }
 
 .custom-radio-btn-top--first {
@@ -4860,6 +4879,13 @@ input:focus {
   background-color: #e8faf1;
   max-width: 363px;
   max-height: 575px;
+}
+
+@media screen and (max-width: 1199px) {
+  .order__cost-box {
+    margin-left: 0;
+    max-width: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
