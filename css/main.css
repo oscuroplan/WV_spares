@@ -2356,7 +2356,7 @@ ul li.slick-active button {
   background-image: url(../images/index_cost_phone.png);
   background-repeat: no-repeat;
   position: absolute;
-  top: 3px;
+  top: 19px;
   left: 14px;
   width: 22px;
   height: 12px;
@@ -2365,6 +2365,7 @@ ul li.slick-active button {
 .form-field {
   margin-bottom: 35px;
   position: relative;
+  display: block;
 }
 
 .form-field__contact-input {
@@ -2377,7 +2378,6 @@ ul li.slick-active button {
 .free-consultation__btn {
   background-color: #15bf69;
   padding: 15px 57px;
-  margin-bottom: 34px;
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 800;

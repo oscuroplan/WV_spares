@@ -62,7 +62,7 @@
     background-image: url(../images/index_cost_phone.png);
     background-repeat: no-repeat;
     position: absolute;
-    top: 3px;
+    top: 19px;
     left: 14px;
     width: 22px;
     height: 12px;
@@ -71,6 +71,7 @@
 .form-field {
   margin-bottom: 35px;
   position: relative;
+  display: block;
   &__contact-input {
     min-width: 254px;
     height: 48px;
@@ -82,7 +83,6 @@
 .free-consultation__btn {
   background-color: getColor("accent");
   padding: 15px 57px;
-  margin-bottom: 34px;
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 800;
