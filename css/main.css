@@ -1654,7 +1654,7 @@ ul {
   right: -242px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1700px) {
   .cost__circle {
     display: none;
   }
