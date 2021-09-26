@@ -1,0 +1,115 @@
+.footer {
+  background-color: getColor("darkText");
+  color: beige;
+}
+.container__footer {
+  padding-top: 45px;
+  padding-bottom: 64px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+}
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 45px;
+  }
+}
+.footer-nav {
+  color: getColor("ligthText");
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  text-align: left;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  &__link {
+    font-weight: 400;
+    color: getColor("navFooter");
+  }
+}
+.footer-nav__link {
+  cursor: pointer;
+  transition: 250ms color linear;
+  &:hover,
+  &:focus {
+    color: getColor("secondaryAccent");
+    text-decoration: underline;
+  }
+}
+.info-block {
+  color: getColor("ligthText");
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  text-align: left;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  &__desc,
+  &__desc a {
+    font-weight: 400;
+    color: getColor("navFooter");
+    cursor: pointer;
+    transition: 250ms color linear;
+    &:hover a,
+    &:focus a {
+      color: getColor("secondaryAccent");
+      text-decoration: underline;
+    }
+  }
+}
+// .footer-menu__text{
+
+// }
+.social {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+}
+.social__item {
+  // width: 18px;
+  // height: 18px;
+  cursor: pointer;
+  transition: 250ms color linear;
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+.social__text {
+  margin-right: 22px;
+  color: getColor("ligthText");
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    margin-right: 18px;
+  }
+}
+.coryright {
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.44;
+  color: getColor("navFooter");
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+}
