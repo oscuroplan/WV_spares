@@ -2671,12 +2671,12 @@ ul li.slick-active button {
 .gallerySlider .slick-arrow.slick-prev {
   left: -15px;
   background-color: red;
-  background: url("../../../images/left_arrow.png") 0 0/100% no-repeat;
+  background: url("./././images/left_arrow.png") 0 0/100% no-repeat;
 }
 
 .gallerySlider .slick-arrow.slick-next {
   right: -15px;
-  background: url("../../../images/right_arrow.png") 0 0/100% no-repeat;
+  background: url("./././images/right_arrow.png") 0 0/100% no-repeat;
 }
 
 .news-list {
