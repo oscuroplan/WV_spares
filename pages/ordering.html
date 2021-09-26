@@ -112,13 +112,42 @@
     <main>
         <section class="order">
             <div class="container">
-                <a href="./shopping-cart.html" class="ordering__back"></a>
+                
+
+                <a href="./shopping-cart.html" class="ordering__back">Вернуться в корзину</a>
+
+                <h1 class="order__title">Оформление заказа</h1>
+
+                <div class="order__content-wrap">
+
                 <div class="order__data-wrap">
-                       <h1 class="order__title"></h1>
+                       
+                    <form action="" autocomplete="off" class="order__delivery-form">
+                        <div class="form-group-top">
+                            <label>
+                                <input type="radio" name="delivery" value="pickup" class="real-radio-btn-top">
+                                <div class="custom-radio-btn-top custom-radio-btn-top--first">
+                                    <h3 class="custom-radio__title">Самовывоз</h3>
+                                    <span class="custom-radio__text">Сегодня, 16 июля</span>
+                                </div>  
+                                 
+                            </label>
+                        </div>
+                        <div class="form-group-top">
+                            <label>
+                                <input type="radio" name="delivery" value="pickup" class="real-radio-btn-top">
+                                <div class="custom-radio-btn-top">
+                                    <h3 class="custom-radio__title">Курьерская доставка</h3>
+                                    <span class="custom-radio__text">Завтра, 17 июля</span>
+                                </div>  
+                                 
+                            </label>
+                        </div>
 
-                       <h2 class="order__delivery-title">Доставить по адресу</h2>
 
-                <form action="" autocomplete="off">
+                       <h2 class="order__subtitle">Доставить по адресу</h2>
+
+                
                        <div class="order__delivery-top">
                            <label class="order__label">
                             Город
@@ -131,7 +160,9 @@
 
                              </label>
                        </div>
-                </form>
+                
+
+
                 
                        <div class="order__delivery-middle">
                         <label class="order__label">
@@ -156,11 +187,108 @@
                        <div class="order__delivery-bottom">
                         <label class="order__label">
                             Комментарии для курьера
-                               <textarea name="comment" id="" cols="56" rows="2"></textarea>
+                               <textarea name="comment" id="" cols="56" rows="1"></textarea>
                                
                             </label>
                             
                        </div>
+
+                    <h2 class="order__subtitle">Дата и время доставки</h2>
+                        <div class="order__delivery-bottom">
+                            <label class="order__label">
+                                Комментарии для курьера
+                                   <textarea name="comment" id="" cols="56" rows="1"></textarea>
+                                   
+                                </label>
+                                
+                           </div>
+
+                    <h2 class="order__subtitle">Покупатель</h2>
+                        <div class="order__delivery-top">
+                            <label class="order__label">
+                                Контактный телефон
+                                <input type="tel" name="phone" id="">
+                                
+                             </label>
+                             <label class="order__label">
+                                Ваше имя
+                                 <input type="text" name="name" id="">
+ 
+                              </label>
+                        </div>
+
+                        <div class="order__delivery-top">
+                            <label class="order__label">
+                                Электронная почта
+                                <input type="email" name="mail" id="">
+                                
+                             </label>
+                             
+                        </div>
+
+                        <h2 class="order__subtitle">Способы оплаты</h2>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" name="payment" value="paypal" class="real-radio-btn">
+                                <span class="custom-radio-btn"></span>  
+                                При получении картой или наличными
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" name="payment" value="card" class="real-radio-btn">
+                                <span class="custom-radio-btn"></span>  
+                                Онлайн оплата
+                            </label>
+                        </div>  
+                    </form>
+                </div>
+
+                <div class="order__cost-box">
+                    <div class="order__total">
+                        <span class="shop-cart__total-text">Итого</span>
+                        <span class="shop-cart__total-price">16 900 руб.</span>
+                    </div>
+                    <div class="order-cart__goods">
+                        <span class="shop-cart__goods-text">2 товара на сумму</span>
+                        <span class="shop-cart__goods-price">27 600 руб.</span>
+                    </div>
+                    <div class="order-cart__delivery">
+                        <span class="shop-cart__delivery-text">Доставка</span>
+                        <span class="shop-cart__delivery-price">500 руб.</span>
+                    </div>
+                    <div class="order-cart__sale">
+                        <span class="shop-cart__sale-text">Сумма скидки</span>
+                        <span class="shop-cart__sale-price">- 7 000 руб.</span>
+                    </div>
+
+                    <span class="order__cost-text">Доставка</span>
+                    <p class="order__cost-info">г Москва, ул. Иванова, д 7, кв 190
+                        16 июня, понедельник, 09:00 - 14:00</p>
+
+                    <span class="order__cost-text">Способ оплаты</span>
+                    <p class="order__cost-info">Наличными курьеру</p>
+
+
+                    <button class="order__cost-btn" type="button">Перейти к оформлению</button>
+
+                    <form action="">
+                        <label class="cost__checkbox-label">
+                            <input
+                              type="checkbox"
+                              name="terms-contract"
+                              class="cost__checkbox"
+                              value="accept"
+                              required
+                            />
+                            <span class="cost__chekbox-icon"></span>
+                            <span class="cost__checkbox-text">
+                              Вы соглашаетесь на
+                              <a href="#" class="cost__contract-link">условия обработки персональных данных</a>
+                            </span>
+                          </label>
+                    </form>
+                </div>
             </div>
             </div>
         </section>
