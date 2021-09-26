@@ -2497,6 +2497,95 @@ ul li.slick-active button {
   width: 140px;
 }
 
+.gallery {
+  background-color: #f2f2f2;
+  padding-top: 88px;
+  padding-bottom: 87px;
+}
+
+.gallery__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    font-size: 43px;
+  }
+}
+
+.gallery__title::before {
+  position: absolute;
+  -webkit-transform: translate(-130%, 300%);
+          transform: translate(-130%, 300%);
+  content: "";
+  width: 26px;
+  height: 7px;
+  background-color: #f59701;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__title::before {
+    width: 46px;
+    height: 9px;
+    -webkit-transform: translate(-150%, 250%);
+            transform: translate(-150%, 250%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__title::before {
+    -webkit-transform: translate(-160%, 245%);
+            transform: translate(-160%, 245%);
+  }
+}
+
+.gallery__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  width: 254px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.gallerySlider .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 62%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 15px;
+  height: 25px;
+}
+
+.gallerySlider .slick-arrow.slick-prev {
+  left: -36px;
+  background-color: red;
+  background: url("../../../images/left_arrow.png") 0 0/100% no-repeat;
+}
+
+.gallerySlider .slick-arrow.slick-next {
+  right: -36px;
+  background: url("../../../images/right_arrow.png") 0 0/100% no-repeat;
+}
+
 .news-list {
   margin: 19px 0 73px 0;
 }
