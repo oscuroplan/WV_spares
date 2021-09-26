@@ -2471,30 +2471,89 @@ ul li.slick-active button {
           transform: scale(1.1);
 }
 
-.our-clients__list {
+.our-clients {
+  padding-top: 98px;
+  padding-bottom: 98px;
+}
+
+.our-clients__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients__title {
+    font-size: 43px;
+  }
+}
+
+.our-clients__title::before {
+  position: absolute;
+  -webkit-transform: translate(-130%, 300%);
+          transform: translate(-130%, 300%);
+  content: "";
+  width: 26px;
+  height: 7px;
+  background-color: #f59701;
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients__title::before {
+    width: 46px;
+    height: 9px;
+    -webkit-transform: translate(-150%, 250%);
+            transform: translate(-150%, 250%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients__title::before {
+    -webkit-transform: translate(-160%, 245%);
+            transform: translate(-160%, 245%);
+  }
+}
+
+.our-cliens__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.our-clients__item {
-  display: inline-block;
-  vertical-align: top;
-  outline: 1px solid red;
-  height: 100%;
-}
-
-.our-clients__item:not(:nth-child(6n + 3)) {
+.our-cliens__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 200px;
 }
 
-.our-clients__item:nth-child(6n + 3) {
+.our-cliens__item:nth-child(3) {
   width: 140px;
+}
+
+.our-cliens__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.our-cliens__item a {
+  display: inline-block;
+}
+
+.our-cliens__item a:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .gallery {
