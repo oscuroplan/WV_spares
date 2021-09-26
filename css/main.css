@@ -2195,32 +2195,6 @@ ul li.slick-active button {
   margin: 19px 0 73px 0;
 }
 
-.separate {
-  color: #15bf69;
-}
-
-.news-list__link {
-  color: #15bf69;
-  margin-bottom: 34px;
-  font-family: Gilroy;
-  font-size: 11px;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 18px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-}
-
-.news-list__link-active {
-  color: #a5a6a6;
-}
-
 .news-list__title {
   position: relative;
   font-family: Gilroy;
@@ -2228,13 +2202,8 @@ ul li.slick-active button {
   color: #000000;
   font-size: 29px;
   font-weight: 800;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 35.33px;
   text-align: center;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-list__title::before {
@@ -2256,13 +2225,8 @@ ul li.slick-active button {
   color: #000000;
   font-size: 12px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-list__thumb {
@@ -2276,13 +2240,7 @@ ul li.slick-active button {
   color: #000000;
   font-size: 10px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-list__subtitle:hover,
@@ -2295,13 +2253,8 @@ ul li.slick-active button {
   font-family: "Gilroy - Semibold";
   font-size: 9px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-list__btn {
@@ -2324,12 +2277,7 @@ ul li.slick-active button {
   color: #15bf69;
   font-size: 11px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-list__btn:hover,
@@ -2403,8 +2351,6 @@ ul li.slick-active button {
   color: #383838;
   font-size: 10px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 17.33px;
   text-align: center;
   border-radius: 3px;
@@ -2443,13 +2389,8 @@ ul li.slick-active button {
   font-family: Gilroy;
   font-size: 22px;
   font-weight: 800;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 29.33px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 @media screen and (min-width: 768px) {
@@ -2483,16 +2424,12 @@ ul li.slick-active button {
   font-family: "Gilroy";
   font-size: 11px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-item__text {
+  padding-right: 150px;
   margin-top: 31px;
   font-family: Gilroy;
   color: #000000;
@@ -2500,8 +2437,12 @@ ul li.slick-active button {
   font-weight: 400;
   line-height: 16.67px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .news-item__text {
+    padding-right: 0;
+  }
 }
 
 .news-item__desc {
@@ -2521,13 +2462,8 @@ ul li.slick-active button {
   font-family: Gilroy;
   font-size: 19px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 29.33px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-item__item {
@@ -2537,13 +2473,8 @@ ul li.slick-active button {
   font-size: 11px;
   font-family: Gilroy;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 20px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .news-item__item:not(:last-child) {
@@ -2586,40 +2517,53 @@ ul li.slick-active button {
 }
 
 .service-page {
-  background-image: url(/images/service/bg-service-page.jpg);
+  background-image: url(../images/service/bg-service-page.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1800px;
-  max-height: 590px;
+  background-position-x: center;
 }
 
-@media screen and (min-width: 768px) {
-  .service-page__cover {
-    max-width: 50%;
+@media screen and (max-width: 767px) {
+  .service-page {
+    background: none;
+  }
+}
+
+.container__service-page {
+  padding-bottom: 115px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .container__service-page {
+    padding-bottom: 40px;
   }
 }
 
 .service-page__title {
-  margin-bottom: 57px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+  width: 50%;
   font-weight: 800;
   font-family: Gilroy;
-  font-size: 33px;
-  font-style: normal;
-  letter-spacing: normal;
+  font-size: 43px;
   line-height: 53px;
   text-align: left;
   color: #000000;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .service-page__title {
-    font-size: 43px;
+    font-size: 31px;
+    margin-bottom: 21px;
+    width: 43%;
+    padding-top: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-page__title {
+    font-size: 26px;
+    width: 100%;
   }
 }
 
@@ -2633,36 +2577,48 @@ ul li.slick-active button {
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 27px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   max-width: 405px;
 }
 
-.container--flex {
+@media screen and (max-width: 1199px) {
+  .service-page__text {
+    font-size: 15px;
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-page__text {
+    width: 100%;
+  }
+}
+
+.container__features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+@media screen and (max-width: 767px) {
+  .container__features {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .features__box {
-  max-width: 50%;
+  padding-left: 72px;
+  max-width: 701px;
 }
 
-.features__box > div {
-  max-width: 408px;
-  max-height: 357px;
-}
-
-.features__case {
-  position: absolute;
-  bottom: 0%;
-  left: 0px;
-  z-index: 1;
+@media screen and (max-width: 767px) {
+  .features__box {
+    padding-left: 0%;
+  }
 }
 
 .features__text {
@@ -2671,17 +2627,14 @@ ul li.slick-active button {
   margin-bottom: 30px;
   color: #000000;
   font-family: Gilroy;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   text-align: left;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (max-width: 767) {
   .features__text {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -2689,16 +2642,17 @@ ul li.slick-active button {
   position: relative;
   margin-left: 11px;
   color: #000000;
-  font-size: 11px;
+  font-size: 16px;
   font-family: Gilroy;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 20px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+}
+
+@media screen and (max-width: 767) {
+  .features__item {
+    font-size: 12px;
+  }
 }
 
 .features__item:not(:last-child) {
@@ -2715,6 +2669,25 @@ ul li.slick-active button {
   width: 5px;
   height: 5px;
   background-color: #f59701;
+}
+
+@media screen and (max-width: 767px) {
+  .features__cover {
+    display: none;
+  }
+}
+
+.features__cover::before {
+  content: "";
+  display: block;
+  background-image: url(../images/service/line@1.5x.jpg);
+  background-repeat: no-repeat;
+  width: 365px;
+  height: 211px;
+  position: absolute;
+  z-index: -1;
+  left: -169px;
+  top: 200px;
 }
 
 .we-work__title {
@@ -2761,13 +2734,8 @@ ul li.slick-active button {
   font-family: Gilroy;
   font-size: 43px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 52.97px;
   text-align: center;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .customer-reviews__title::before {
@@ -2796,13 +2764,8 @@ ul li.slick-active button {
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 24px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .customer-reviews__btn {
