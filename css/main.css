@@ -4664,6 +4664,12 @@ input:focus {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .ordering__back {
+    margin: 0;
+  }
+}
+
 .order__delivery-form {
   margin-bottom: 80px;
 }
@@ -4705,6 +4711,12 @@ input:focus {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .order__delivery-top {
+    display: block;
+  }
+}
+
 .order__delivery-top input {
   padding: 19px 38px;
   margin-right: 20px;
@@ -4739,6 +4751,19 @@ input:focus {
   -webkit-transition: 250ms border linear;
   transition: 250ms border linear;
   margin-bottom: 80px;
+  width: 72%;
+}
+
+@media screen and (max-width: 1199px) {
+  .order__label textarea {
+    min-width: 516px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .order__label textarea {
+    min-width: 250px;
+  }
 }
 
 .order__delivery-middle {
@@ -4748,10 +4773,24 @@ input:focus {
   margin-bottom: 33px;
 }
 
+@media screen and (max-width: 767px) {
+  .order__delivery-middle {
+    display: block;
+  }
+}
+
 .order__delivery-middle input {
   max-width: 157px;
   padding: 19px 20px;
   margin-right: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .order__delivery-middle input {
+    max-width: 250px;
+    padding: 19px 38px;
+    margin-right: 0;
+  }
 }
 
 .order__label:focus-within input,
@@ -4850,6 +4889,13 @@ input:focus {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .form-group-top {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
 .custom-radio-btn-top {
   background-color: #e8faf1;
   padding: 19px 148px 19px 33px;
@@ -4864,8 +4910,20 @@ input:focus {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .custom-radio-btn-top {
+    padding: 14px 102px 14px 33px;
+  }
+}
+
 .custom-radio-btn-top--first {
   padding: 19px 174px 19px 33px;
+}
+
+@media screen and (max-width: 767px) {
+  .custom-radio-btn-top--first {
+    padding: 14px 107px 14px 33px;
+  }
 }
 
 .real-radio-btn-top:checked + .custom-radio-btn-top {
@@ -4891,6 +4949,7 @@ input:focus {
 @media screen and (max-width: 767px) {
   .order__cost-box {
     padding-top: 45px;
+    max-height: none;
   }
 }
 
@@ -4905,6 +4964,20 @@ input:focus {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 11px;
+}
+
+@media screen and (max-width: 767px) {
+  .order__cost-box > div {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .order__cost-box div span {
+    display: block;
+    margin-bottom: 7px;
+  }
 }
 
 .order__cost-btn {
@@ -4942,6 +5015,12 @@ input:focus {
   width: 300px;
   height: 1px;
   background-color: #c8e6d7;
+}
+
+@media screen and (max-width: 767px) {
+  .order-cart__sale::after {
+    display: none;
+  }
 }
 
 .order__cost-text {
