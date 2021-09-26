@@ -2281,16 +2281,32 @@ ul li.slick-active button {
   padding-bottom: 69px;
 }
 
+@media screen and (max-width: 1199px) {
+  .free-consultation {
+    padding-left: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .free-consultation {
+    padding-left: 30px;
+  }
+}
+
 .free-consultation__title {
   font-family: Gilroy;
-  font-size: 19px;
+  font-size: 43px;
   line-height: 53px;
   font-weight: 800;
-  font-style: normal;
-  letter-spacing: inherit;
-  text-transform: uppercase;
   color: #000000;
   margin-bottom: 33px;
+}
+
+@media screen and (max-width: 767px) {
+  .free-consultation__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
 }
 
 .free-consultation__subtitle {
@@ -2299,25 +2315,69 @@ ul li.slick-active button {
   line-height: 27px;
   font-weight: 400;
   color: #000000;
-  letter-spacing: 0;
+  width: 38%;
   margin-bottom: 37px;
-  max-width: 447px;
+}
+
+@media screen and (max-width: 1199px) {
+  .free-consultation__subtitle {
+    width: 66%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .free-consultation__subtitle {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.free-consultation__input {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #878888;
+  padding-left: 45px;
+  margin-right: 18px;
+  outline: none;
+  -webkit-transition: 250ms border linear;
+  transition: 250ms border linear;
+}
+
+@media screen and (max-width: 767px) {
+  .free-consultation__input {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.free-consultation__input-icon {
+  background-image: url(../images/index_cost_phone.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 3px;
+  left: 14px;
+  width: 22px;
+  height: 12px;
 }
 
 .form-field {
-  display: block;
+  margin-bottom: 35px;
+  position: relative;
 }
 
-.form-field .form-field__contact-input {
+.form-field__contact-input {
   min-width: 254px;
   height: 48px;
   border: 1px solid #e0e0e0;
   border-radius: 3px;
 }
 
-.form-call-back__btn {
+.free-consultation__btn {
   background-color: #15bf69;
   padding: 15px 57px;
+  margin-bottom: 34px;
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 800;
@@ -2325,6 +2385,90 @@ ul li.slick-active button {
   border: none;
   text-align: center;
   color: #ffffff;
+  -webkit-transition: 250ms background-color linear;
+  transition: 250ms background-color linear;
+  cursor: pointer;
+}
+
+.free-consultation__btn:hover {
+  background-color: #1baa62;
+}
+
+@media screen and (max-width: 767px) {
+  .free-consultation__btn {
+    padding: 15px 64px;
+  }
+}
+
+.free-consultation__form-field:focus-within .free-consultation__input {
+  border: 1px solid #14bf69;
+}
+
+.free-consultation__checkbox-text {
+  font-family: Gilroy;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #828282;
+}
+
+@media screen and (max-width: 767px) {
+  .free-consultation__checkbox-text {
+    line-height: 27px;
+  }
+}
+
+.free-consultation__checkbox-text .free-consultation__contract-link {
+  font-weight: 500;
+  color: #15bf69;
+  border-bottom: 1px dashed #14bf69;
+}
+
+.free-consultation__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .free-consultation__checkbox-label {
+    display: block;
+  }
+}
+
+.free-consultation__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.free-consultation__chekbox-icon {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  margin-right: 10px;
+  -webkit-transition: 250ms -webkit-transform linear;
+  transition: 250ms -webkit-transform linear;
+  transition: 250ms transform linear;
+  transition: 250ms transform linear, 250ms -webkit-transform linear;
+}
+
+.free-consultation__checkbox:checked + .free-consultation__chekbox-icon {
+  background-color: #f59701;
+  border-color: #f59701;
+  background-image: url(../images/chekbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .our-clients__list {
