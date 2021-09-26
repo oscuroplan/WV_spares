@@ -34,7 +34,8 @@
 }
 
 .gallery__item {
-  flex: 0 0 25%;
+  position: relative;
+  overflow: hidden;
   width: 254px;
   display: flex;
   justify-content: center;
@@ -43,9 +44,35 @@
   margin-left: 15px;
 }
 
-.gallerySlider {
+.gallery__overlay {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #14bf69;
+  opacity: 0.5;
+  transform: translateX(100%);
+  transition: 250ms translate linear;
+  cursor: pointer;
+}
+.gallery__item:hover .gallery__overlay,
+.gallery__item:focus .gallery__overlay {
+  transform: translateX(0);
 }
 
+.gallery__btn {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  cursor: pointer;
+}
+.gallery__btn-icon {
+  width: 43px;
+  height: 43px;
+  transform: translateY(-50%);
+}
 .gallerySlider .slick-arrow {
   display: block;
   position: absolute;
@@ -57,11 +84,11 @@
   height: 25px;
 }
 .gallerySlider .slick-arrow.slick-prev {
-  left: -36px;
+  left: -15px;
   background-color: red;
   background: url("../../../images/left_arrow.png") 0 0 / 100% no-repeat;
 }
 .gallerySlider .slick-arrow.slick-next {
-  right: -36px;
+  right: -15px;
   background: url("../../../images/right_arrow.png") 0 0 / 100% no-repeat;
 }
