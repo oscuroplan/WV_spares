@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link href="../fonts/stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="second-header">
+        <div class="container second-header__container">
+            <!-- Логотип -->
+            <div class="second-header__logo">
+                <img  src="../images/catalog_images/logo.png" alt="Логотип">
+            </div>
+            <div class="second-header__wrap">
+                <!-- Навигация -->
+                <nav class="second-header__nav">
+                    <ul class="second-header__list">
+                        <li class="second-header__item">
+                            <a href="../index.html" class="second-header__link">Главная</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="#" class="second-header__link second-header__link--current">Каталог</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="#" class="second-header__link">О компании</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="#" class="second-header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Контакты -->
+                <div class="second-header__contacts">
+                    <div class="second-header__phone">
+                        <img class="second-header__phone-image" src="../images/catalog_images/phone_2.png" alt="Иконка телефона"/> 
+                        <a href="tel:+78006966699">
+                        +7 (800) 696-66-99
+                        </a>
+                    </div>
+                    <p class="second-header__callback">Бесплатный звонок по России</p>
+                </div> 
+            </div>
+            <!--Кнопка мобильного меню-->
+            <div class="second-header__button">
+            <button type="button" class="menu-btn menu-button--open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="22" height="20" aria-label="Переключатель мобильного меню">
+                    <use href="../images/mobile-menu.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
+            </div>
+            <!-- Мобильное меню -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-close js-close-menu">
+                    <svg class="menu-close__icon" width="40" height="40">
+                        <use href="../images/mobile-close.svg#icon-close"></use>
+                    </svg>
+                </button>
+            
+                <div class="mobile-menu">
+                    <ul class="mobile-menu__navigation">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Сервисное обслуживание</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+            
+                    <!-- _____________почта__________ -->
+                    <div class="first-header__mail--mobile">
+                        <div class="first-header__mail-img">
+                            <img src="../images/header_mail.png" alt="" />
+                        </div>
+                        <div class="first-header__mail-content">
+                            <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                                autoservice@cv.ru
+                            </a>
+            
+                            <span class="first-header__mail-text"> сотрудничество </span>
+                        </div>
+                    </div>
+                    <!-- _____________телефон__________ -->
+                    <div class="first-header__phone--mobile">
+                        <div class="first-header__phone-img">
+                            <img src="../images/header_phone.png" alt="" />
+                        </div>
+                        <div class="first-header__phone-content">
+                            <a href="tel:+74958602332" class="first-header__phone-link">+7 (495) <b> 860-23-32</b></a>
+                            <a href="tel:+74958602332" class="first-header__phone-link">+7 (495) <b> 860-23-32</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <section class="shop-cart">
+            <div class="container shop-cart-container">
+                <!-- Breadcrumbs -->
+                <div class="breadcrumbs">
+                    <span><a href="../index.html"><span>Главная</span></a></span>
+                    <span>/</span>
+                    <span class="breadcrumbs--current">Корзина</span>
+                </div>
+                
+                <h1 class="shop-cart__title">Корзина</h1>
+<!-- Карточки -->
+        <div class="shop-cart__wrap">
+                <div class="shop-cart__list-box">
+                    <ul class="shop-cart__list">
+                        <li class="shop-cart__item">
+                            <div class="shop-cart__img"><a href="#"><img src="../images/cable-system.png" alt=""></a></div>
+                            <div class="shop-cart__content">
+                                <div class="shop-cart__content-top">
+                                    <a href="#" class="shop-cart__content-link">Кабель системы нивелирования moba</a>
+                                    <div class="shop-cart__content-price">
+                                        <span class="shop-cart__price--new">8 500 руб.</span>
+                                        <span class="shop-cart__price--old">9 600 руб.</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="shop-cart__content-bottom">
+                                    <div class="quantity">
+                                        <button class="minus-btn" type="button" name="button">
+                                            -
+                                        </button>
+                                        <input type="text" name="name" value="1">
+                                        
+                                        <button class="plus-btn" type="button" name="button">
+                                            +
+                                          </button>
+                                      </div>
+
+                                      <button class="shop-cart__delete">Удалить</button>
+                                </div>
+
+
+                            </div>
+                        </li>
+                        <li class="shop-cart__item">
+                            <div class="shop-cart__img"><a href="#"><img src="../images/cable-system.png" alt=""></a></div>
+                            <div class="shop-cart__content">
+                                <div class="shop-cart__content-top">
+                                    <a href="#" class="shop-cart__content-link">Кабель системы нивелирования moba</a>
+                                    <div class="shop-cart__content-price">
+                                        <span class="shop-cart__price--new">8 500 руб.</span>
+                                        <span class="shop-cart__price--old">9 600 руб.</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="shop-cart__content-bottom">
+                                    <div class="quantity">
+                                        <button class="minus-btn" type="button" name="button">
+                                            -
+                                        </button>
+                                        <input type="text" name="name" value="1">
+                                        
+                                        <button class="plus-btn" type="button" name="button">
+                                            +
+                                          </button>
+                                      </div>
+
+                                      <button class="shop-cart__delete">Удалить</button>
+                                </div>
+
+
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="shop-cart__btn"><span class="shop-cart__list-icon"></span>Очистить корзину</button>
+                </div>
+
+                <div class="shop-cart__cost-box">
+                    <div class="shop-cart__total">
+                        <span class="shop-cart__total-text">Итого</span>
+                        <span class="shop-cart__total-price">16 900 руб.</span>
+                    </div>
+                    <div class="shop-cart__goods">
+                        <span class="shop-cart__goods-text">2 товара на сумму</span>
+                        <span class="shop-cart__goods-price">27 600 руб.</span>
+                    </div>
+                    <div class="shop-cart__delivery">
+                        <span class="shop-cart__delivery-text">Доставка</span>
+                        <span class="shop-cart__delivery-price">500 руб.</span>
+                    </div>
+                    <div class="shop-cart__sale">
+                        <span class="shop-cart__sale-text">Сумма скидки</span>
+                        <span class="shop-cart__sale-price">- 7 000 руб.</span>
+                    </div>
+                    <button class="shop-cart__cost-btn" type="button">Перейти к оформлению</button>
+
+                </div>
+
+
+            </div>
+
+            <div class="shop-cart__circle-orange">
+                <img src="../images/index_service_orange.png" alt="" />
+              </div>
+              <div class="shop-cart__circle-green">
+                <img src="../images/index_service_green.png" alt="" />
+              </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="../JS/mobile-menu.js "></script>
+</body>
+</html>

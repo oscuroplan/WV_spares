@@ -1,29 +1,6 @@
 .news-list {
   margin: 19px 0 73px 0;
 }
-.separate {
-  color: getColor("accent");
-}
-.news-list__link {
-  color: getColor("accent");
-  margin-bottom: 34px;
-  font-family: Gilroy;
-  font-size: 11px;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 18px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-}
-.news-list__link-active {
-  color: #a5a6a6;
-}
 
 .news-list__title {
   position: relative;
@@ -33,13 +10,8 @@
   color: getColor("darkText");
   font-size: 29px;
   font-weight: 800;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 35.33px;
   text-align: center;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   &::before {
     position: absolute;
     top: 42%;
@@ -59,13 +31,8 @@
   color: getColor("darkText");
   font-size: 12px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 .news-list__thumb {
   overflow: hidden;
@@ -77,13 +44,7 @@
   color: getColor("darkText");
   font-size: 10px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 .news-list__subtitle:hover,
 .news-list__subtitle:focus {
@@ -94,13 +55,8 @@
   font-family: "Gilroy - Semibold";
   font-size: 9px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 .news-list__btn {
   display: flex;
@@ -116,12 +72,7 @@
   color: getColor("accent");
   font-size: 11px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 16px;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 .news-list__btn:hover,
 .news-list__btn:focus {
@@ -171,8 +122,6 @@
   color: getColor("textHeader");
   font-size: 10px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 17.33px;
   text-align: center;
   border-radius: 3px;

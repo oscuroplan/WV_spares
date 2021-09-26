@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link href="../fonts/stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="second-header">
+        <div class="container second-header__container">
+            <!-- Логотип -->
+            <div class="second-header__logo">
+                <img src="../images/catalog_images/logo.png" alt="Логотип">
+            </div>
+            <div class="second-header__wrap">
+                <!-- Навигация -->
+                <nav class="second-header__nav">
+                    <ul class="second-header__list">
+                        <li class="second-header__item">
+                            <a href="../index.html" class="second-header__link">Главная</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="../pages/catalog.html"
+                                class="second-header__link second-header__link--current">Каталог</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="#" class="second-header__link">О компании</a>
+                        </li>
+                        <li class="second-header__item">
+                            <a href="../pages/contacts.html" class="second-header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Контакты -->
+                <div class="second-header__contacts">
+                    <div class="second-header__phone">
+                        <img class="second-header__phone-image" src="../images/catalog_images/phone_2.png"
+                            alt="Иконка телефона" />
+                        <a href="tel:+78006966699">
+                            +7 (800) 696-66-99
+                        </a>
+                    </div>
+                    <p class="second-header__callback">Бесплатный звонок по России</p>
+                </div>
+            </div>
+            <!--Кнопка мобильного меню-->
+            <div class="second-header__button">
+                <button type="button" class="menu-btn menu-button--open js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg class="menu-icon" width="22" height="20" aria-label="Переключатель мобильного меню">
+                        <use href="../images/mobile-menu.svg#icon-mobile-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <!-- Мобильное меню -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-close js-close-menu">
+                    <svg class="menu-close__icon" width="40" height="40">
+                        <use href="../images/mobile-close.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <div class="mobile-menu">
+                    <ul class="mobile-menu__navigation">
+                        <li>
+                            <a href="../index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a href="../pages/catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="../pages/service.html">Сервисное обслуживание</a>
+                        </li>
+                        <li>
+                            <a href="../pages/news-list.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <!-- _____________почта__________ -->
+                    <div class="first-header__mail--mobile">
+                        <div class="first-header__mail-img">
+                            <img src="../images/header_mail.png" alt="" />
+                        </div>
+                        <div class="first-header__mail-content">
+                            <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                                autoservice@cv.ru
+                            </a>
+
+                            <span class="first-header__mail-text"> сотрудничество </span>
+                        </div>
+                    </div>
+                    <!-- _____________телефон__________ -->
+                    <div class="first-header__phone--mobile">
+                        <div class="first-header__phone-img">
+                            <img src="../images/header_phone.png" alt="" />
+                        </div>
+                        <div class="first-header__phone-content">
+                            <a href="tel:+74958602332" class="first-header__phone-link">+7 (495) <b> 860-23-32</b></a>
+                            <a href="tel:+74958602332" class="first-header__phone-link">+7 (495) <b> 860-23-32</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <section class="card card__section">
+            <div class="container card__container">
+                <!-- Breadcrumbs -->
+                <div class="catalog-breadcrumbs">
+                    <span><a href="../index.html"><span>Главная</span></a></span>
+                    <span>/</span>
+                    <span><a href="../pages/catalog.html"><span>Каталог</span></a></span>
+                    <span>/</span>
+                    <span><a href="../pages/category-item.html"><span>Пульты управления (Wirtgen)</span></a></span>
+                    <span>/</span>
+                    <span class="catalog-breadcrumbs--current">Кабель системы нивелирования moba</span>
+                </div>
+                <div class="card__content">
+                    <div class="card__grid">
+                        <div class="card__left">
+                            <div class="card__picture">
+                                <img class="card__image" src="../images/catalog_images/product_photo.png" alt="Фото товара" width="590px">
+                                <img class="card__label--bg" src="../images/catalog_images/card_label.png " alt="">
+                                <span class="card__label--text">-20%</span>
+                            </div>
+                            
+                            <!-- Слайдер 1 -->
+
+                            <div class="card-slider">
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="" width="85px">
+                                </div>
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="">
+                                </div>
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="">
+                                </div>
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="">
+                                </div>
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="">
+                                </div>
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="">
+                                </div>
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="">
+                                </div>
+                                <div class="card-slider__item">
+                                    <img src="../images/catalog_images/product_photo.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card__right">
+                            <div class="card__name">
+                                <p class="card__subname">Кабель системы нивелирования moba</p>
+                                <p class="card__article">Артикул: 6036060</p>
+                            </div>
+                            <div class="card__info">
+                                <p class="card__price--final">8 500 руб.</p>
+                                <p class="card__price">9 600 &#8381</p>
+                            </div>
+                            <div class="card__discripion">
+                                <p class="card__discripion--gray">Производитель: <span class="card__discripion--green">Wirtgen</span> </p>
+                                <p><span class="card__discripion--gray">Состояние: </span>новый</p>
+                                <p>
+                                Ультразвуковой датчик VOGELE для асфальтоукладчика б/у рабочий в хорошем состоянии он на фото и есть, кабель к нему в
+                                наличии есть отдельно. Проверка, установка, тех. поддержка, гарантия, любая удобная форма оплаты.</p>
+                            </div>
+                            <div class="card__order">
+                                <button class="card__button card__button--buy" type="button">Купить</button>
+                                <button class="card__button card__button--order" type="button">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recomendation">
+            <div class="container recomendation__container">
+                <!-- Заголовок -->
+                <h1 class="catalog__title">Рекомендуем</h1>
+           
+                <!-- Слайдер 2 -->
+
+                    <ul class="catalog-grid recomendation-slider">
+                        <li class="catalog-grid__item recomendation-slider__item">
+                            <article class="catalog-product">
+                                <a href="../pages/card-product.html"><img class="catalog-product__image"
+                                        src="../images/catalog_images/product_photo.png" alt="Фото товара" width="271px"></a>
+                                <a href="../pages/card-product.html">
+                                    <h3 class="catalog-product__name">Кабель системы нивелирования moba</h3>
+                                </a>
+                                <div class="catalog-product__wrap">
+                                    <p class="catalog-product__price">16 990 руб.</p>
+                                    <button type="button" class="recomendation-card__button" aria-label="More details">Подробнее</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="catalog-grid__item recomendation-slider__item">
+                            <article class="catalog-product">
+                                <a href="../pages/card-product.html"><img class="catalog-product__image"
+                                        src="../images/catalog_images/product_photo.png" alt="Фото товара" width="271px"></a>
+                                <a href="../pages/card-product.html">
+                                    <h3 class="catalog-product__name">Кабель системы нивелирования moba</h3>
+                                </a>
+                                <div class="catalog-product__wrap">
+                                    <p class="catalog-product__price">16 990 руб.</p>
+                                    <button type="button" class="catalog-product__button" aria-label="More details">Подробнее</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="catalog-grid__item recomendation-slider__item">
+                            <article class="catalog-product">
+                                <a href="../pages/card-product.html"><img class="catalog-product__image"
+                                        src="../images/catalog_images/product_photo.png" alt="Фото товара" width="271px"></a>
+                                <a href="../pages/card-product.html">
+                                    <h3 class="catalog-product__name">Кабель системы нивелирования moba</h3>
+                                </a>
+                                <div class="catalog-product__wrap">
+                                    <p class="catalog-product__price">16 990 руб.</p>
+                                    <button type="button" class="catalog-product__button" aria-label="More details">Подробнее</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="catalog-grid__item recomendation-slider__item">
+                            <article class="catalog-product">
+                                <a href="../pages/card-product.html"><img class="catalog-product__image"
+                                        src="../images/catalog_images/product_photo.png" alt="Фото товара" width="271px"></a>
+                                <a href="../pages/card-product.html">
+                                    <h3 class="catalog-product__name">Кабель системы нивелирования moba</h3>
+                                </a>
+                                <div class="catalog-product__wrap">
+                                    <p class="catalog-product__price">16 990 руб.</p>
+                                    <button type="button" class="catalog-product__button" aria-label="More details">Подробнее</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="catalog-grid__item recomendation-slider__item">
+                            <article class="catalog-product">
+                                <a href="../pages/card-product.html"><img class="catalog-product__image"
+                                        src="../images/catalog_images/product_photo.png" alt="Фото товара" width="271px"></a>
+                                <a href="../pages/card-product.html">
+                                    <h3 class="catalog-product__name">Кабель системы нивелирования moba</h3>
+                                </a>
+                                <div class="catalog-product__wrap">
+                                    <p class="catalog-product__price">16 990 руб.</p>
+                                    <button type="button" class="catalog-product__button" aria-label="More details">Подробнее</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Скрипты -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="../JS/mobile-menu.js "></script>
+    <!-- Cкрипт слайдера -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- <script src="../JS/slider.js"></script> -->
+    <script>
+    $(document).ready(function () {
+        $(".card-slider").slick({
+            arrows: true,
+            dots: false,
+            adaptiveHeight: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: false,
+            speed: 500,
+            
+            responsive: [
+                {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+        });
+    });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".recomendation-slider").slick({
+                arrows: true,
+                dots: false,
+                adaptiveHeight: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: false,
+                speed: 500,
+
+                responsive: [
+                    {
+                        breakpoint: 1279,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+</body>
+</html>

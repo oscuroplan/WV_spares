@@ -7,17 +7,24 @@
   padding-top: 73px;
   padding-bottom: 69px;
 
+  @media screen and (max-width: 1199px) {
+    padding-left: 60px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 30px;
+  }
+
   &__title {
     font-family: Gilroy;
-    font-size: 19px;
+    font-size: 43px;
     line-height: 53px;
     font-weight: 800;
-    font-style: normal;
-    letter-spacing: inherit;
-    text-transform: uppercase;
     color: getColor("darkText");
-
     margin-bottom: 33px;
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 35px;
+    }
   }
 
   &__subtitle {
@@ -26,15 +33,46 @@
     line-height: 27px;
     font-weight: 400;
     color: getColor("darkText");
-    letter-spacing: 0;
-
+    width: 38%;
     margin-bottom: 37px;
-    max-width: 447px;
+    @media screen and (max-width: 1199px) {
+      width: 66%;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  &__input {
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #878888;
+    padding-left: 45px;
+    margin-right: 18px;
+    outline: none;
+    transition: 250ms border linear;
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &__input-icon {
+    background-image: url(../images/index_cost_phone.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 19px;
+    left: 14px;
+    width: 22px;
+    height: 12px;
   }
 }
 .form-field {
+  margin-bottom: 35px;
+  position: relative;
   display: block;
-  .form-field__contact-input {
+  &__contact-input {
     min-width: 254px;
     height: 48px;
     border: 1px solid #e0e0e0;
@@ -42,7 +80,7 @@
   }
 }
 
-.form-call-back__btn {
+.free-consultation__btn {
   background-color: getColor("accent");
   padding: 15px 57px;
   font-family: Gilroy;
@@ -52,4 +90,67 @@
   border: none;
   text-align: center;
   color: getColor("ligthText");
+  transition: 250ms background-color linear;
+  cursor: pointer;
+  &:hover {
+    background-color: #1baa62;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 15px 64px;
+  }
+}
+
+.free-consultation__form-field:focus-within .free-consultation__input {
+  border: 1px solid #14bf69;
+}
+
+.free-consultation__checkbox-text {
+  font-family: Gilroy;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #828282;
+  @media screen and (max-width: 767px) {
+    line-height: 27px;
+  }
+  .free-consultation__contract-link {
+    font-weight: 500;
+    color: getColor("accent");
+    border-bottom: 1px dashed #14bf69;
+  }
+}
+
+.free-consultation__checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.free-consultation__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.free-consultation__chekbox-icon {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  margin-right: 10px;
+  transition: 250ms transform linear;
+}
+.free-consultation__checkbox:checked + .free-consultation__chekbox-icon {
+  background-color: getColor("secondaryAccent");
+  border-color: getColor("secondaryAccent");
+  background-image: url(../images/chekbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  transform: scale(1.1);
 }

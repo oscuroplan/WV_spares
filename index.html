@@ -574,7 +574,7 @@
                 </ul>
                 <img
                   class="popular-categories__label-one"
-                  src="../images/catalog_images/avtobrand_1.png"
+                  src="./images/catalog_images/avtobrand_1.png"
                   alt="Vogele brand"
                 />
                 </div>               
@@ -607,7 +607,7 @@
                 </ul>
                 <img
                   class="popular-categories__label-two"
-                  src="../images/catalog_images/avtobrand_2.png"
+                  src="./images/catalog_images/avtobrand_2.png"
                   alt="Volvo brand"
                 />
               </div>
@@ -639,7 +639,7 @@
                 </ul>
                 <img
                   class="popular-categories__label-three"
-                  src="../images/catalog_images/avtobrand_3.png"
+                  src="./images/catalog_images/avtobrand_3.png"
                   alt="Wirtgen brand"
                 />
               </div>
@@ -814,7 +814,7 @@
 
       <!--Бесплатная консультация инженера -->
       <section class="free-consultation">
-        <div class="container">
+        <div class="container free-consultation__container">
           <h2 class="free-consultation__title">
             Беспланая консультация инженера
           </h2>
@@ -828,34 +828,36 @@
             name="form-call-back"
             autocomplete="on"
           >
-            <label class="form-field">
+            <label class="form-field free-consultation__form-field">
               <span class="form-field__input-wrapper">
                 <input
                   type="tel"
                   name="contact-tel"
                   placeholder="Ваш телефон"
-                  class="form-field__contact-input"
+                  class="form-field__contact-input free-consultation__input"
                   required=""
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                   title="8096-111-11-11"
                 />
+                <span class="free-consultation__input-icon"></span>
               </span>
-              <button type="submit" class="btn form-call-back__btn">
+              <button type="submit" class="btn  free-consultation__btn">
                 <span class="form-call-back__btn--color">Заказать звонок</span>
               </button>
             </label>
 
-            <label class="modal__checkbox-label">
+            <label class="free-consultation__checkbox-label">
               <input
                 type="checkbox"
                 name="terms-contract"
-                class="modal__checkbox"
+                class="free-consultation__checkbox"
                 value="accept"
                 required
               />
-              <span class="modal__checkbox-text">
+              <span class="free-consultation__chekbox-icon"></span>
+              <span class="free-consultation__checkbox-text">
                 Соглашаюсь с рассылкой и принимаю
-                <a href="#" class="modal__contract-link">условия договора</a>
+                <a href="#" class="free-consultation__contract-link">условия договора</a>
               </span>
             </label>
           </form>
@@ -960,7 +962,66 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+            <div class="container container__footer">
+              <div class="footer__box">
+                  <div class="footer-nav">
+                    <p class="footer-nav__text">Для клиентов</p>
+                    <ul>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-nav">
+                    <p class="footer-nav__text">О нас</p>
+                    <ul>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-nav">
+                    <p class="footer-nav__text">Для компаний</p>
+                    <ul>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="">Меню</a></li>
+                    </ul>
+                  </div>
+                  <div class="info-block">
+                    <p class="info-block__subtitle">Наши контакты:</p>
+                    <p class="info-block__desc">ООО “Название компании полное”</p>
+                    <p class="info-block__desc"><a class="" href="">По вопросам размещения рекламы</a></p>
+                    <p class="info-block__subtitle">Режим работы:</p>
+                    <p class="info-block__desc">Пн - вс 09:00 - 21:00</p>
+                  </div>
+              </div>
+
+              <div class="social">
+                <p class="social__text">Мы в соцсетях:</p>
+                <ul class="social__list">
+                  <li class="social__item"><a href="https://www.instagram.com/"><img class="social__img"
+                        src="./images/footer/instagram.png" alt="" width="11" height="18"></a>
+                  </li>
+                  <li class="social__item"><a href="https://www.facebook.com/"><img class="social__img" src="./images/footer/facebook.png"
+                        alt="" width="18" height="18"></a></li>
+                  <li class="social__item"><a href="https://www.linkedin.com/"><img class="social__img" src="./images/footer/linkedin.png"
+                        alt="" width="18" height="18"></a></li>
+                </ul>
+              </div>
+              <div class="coryright">
+                <div>
+                  <p>Информация о посещении сайта.</p>
+                </div>
+                <div>
+                  <p class="copy-text">&#169;Копирайтинг, 2010-2021</p>
+                </div>
+              </div>
+            </div>
+    </footer>
+
     <!-- скрипт мобильного меню -->
     <script
       defer
@@ -977,7 +1038,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./js/slider.js"></script>
+    <script src="./JS/slider.js"></script>
     <!-- скрипт табов -->
     <script src="./JS/tabs.js"></script>
   </body>
