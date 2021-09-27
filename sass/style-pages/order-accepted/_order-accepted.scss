@@ -1,0 +1,132 @@
+.order-accept {
+  padding: 200px 30px 220px 30px;
+  @media screen and (max-width: 1199px) {
+    padding: 80px 30px 80px 30px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 65px 30px 65px 30px;
+  }
+}
+.order-accept__title {
+  font-family: Gilroy;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-bottom: 38px;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-10px);
+    margin-right: 24px;
+
+    width: 46px;
+    height: 9px;
+    background-color: getColor("secondaryAccent");
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 35px;
+  }
+}
+.order-accept__number {
+  font-family: Gilroy;
+  font-size: 21px;
+  line-height: 38px;
+  font-weight: 500;
+  color: #202020;
+  text-align: center;
+
+  span {
+    line-height: 31px;
+    font-weight: 700;
+    color: #14bf69;
+  }
+}
+.order-accept__img {
+  width: 95px;
+  height: 95px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 86px;
+  @media screen and (max-width: 767px) {
+    margin-top: 45px;
+  }
+}
+.order-accept__text {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 31px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin-top: 86px;
+  @media screen and (max-width: 767px) {
+    margin-top: 45px;
+  }
+}
+.order-accept__btn {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #14bf69;
+  border-radius: 3px;
+  padding: 12px 83px;
+  cursor: pointer;
+  transition: 250ms background-color linear;
+  display: block;
+  margin: 51px auto 0 auto;
+
+  &:hover {
+    background-color: #13af61;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 8px 52px;
+    font-size: 14px;
+  }
+}
+.order-accept__circles {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.order-accept__green-big {
+  width: 82px;
+  height: 82px;
+  position: absolute;
+  top: -146px;
+  right: 0;
+  @media screen and (max-width: 1199px) {
+    top: -45px;
+  }
+}
+.order-accept__green-little {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 169px;
+  left: 156px;
+}
+.order-accept__orange-big {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+
+  bottom: -100px;
+  right: 0;
+  @media screen and (max-width: 1199px) {
+    bottom: -45px;
+  }
+}
+.order-accept__orange-little {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  @media screen and (max-width: 1199px) {
+    bottom: 50px;
+  }
+}
