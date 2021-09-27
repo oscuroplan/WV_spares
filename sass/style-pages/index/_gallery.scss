@@ -31,6 +31,9 @@
       }
     }
   }
+  &__slider {
+    z-index: 2;
+  }
 }
 
 .gallery__item {
@@ -86,9 +89,54 @@
 .gallerySlider .slick-arrow.slick-prev {
   left: -15px;
   background-color: red;
-  background: url("../../../images/left_arrow.png") 0 0 / 100% no-repeat;
+  background: url("./../../../images/left_arrow.png") 0 0 / 100% no-repeat;
+  cursor: pointer;
 }
 .gallerySlider .slick-arrow.slick-next {
   right: -15px;
-  background: url("../../../images/right_arrow.png") 0 0 / 100% no-repeat;
+  background: url("./../../../images/right_arrow.png") 0 0 / 100% no-repeat;
+  cursor: pointer;
+}
+
+.gallery__text-decoration {
+  position: absolute;
+  z-index: 1;
+  left: -37%;
+  top: 30%;
+  opacity: 0.6;
+  font-family: Gilroy;
+  font-size: 169px;
+  line-height: 53px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #e1e2e2;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.gallery__circle-decoration--orange {
+  position: absolute;
+  border-radius: 50%;
+  top: -40%;
+  left: -28%;
+  width: 60px;
+  height: 60px;
+  border: 15px solid #f59701;
+  box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.685);
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.gallery__circle-decoration--green {
+  position: absolute;
+  bottom: -40%;
+  right: -25%;
+  border-radius: 50%;
+  width: 59px;
+  height: 59px;
+  border: 15px solid #14bf69;
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
