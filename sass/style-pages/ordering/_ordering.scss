@@ -1,0 +1,313 @@
+.order {
+  padding: 20px 30px 50px 30px;
+}
+.order__content-wrap {
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
+}
+.ordering__back {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #14bf69;
+  margin: 0 0 75px 274px;
+  display: block;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
+}
+.order__delivery-form {
+  margin-bottom: 80px;
+}
+.order__title {
+  font-family: Gilroy;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-top: 20px;
+  margin-bottom: 75px;
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-10px);
+    margin-right: 24px;
+
+    width: 46px;
+    height: 9px;
+    background-color: getColor("secondaryAccent");
+  }
+}
+.order__subtitle {
+  font-family: Gilroy;
+  font-size: 22px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: 36px;
+}
+.order__delivery-top {
+  display: flex;
+  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  input {
+    padding: 19px 38px;
+    margin-right: 20px;
+  }
+}
+.order__label {
+  display: block;
+  font-family: Gilroy;
+  font-size: 15px;
+  line-height: 43px;
+  font-weight: 400;
+  color: #292929;
+
+  input {
+    display: block;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    transition: 250ms border linear;
+  }
+  textarea {
+    display: block;
+    outline: none;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 17px 25px;
+    resize: none;
+    border: 1px solid #f4f4f4;
+    transition: 250ms border linear;
+    margin-bottom: 80px;
+    width: 72%;
+
+    @media screen and (max-width: 1199px) {
+      min-width: 516px;
+    }
+    @media screen and (max-width: 767px) {
+      min-width: 250px;
+    }
+  }
+}
+.order__delivery-middle {
+  display: flex;
+  margin-bottom: 33px;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  input {
+    max-width: 157px;
+    padding: 19px 20px;
+    margin-right: 22px;
+    @media screen and (max-width: 767px) {
+      max-width: 250px;
+      padding: 19px 38px;
+      margin-right: 0;
+    }
+  }
+}
+.order__label:focus-within input,
+.order__label:focus-within textarea {
+  border: 1px solid #15bf69;
+}
+
+.form-group label {
+  font-family: Gilroy;
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.custom-radio-btn {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+/* Рисуем внутренний круг */
+.custom-radio-btn::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #f59701;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+}
+.real-radio-btn:checked + .custom-radio-btn::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.real-radio-btn {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.real-radio-btn-top {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.custom-radio__title {
+  font-family: Gilroy;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.custom-radio__text {
+  font-family: Gilroy;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.form-group-top {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 70px;
+  &:last-child {
+    margin-right: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-right: 10px;
+    margin-bottom: 70px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+.custom-radio-btn-top {
+  background-color: #e8faf1;
+  padding: 19px 148px 19px 33px;
+  border-radius: 10px;
+  transition: 250ms background-color linear;
+  @media screen and (max-width: 1199px) {
+    padding: 19px 120px 19px 33px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 14px 102px 14px 33px;
+  }
+}
+.custom-radio-btn-top--first {
+  padding: 19px 174px 19px 33px;
+
+  @media screen and (max-width: 767px) {
+    padding: 14px 107px 14px 33px;
+  }
+}
+.real-radio-btn-top:checked + .custom-radio-btn-top {
+  background-color: #14bf69;
+}
+.order__cost-box {
+  position: relative;
+  padding: 37px 32px;
+  margin-left: 60px;
+  background-color: #e8faf1;
+  max-width: 363px;
+  max-height: 575px;
+  @media screen and (max-width: 1199px) {
+    margin-left: 0;
+    max-width: none;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 45px;
+    max-height: none;
+  }
+}
+.order__cost-box > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+.order__cost-box div span {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 7px;
+  }
+}
+.order__cost-btn {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #14bf69;
+  border-radius: 3px;
+  padding: 17px 58px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 250ms background-color linear;
+
+  &:hover {
+    background-color: #13af61;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 8px 52px;
+    font-size: 14px;
+  }
+}
+.order-cart__sale {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 170px;
+    width: 300px;
+    height: 1px;
+    background-color: #c8e6d7;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.order__cost-text {
+  font-family: Gilroy;
+  font-size: 15px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #000000;
+  display: block;
+  padding-top: 30px;
+}
+.order__cost-info {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 23px;
+}
