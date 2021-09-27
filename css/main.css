@@ -2618,10 +2618,6 @@ ul li.slick-active button {
   width: 140px;
 }
 
-.our-cliens__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .our-cliens__item a {
   display: inline-block;
 }
