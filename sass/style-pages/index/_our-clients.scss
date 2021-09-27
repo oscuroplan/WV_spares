@@ -1,6 +1,7 @@
 .our-clients {
   padding-top: 98px;
   padding-bottom: 98px;
+  overflow: hidden;
   &__title {
     font-family: Gilroy;
     font-size: 36px;
@@ -42,6 +43,11 @@
   flex-direction: column;
   width: 200px;
 }
+
+.our-clients__logo:hover {
+  box-shadow: 0 0 1px 1px rgba(127, 127, 128, 0.1);
+}
+
 .our-cliens__item:nth-child(3) {
   width: 140px;
 }
@@ -52,4 +58,28 @@
 
 .our-cliens__item a:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.our-cliens__decoration-text {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 95%;
+  bottom: 145%;
+  opacity: 0.07;
+  font-family: Gilroy;
+  font-size: 88px;
+  line-height: 53px;
+  font-weight: 900;
+  color: #f59701;
+}
+
+.our-cliens__decoration-circle--green {
+  position: absolute;
+  right: -10%;
+  top: 0%;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: 15px solid #14bf69;
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
 }
