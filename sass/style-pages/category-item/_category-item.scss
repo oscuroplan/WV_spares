@@ -1,0 +1,220 @@
+.category__section {
+  padding-top: 28px;
+  padding-bottom: 108px;
+}
+.category__title {
+  margin-bottom: 20px;
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: normal;
+  line-height: 1.23;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-127%);
+    margin-right: 24px;
+
+    width: 36px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 63px;
+    font-size: 43px;
+
+    &::before {
+      width: 46px;
+      height: 9px;
+    }
+  }
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 271px;
+  height: 413px;
+  background-color: #e8faf1;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 100;
+}
+
+.sidebar__title {
+  //   padding: 25px 80px 22px 20px;
+  padding-top: 25px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  color: #ffffff;
+  background-color: #14bf69;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  text-align: left;
+}
+.sidebar a {
+  display: block;
+
+  color: #000000;
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 2.4;
+  text-align: left;
+
+  &.current {
+    font-weight: 700;
+    color: #14bf69;
+  }
+  &:hover,
+  &:focus {
+    font-weight: 700;
+    color: #14bf69;
+  }
+}
+.sidebar__link {
+  padding: 33px 134px 105px 20px;
+}
+.category__content {
+  margin-left: 271px;
+  padding: 0 40px;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .sidebar__title {
+    padding: 10px;
+    text-align: center;
+  }
+  .sidebar__link {
+    padding: 10px 10px 10px 10px;
+  }
+  .sidebar a {
+    text-align: center;
+  }
+  .category__content {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    margin: -15px;
+  }
+}
+.category-grid__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - (15px * 4)) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (15px * 6)) / 3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .sidebar {
+    width: 200px;
+  }
+  .category-filter {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .category-filter .catalog-filter__list {
+    margin: 0;
+    justify-content: space-between;
+  }
+  .category__content {
+    margin-left: 200px;
+    padding: 0 20px;
+  }
+}
+// Декор
+.category-decoration {
+  position: absolute;
+  top: 970px;
+  left: 940px;
+  transform: rotate(-90deg);
+
+  z-index: 100;
+  opacity: 0.08;
+  color: #f59701;
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 88px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  text-transform: uppercase;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  &--brand {
+    top: 250px;
+    left: -340px;
+  }
+}
+.category-circle {
+  position: absolute;
+  z-index: 100;
+  &--gb {
+    width: 82px;
+    height: 82px;
+    top: 660px;
+    left: -255px;
+  }
+  &--gb2 {
+    width: 82px;
+    height: 82px;
+    top: 2590px;
+    left: -295px;
+  }
+  &--ob {
+    width: 88px;
+    height: 88px;
+    top: 100px;
+    left: 1130px;
+  }
+  &--gs {
+    width: 44px;
+    height: 44px;
+    top: 1970px;
+    left: 1390px;
+  }
+  &--os {
+    width: 60px;
+    height: 60px;
+    top: 1470px;
+    left: 90px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}

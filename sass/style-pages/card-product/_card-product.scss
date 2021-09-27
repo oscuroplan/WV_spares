@@ -3,9 +3,12 @@
   padding-bottom: 100px;
 }
 .card__grid {
-  display: grid;
-  grid-template-columns: 590px auto;
-  gap: 58px;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 590px auto;
+    gap: 58px;
+  }
 }
 .card__subname {
   margin-top: 25px;
@@ -105,7 +108,7 @@
     margin-right: 10px;
     &:hover,
     &:focus {
-      background-color: #f59701;
+      background-color: #1baa62;
     }
   }
   &--order {
@@ -121,6 +124,9 @@
 .card__picture {
   position: relative;
   margin-bottom: 20px;
+}
+.card__image {
+  border-radius: 10px;
 }
 
 .card__label--bg {
@@ -180,6 +186,11 @@
   right: 0;
   background: url("../images/catalog_images/next.png") 0 0 / 100% no-repeat;
 }
+.card-slider__item a img {
+  &:hover {
+    border: 2px solid #14bf69;
+  }
+}
 // Рекомендации
 .recomendation__container {
   padding-bottom: 117px;
@@ -222,8 +233,46 @@
   background-position: 50% 50%;
   background-color: #fff;
 }
-// Кнопки в карточке
-.recomendation-card__button {
+// Карточка рекомендованого товара
+.recomendation-slider__item {
+  margin: 10px;
+}
+.recomendation-product {
+  width: 271px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #cdcece;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.recomendation-product__name {
+  padding: 17px 25px 25px 20px;
+
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+.recomendation-product__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px 25px 20px;
+}
+.recomendation-product__price {
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: normal;
+  line-height: 1.41;
+}
+.recomendation-product__wrap a {
   color: #14bf69;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
@@ -232,8 +281,6 @@
   letter-spacing: normal;
   line-height: 1.5;
 
-  width: 107px;
-  height: 34px;
   background-color: #e8faf1;
   cursor: pointer;
   padding: 10px 9px 8px 12px;
@@ -246,5 +293,64 @@
   &:focus {
     background-color: #14bf69;
     color: #fff;
+  }
+}
+// Декор
+
+.card-decoration {
+  position: absolute;
+  top: 760px;
+  left: 920px;
+  transform: rotate(-90deg);
+
+  z-index: 100;
+  opacity: 0.08;
+  color: #f59701;
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 88px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  text-transform: uppercase;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  &--brand {
+    top: 260px;
+    left: -320px;
+  }
+}
+
+.card-circle {
+  position: absolute;
+  z-index: 100;
+  &--gb {
+    width: 82px;
+    height: 82px;
+    top: 520px;
+    left: -230px;
+  }
+  &--ob {
+    width: 88px;
+    height: 88px;
+    top: 1695px;
+    left: -200px;
+  }
+  &--gs {
+    width: 44px;
+    height: 44px;
+    top: 1295px;
+    left: 1350px;
+  }
+  &--os {
+    width: 60px;
+    height: 60px;
+    top: 0px;
+    left: 1120px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
   }
 }

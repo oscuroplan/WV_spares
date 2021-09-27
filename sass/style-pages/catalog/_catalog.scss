@@ -384,3 +384,66 @@
   margin-left: 14px;
   margin-right: 14px;
 }
+// Декор
+.catalog-decoration {
+  position: absolute;
+  top: 1700px;
+  left: 940px;
+  transform: rotate(-90deg);
+
+  z-index: 100;
+  opacity: 0.08;
+  color: #f59701;
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 88px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  text-transform: uppercase;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  &--brand {
+    top: 200px;
+    left: -340px;
+  }
+}
+.catalog-circle {
+  position: absolute;
+  z-index: 100;
+  &--gb {
+    width: 82px;
+    height: 82px;
+    top: 680px;
+    left: -255px;
+  }
+  &--gb2 {
+    width: 82px;
+    height: 82px;
+    top: 2520px;
+    left: -295px;
+  }
+  &--ob {
+    width: 88px;
+    height: 88px;
+    top: 1760px;
+    left: -200px;
+  }
+  &--gs {
+    width: 44px;
+    height: 44px;
+    top: 2290px;
+    left: 1390px;
+  }
+  &--os {
+    width: 60px;
+    height: 60px;
+    top: 1000px;
+    left: 1320px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
