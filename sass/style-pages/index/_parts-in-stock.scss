@@ -1,3 +1,6 @@
+.stock__box {
+  position: relative;
+}
 .stock__title {
   font-family: Gilroy;
   font-size: 36px;
@@ -72,6 +75,10 @@
     flex-basis: calc((100% - (20px * 8)) / 4);
   }
 }
+.stock__item:hover,
+.stock__item:focus {
+  box-shadow: 0 0 37px 2px rgba(127, 127, 128, 0.15);
+}
 .stock__product {
   height: 100%;
   border-radius: 10px;
@@ -104,6 +111,33 @@
   letter-spacing: normal;
   line-height: 1.41;
 }
+//Circle
+
+.stock-orange-small {
+  position: absolute;
+  left: -260px;
+  bottom: 190px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+//Background
+.stock__background {
+  position: relative;
+  opacity: 0.07;
+  font-family: Gilroy;
+  font-size: 88px;
+  line-height: 53px;
+  font-weight: 900;
+  color: getColor("secondaryAccent");
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+  bottom: 1330px;
+  left: 135px;
+}
+
+//Slider
 .slider {
   display: flex;
   flex-wrap: wrap;

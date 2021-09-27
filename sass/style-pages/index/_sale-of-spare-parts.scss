@@ -1,3 +1,6 @@
+.sale__wrap-box {
+  position: relative;
+}
 .sale__title {
   font-family: Gilroy;
   font-size: 36px;
@@ -64,6 +67,7 @@
   width: 136px;
   margin: 38px auto;
   position: relative;
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
 }
 .sale__icon {
   width: 52px;
@@ -93,7 +97,30 @@
   border: none;
   text-align: center;
   display: block;
+  &:hover,
+  &:focus {
+    background-color: #19ad62;
+  }
 }
 .sale__button-link {
   color: getColor("ligthText");
+}
+
+//Circle
+
+.sale-green-small {
+  position: absolute;
+  right: -60px;
+  top: 10px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.sale-orange-big {
+  position: absolute;
+  bottom: 45px;
+  left: -135px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
