@@ -8,7 +8,22 @@
     background: none;
   }
 }
-
+.service-page__bg {
+  position: absolute;
+  z-index: 1;
+  left: -37%;
+  top: 30%;
+  opacity: 0.6;
+  font-family: Gilroy;
+  font-size: 169px;
+  line-height: 53px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #e1e2e2;
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
 .container__service-page {
   padding-bottom: 25px;
   padding-left: 30px;
@@ -59,6 +74,22 @@
 
 // Секция features
 
+.features-bg {
+  position: absolute;
+  opacity: 0.07;
+  font-family: Gilroy;
+  font-size: 88px;
+  line-height: 53px;
+  font-weight: 900;
+  color: #f59701;
+  transform: rotate(270deg);
+  transform-origin: bottom left;
+  right: -40%;
+  bottom: 10%;
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
 .container__features {
   display: flex;
   padding-top: 80px;
@@ -69,53 +100,37 @@
   }
 }
 .features__box {
-  padding-left: 72px;
-  max-width: 701px;
+  margin-left: 72px;
+  width: 60vw;
   @media screen and (max-width: 767px) {
-    padding-left: 0%;
+    margin-left: 0%;
+    width: 90vw;
   }
 }
-// .features__box {
-//   max-width: 50%;
-
-//   & > div {
-//     max-width: 408px;
-//     max-height: 357px;
-//   }
-// }
-// .features__case {
-//   position: absolute;
-//   bottom: 0%;
-//   left: 0px;
-//   z-index: 1;
-// }
 .features__text {
   max-width: 700px;
   margin-top: 10px;
   margin-bottom: 30px;
   color: getColor("darkText");
   font-family: Gilroy;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
-  @media screen and (max-width: 767) {
-    font-size: 12px;
+  @media screen and (min-width: 1180px) {
+    font-size: 16px;
   }
 }
 .features__item {
   position: relative;
   margin-left: 11px;
   color: getColor("darkText");
-  font-size: 16px;
+  font-size: 13px;
   font-family: Gilroy;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: left;
-  @media screen and (max-width: 767) {
-    font-size: 12px;
-  }
-  &:not(:last-child) {
-    margin-bottom: 8px;
+  @media screen and (min-width: 1180px) {
+    font-size: 16px;
   }
   &::before {
     position: absolute;
@@ -130,22 +145,53 @@
   }
 }
 .features__cover {
+  // position: relative;
   @media screen and (max-width: 767px) {
     display: none;
   }
-  &::before {
-    content: "";
-    display: block;
-    background-image: url(../images/service/line@1.5x.jpg);
-    background-repeat: no-repeat;
-    width: 365px;
-    height: 211px;
-    position: absolute;
-    z-index: -1;
-    left: -169px;
-    top: 200px;
+}
+.features__case {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: -1;
+  left: 7%;
+  bottom: 22%;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
+.features__circle-small {
+  position: absolute;
+  left: 32%;
+  top: 30%;
+  z-index: -1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 15px solid getColor("secondaryAccent");
+  box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
+.features__circle-big {
+  position: absolute;
+  left: -10%;
+  top: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 16px solid getColor("accent");
+  box-shadow: 0 0 31px 1px rgb(20, 191, 105, 0.47);
+
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
+
 // Секция Как мы работаем
 
 .we-work__title {
@@ -179,6 +225,23 @@
 
 // Секция customer-reviews
 
+.customer-reviews__bg {
+  position: absolute;
+  opacity: 0.07;
+  font-family: Gilroy;
+  font-size: 88px;
+  line-height: 53px;
+  font-weight: 900;
+  color: #f59701;
+  transform: rotate(270deg);
+  transform-origin: bottom left;
+  left: -5%;
+  bottom: -80%;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .customer-reviews__title {
   position: relative;
   margin-left: 38px;
@@ -200,22 +263,16 @@
     background-color: getColor("secondaryAccent");
   }
 }
-.customer-reviews__list {
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  // gap: 36px;
-  margin-bottom: 48px;
-}
+
 .customer-reviews__item {
   position: relative;
-  // max-width: 274px;
-  // // max-height: 153px;
   &:not(:last-child) {
     margin-right: 33px;
   }
 }
 .customer-reviews__text {
   margin-top: 22px;
+  margin-bottom: 40px;
   color: getColor("darkText");
   font-family: Gilroy;
   font-size: 16px;
@@ -239,31 +296,87 @@ ul li.customer-reviews__item button.customer-reviews__btn {
   overflow: hidden;
   outline: none;
 }
-// slider ul.slick-dots {
-//   margin: 30px 0 0 0;
-//   text-align: center;
-//   display: block;
-//   margin: 128px auto;
-// }
-// ul.slick-dots li {
-//   display: inline-block;
-//   margin: 0 9px;
-// }
-// ul.slick-dots li button {
-//   border: none;
-//   background-color: #e8faf1;
-//   outline: none;
-//   cursor: pointer;
 
-//   font-size: 0;
-//   border-radius: 50%;
-//   overflow: hidden;
-//   width: 12px;
-//   height: 12px;
-// }
+.customer-reviews__circle {
+  position: absolute;
+  right: -10%;
+  bottom: 30%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 16px solid getColor("accent");
+  box-shadow: 0 0 31px 1px rgb(20, 191, 105, 0.47);
 
-// ul li.slick-active button {
-//   background-color: getColor("accent");
-//   width: 12px;
-//   height: 12px;
-// }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+// Slider
+
+.slider-service .slick-arrow,
+.slider-review .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 103%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 13px;
+  height: 26px;
+}
+.slider-service .slick-arrow.slick-prev,
+.slider-review .slick-arrow.slick-prev {
+  left: 100px;
+  background: url("../images/left_arrow.png") 0 0 / 100% no-repeat;
+  cursor: pointer;
+  @media screen and (max-width: 450px) {
+    left: 30px;
+  }
+  @media screen and (min-width: 767px) {
+    left: 290px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 500px;
+  }
+}
+.slider-service .slick-arrow.slick-next,
+.slider-review .slick-arrow.slick-next {
+  right: 100px;
+  background: url("../images/right_arrow.png") 0 0 / 100% no-repeat;
+  cursor: pointer;
+  @media screen and (max-width: 450px) {
+    right: 30px;
+  }
+  @media screen and (min-width: 767px) {
+    right: 290px;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 500px;
+  }
+}
+
+ul.slick-dots {
+  text-align: center;
+  display: block;
+  margin-bottom: 90px;
+}
+ul.slick-dots li {
+  display: inline-block;
+  margin: 0 11px;
+}
+ul.slick-dots li button {
+  border: none;
+  background-color: getColor("backgroundBtn");
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+}
+ul li.slick-active button {
+  background-color: getColor("accent");
+  width: 12px;
+  height: 12px;
+}
