@@ -179,6 +179,9 @@
   left: 100px;
   background: url("../images/left_arrow.png") 0 0 / 100% no-repeat;
   cursor: pointer;
+  @media screen and (max-width: 450px) {
+    left: 30px;
+  }
   @media screen and (min-width: 767px) {
     left: 290px;
   }
@@ -190,6 +193,9 @@
   right: 100px;
   background: url("../images/right_arrow.png") 0 0 / 100% no-repeat;
   cursor: pointer;
+  @media screen and (max-width: 450px) {
+    right: 30px;
+  }
   @media screen and (min-width: 767px) {
     right: 290px;
   }
@@ -197,6 +203,7 @@
     right: 500px;
   }
 }
+
 ul.slick-dots {
   text-align: center;
   display: block;

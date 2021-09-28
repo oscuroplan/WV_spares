@@ -2385,6 +2385,12 @@ ul {
   cursor: pointer;
 }
 
+@media screen and (max-width: 450px) {
+  .slider-stock .slick-arrow.slick-prev {
+    left: 30px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .slider-stock .slick-arrow.slick-prev {
     left: 290px;
@@ -2401,6 +2407,12 @@ ul {
   right: 100px;
   background: url("../images/right_arrow.png") 0 0/100% no-repeat;
   cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .slider-stock .slick-arrow.slick-next {
+    right: 30px;
+  }
 }
 
 @media screen and (min-width: 767px) {
