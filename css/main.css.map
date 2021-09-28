@@ -27,7 +27,8 @@
         "../sass/layout/_footer.scss",
         "../sass/style-pages/ordering/_ordering.scss",
         "../sass/style-pages/order-accepted/_order-accepted.scss",
-        "../sass/style-pages/category-item/_category-item.scss"
+        "../sass/style-pages/category-item/_category-item.scss",
+        "../sass/style-pages/contacts/_contacts.scss"
     ],
     "names": [],
     "file": "main.css"
