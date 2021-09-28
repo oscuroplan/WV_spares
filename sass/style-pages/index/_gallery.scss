@@ -55,27 +55,25 @@
   width: 100%;
   height: 100%;
   background-color: #14bf69;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20%;
   opacity: 0.5;
   transform: translateX(100%);
   transition: 250ms translate linear;
-  cursor: pointer;
+  pointer-events: none;
 }
+
+.gallery__img--link {
+  cursor: zoom-in;
+}
+
 .gallery__item:hover .gallery__overlay,
 .gallery__item:focus .gallery__overlay {
   transform: translateX(0);
 }
 
-.gallery__btn {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  cursor: pointer;
-}
-.gallery__btn-icon {
-  width: 43px;
-  height: 43px;
-  transform: translateY(-50%);
-}
 .gallerySlider .slick-arrow {
   display: block;
   position: absolute;
