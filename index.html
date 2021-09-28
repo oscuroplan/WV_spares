@@ -466,6 +466,7 @@
           </div>
         </div>
       </section>
+
       <!-- Продажа запасных частей-->
       <section class="sale">
         <div class="container sale__wrap-box">
@@ -530,14 +531,9 @@
           <button type="button" class="sale__button">
             <a href="#" class="sale__button-link">Оставить заявку</a>
           </button>
-           <div class="sale-orange-big">
-            <img src="./images/orange_big.png" alt="" />
-          </div>
-          <div class="sale-green-small">
-            <img src="./images/green_small.png" alt="" width="70px"/>
-          </div>
+          <div class="sale__orange-big"></div>
+          <div class="sale__green-small"></div>
         </div>
-
       </section>
 
        <!-- Популярные категории -->
@@ -643,12 +639,11 @@
             </li>
           </ul>
           <button type="button" class="popular-categories__button">
-            <a href="#" class="popular-categories__button-link"
+            <a href="../pages/catalog.html" class="popular-categories__button-link"
               >Перейти в каталог</a
             >
           </button>
-          <div class="sale-green-big">
-            <img src="./images/green_big.png" alt="" width="70px" />
+          <div class="popular-categories__green-big">
           </div>
           <p class="popular-categories__background">ПОПУЛЯРНОЕ</p>
         </div>
@@ -657,8 +652,9 @@
             <!--Запчасти в наличии и под заказ-->
       <section class="stock">
         <div class="container stock__box">
+          <p class="stock__background">ЗАПЧАСТИ</p>
           <h2 class="stock__title">Запчасти в наличии и под заказ</h2>
-            <div class="stock__list slider">
+            <div class="stock__list slider-stock">
               <div class="stock__item slider__item">
                 <article class="stock__product">
                   <img
@@ -674,6 +670,7 @@
                       type="button"
                       class="stock__button"
                       aria-label="More details"
+                      onclick="window.location.href =`../pages/card-product.html`;"
                     >
                       Подробнее
                     </button>
@@ -695,6 +692,7 @@
                       type="button"
                       class="stock__button"
                       aria-label="More details"
+                      onclick="window.location.href =`../pages/card-product.html`;"
                     >
                       Подробнее
                     </button>
@@ -716,6 +714,7 @@
                       type="button"
                       class="stock__button"
                       aria-label="More details"
+                      onclick="window.location.href =`../pages/card-product.html`;"
                     >
                       Подробнее
                     </button>
@@ -737,6 +736,7 @@
                       type="button"
                       class="stock__button"
                       aria-label="More details"
+                      onclick="window.location.href =`../pages/card-product.html`;"
                     >
                       Подробнее
                     </button>
@@ -758,6 +758,7 @@
                       type="button"
                       class="stock__button"
                       aria-label="More details"
+                      onclick="window.location.href =`../pages/card-product.html`;"
                     >
                       Подробнее
                     </button>
@@ -779,6 +780,7 @@
                       type="button"
                       class="stock__button"
                       aria-label="More details"
+                      onclick="window.location.href =`../pages/card-product.html`;"
                     >
                       Подробнее
                     </button>
@@ -786,10 +788,7 @@
                 </article>
               </div>
             </div>
-          <div class="stock-orange-small">
-            <img src="./images/orange_small.png" alt="" />
-          </div>
-          <p class="stock__background">ЗАПЧАСТИ</p>
+          <div class="stock__orange-small"></div>
         </div>
       </section>
 

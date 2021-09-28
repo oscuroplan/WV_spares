@@ -107,19 +107,29 @@
 }
 
 //Circle
-
-.sale-green-small {
+.sale__orange-big {
+  width: 88px;
+  height: 88px;
   position: absolute;
-  right: -60px;
-  top: 10px;
+  border-radius: 50%;
+  border: 15px solid getColor("secondaryAccent");
+  box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.685);
+  left: -20%;
+  bottom: 0%;
   @media screen and (max-width: 1199px) {
     display: none;
   }
 }
-.sale-orange-big {
+
+.sale__green-small {
+  width: 44px;
+  height: 44px;
   position: absolute;
-  bottom: 45px;
-  left: -135px;
+  border-radius: 50%;
+  border: 15px solid #14bf69;
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
+  right: -5%;
+  bottom: 90%;
   @media screen and (max-width: 1199px) {
     display: none;
   }
