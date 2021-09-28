@@ -185,7 +185,7 @@
   width: 80px;
   height: 80px;
   border: 16px solid getColor("accent");
-  box-shadow: 0 0 31px 1px rgb(20, 191, 105, 0.47);
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
 
   @media screen and (max-width: 1099px) {
     display: none;
@@ -305,7 +305,7 @@ ul li.customer-reviews__item button.customer-reviews__btn {
   width: 80px;
   height: 80px;
   border: 16px solid getColor("accent");
-  box-shadow: 0 0 31px 1px rgb(20, 191, 105, 0.47);
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
 
   @media screen and (max-width: 1199px) {
     display: none;
