@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WV | Контакты</title>
     <link rel="stylesheet" href="../css/main.min.css" />
     <link href="../fonts/stylesheet.css" rel="stylesheet" />
   </head>
@@ -112,8 +112,19 @@
       </header>
 
 <main>
-<section class="map">
-    <div class="container">
+<section class="contacts">
+    <div class="container contacts__container">
+      <!-- Breadcrumbs -->
+                <div class="contacts__breadcrumbs">
+                    <span><a href="../index.html"><span>Главная</span></a></span>
+                    <span>/</span>
+                    <span class="contacts__breadcrumbs--current">Контакты</span>
+                </div>
+      <h1 class="contacts__title">Контакты</h1>
+
+      <div id="map">
+
+      </div>
         
     </div>
 </section>
@@ -179,5 +190,26 @@
       </div>
     </footer>
     <script defer src="../JS/mobile-menu.js "></script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiuGYSLvBOyB2SyfLNN-k0iCk6NeevJUo&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>
