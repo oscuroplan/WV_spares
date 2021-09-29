@@ -1,0 +1,63 @@
+.contacts {
+  padding-top: 28px;
+
+  &__breadcrumbs {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      margin: 0 0 51px 274px;
+    }
+  }
+
+  &__breadcrumbs span {
+    margin-right: 3px;
+
+    color: #14bf69;
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.69;
+  }
+}
+.contacts__breadcrumbs .contacts__breadcrumbs--current {
+  color: #a5a6a6;
+}
+
+// Заголовок
+.contacts__title {
+  margin-bottom: 91px;
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 33px;
+  letter-spacing: normal;
+  line-height: 1.23;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-127%);
+    margin-right: 24px;
+
+    width: 36px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 72px;
+    font-size: 43px;
+
+    &::before {
+      width: 46px;
+      height: 9px;
+    }
+  }
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
