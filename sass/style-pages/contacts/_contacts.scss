@@ -61,3 +61,194 @@
   width: 100%;
   height: 300px;
 }
+//  Секция contacts-us
+
+.container--contacts-us {
+  padding-top: 100px;
+  padding-bottom: 95px;
+}
+
+.contacts-us__bg {
+  position: absolute;
+  opacity: 0.07;
+  font-family: Gilroy;
+  font-size: 88px;
+  line-height: 53px;
+  font-weight: 900;
+  color: getColor("secondaryAccent");
+  transform: rotate(270deg);
+  transform-origin: bottom left;
+  left: -10%;
+  bottom: 20%;
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
+.contacts-us__title {
+  margin-bottom: 40px;
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 33px;
+  letter-spacing: normal;
+  line-height: 1.23;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-127%);
+    margin-right: 24px;
+
+    width: 36px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 43px;
+
+    &::before {
+      width: 46px;
+      height: 9px;
+    }
+  }
+}
+
+// Форма
+
+.contacts-form {
+  display: flex;
+  justify-content: center;
+  @media screen and(max-width:768px) {
+    flex-direction: column;
+  }
+}
+.form-field__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-form__cover {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.contacts-form__text {
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  color: getColor("darkText");
+}
+.contacts-form__label {
+  margin-bottom: 10px;
+}
+@media screen and(min-width:768px) {
+  .contacts-form__label-check {
+    margin-left: 10px;
+  }
+}
+.contacts-form__label:not(:last-child) {
+  @media screen and(min-width:768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts-form__input {
+  padding-left: 28px;
+  width: 442px;
+  height: 58px;
+  background-color: getColor("backgroundInput");
+  border-radius: 3px;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: getColor("darkText");
+  @media screen and(min-width:768px) {
+    width: 262px;
+  }
+}
+.contacts-form__textarea {
+  padding-top: 20px;
+  padding-left: 28px;
+  width: 442px;
+  height: 193px;
+  background-color: getColor("backgroundInput");
+  border-radius: 3px;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: getColor("darkText");
+  @media screen and(min-width:768px) {
+    width: 542px;
+  }
+}
+
+.contacts-form__btn {
+  background-color: getColor("accent");
+  margin: 10px auto 20px auto;
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  display: block;
+  color: getColor("ligthText");
+  @media screen and (max-width: 767px) {
+    padding: 15px 67px;
+  }
+}
+
+.contacts-form__checkbox-text {
+  font-family: Gilroy;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #828282;
+  @media screen and (min-width: 767px) {
+    line-height: 27px;
+    font-size: 15px;
+  }
+}
+.contacts-form__contract-link {
+  font-weight: 500;
+  color: getColor("accent");
+  border-bottom: 1px dashed getColor("accent");
+}
+
+.contacts-form__checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.contacts-form__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.contacts-form__chekbox-icon {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid getColor("darkText");
+  margin-right: 10px;
+  transition: 250ms transform linear;
+}
+.contacts-form__checkbox:checked + .contacts-form__chekbox-icon {
+  background-color: getColor("secondaryAccent");
+  border-color: getColor("secondaryAccent");
+  background-image: url(../images/chekbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  transform: scale(1.1);
+}
