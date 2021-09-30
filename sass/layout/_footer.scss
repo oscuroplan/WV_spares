@@ -17,7 +17,14 @@
   @media screen and (max-width: 1199px) {
     margin-bottom: 45px;
   }
+  @media screen and (max-width: 479px) {
+    margin-bottom: 45px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .footer-nav {
   color: getColor("ligthText");
   font-family: Gilroy;

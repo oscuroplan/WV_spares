@@ -986,9 +986,19 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 88px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1199px) {
+  .footer__box {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 479px) {
   .footer__box {
     margin-bottom: 45px;
   }
@@ -5572,9 +5582,19 @@ input:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 88px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1199px) {
+  .footer__box {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 479px) {
   .footer__box {
     margin-bottom: 45px;
   }
