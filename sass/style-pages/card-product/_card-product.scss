@@ -1,3 +1,4 @@
+// Карточка товара
 .card__section {
   padding-top: 28px;
   padding-bottom: 100px;
@@ -14,7 +15,7 @@
   margin-top: 25px;
   margin-bottom: 19px;
 
-  color: #000000;
+  color: getColor("darkText");
   font-family: "Gilroy";
   font-size: 38px;
   font-weight: 800;
@@ -59,7 +60,7 @@
   }
 }
 .card__discripion {
-  color: #000000;
+  color: getColor("darkText");
   font-family: Gilroy;
   font-size: 15px;
   font-weight: 400;
@@ -71,7 +72,7 @@
     color: #9b9b9a;
   }
   &--green {
-    color: #14bf69;
+    color: getColor("accent");
   }
 }
 
@@ -103,22 +104,26 @@
   line-height: 27px;
 
   &--buy {
-    background-color: #14bf69;
-    color: #ffffff;
+    background-color: getColor("accent");
+    color: getColor("ligthText");
     margin-right: 10px;
+    transition: 250ms background-color linear;
+
     &:hover,
     &:focus {
-      background-color: #1baa62;
+      background-color: #19ad62;
     }
   }
   &--order {
-    background-color: #e8faf1;
-    color: #14bf69;
-    &:hover,
-    &:focus {
-      background-color: #14bf69;
-      color: #ffffff;
-    }
+    background-color: getColor("backgroundBtn");
+    color: getColor("accent");
+    transition: 250ms background-color linear;
+
+    // &:hover,
+    // &:focus {
+    //   background-color: getColor("accent");
+    //   color: getColor("ligthText");
+    // }
   }
 }
 .card__picture {
@@ -128,7 +133,6 @@
 .card__image {
   border-radius: 10px;
 }
-
 .card__label--bg {
   position: absolute;
   top: -12px;
@@ -141,7 +145,7 @@
   left: 8px;
   z-index: 20;
 
-  color: #ffffff;
+  color: getColor("ligthText");
   font-family: "Gilroy";
   font-size: 21px;
   font-weight: 800;
@@ -188,12 +192,42 @@
 }
 .card-slider__item a img {
   &:hover {
-    border: 2px solid #14bf69;
+    border: 2px solid getColor("accent");
   }
 }
 // Рекомендации
 .recomendation__container {
   padding-bottom: 117px;
+}
+.recomendation__title {
+  margin-bottom: 20px;
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 33px;
+  letter-spacing: normal;
+  line-height: 1.23;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-127%);
+    margin-right: 24px;
+
+    width: 36px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 72px;
+    font-size: 43px;
+
+    &::before {
+      width: 46px;
+      height: 9px;
+    }
+  }
 }
 .recomendation-slider .slick-list {
   overflow: hidden;
@@ -202,7 +236,6 @@
   display: flex;
   align-items: flex-start;
 }
-
 .recomendation-slider {
   position: relative;
   padding: 0 0;
@@ -238,7 +271,6 @@
   margin: 10px;
 }
 .recomendation-product {
-  width: 271px;
   height: auto;
   border-radius: 10px;
   border: 1px solid #cdcece;
@@ -248,7 +280,7 @@
 .recomendation-product__name {
   padding: 17px 25px 25px 20px;
 
-  color: #000000;
+  color: getColor("darkText");
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -264,7 +296,7 @@
   padding: 0 25px 25px 20px;
 }
 .recomendation-product__price {
-  color: #000000;
+  color: getColor("darkText");
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -273,7 +305,7 @@
   line-height: 1.41;
 }
 .recomendation-product__wrap a {
-  color: #14bf69;
+  color: getColor("accent");
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -291,7 +323,7 @@
 
   &:hover,
   &:focus {
-    background-color: #14bf69;
+    background-color: getColor("accent");
     color: #fff;
   }
 }
@@ -305,15 +337,15 @@
 
   z-index: 100;
   opacity: 0.08;
-  color: #f59701;
+  color: getColor("secondaryAccent");
   font-family: "Gilroy";
   font-weight: 900;
   font-size: 88px;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-
   text-transform: uppercase;
+
   @media screen and (max-width: 1200px) {
     display: none;
   }
@@ -327,26 +359,42 @@
   position: absolute;
   z-index: 100;
   &--gb {
+    border-radius: 50%;
     width: 82px;
     height: 82px;
-    top: 520px;
+    border: 16px solid getColor("accent");
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
+    top: 594px;
     left: -230px;
   }
   &--ob {
+    border-radius: 50%;
     width: 88px;
     height: 88px;
-    top: 1695px;
+    border: 15px solid getColor("secondaryAccent");
+    box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+
+    top: 1719px;
     left: -200px;
   }
   &--gs {
+    border-radius: 50%;
     width: 44px;
     height: 44px;
+    border: 16px solid getColor("accent");
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
     top: 1295px;
     left: 1350px;
   }
   &--os {
+    border-radius: 50%;
     width: 60px;
     height: 60px;
+    border: 15px solid getColor("secondaryAccent");
+    box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+
     top: 0px;
     left: 1120px;
   }
