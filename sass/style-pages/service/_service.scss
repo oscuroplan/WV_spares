@@ -11,7 +11,7 @@
 .service-page__bg {
   position: absolute;
   z-index: 1;
-  left: -37%;
+  left: -23%;
   top: 30%;
   opacity: 0.6;
   font-family: Gilroy;
@@ -29,6 +29,8 @@
   padding-left: 30px;
 }
 .service-page__title {
+  position: inherit;
+  z-index: 4;
   margin-bottom: 50px;
   padding-top: 70px;
   width: 50%;

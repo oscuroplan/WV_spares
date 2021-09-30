@@ -252,6 +252,74 @@
   background-origin: border-box;
   transform: scale(1.1);
 }
+<<<<<<< HEAD
 
 .contacts__container-adress {
+=======
+//  Circle
+.contacts-us__circle-green-small {
+  position: absolute;
+  left: 4%;
+  bottom: 24%;
+  transform: translateY(50%);
+  z-index: 1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 14px solid getColor("accent");
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
+
+.contacts-us__circle-green-big {
+  position: absolute;
+  left: -30%;
+  top: 0;
+  transform: translateY(20%);
+  z-index: 1;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 14px solid getColor("accent");
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
+
+.contacts-us__circle-orange-big {
+  position: absolute;
+  right: 0;
+  top: 16%;
+  z-index: -1;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 15px solid getColor("secondaryAccent");
+  box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.47);
+
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+}
+
+.contacts__circle-orange-small {
+  position: absolute;
+  right: -1%;
+  top: 50%;
+  z-index: -1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 15px solid getColor("secondaryAccent");
+  box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.47);
+
+  @media screen and (max-width: 1099px) {
+    display: none;
+  }
+>>>>>>> main
 }
