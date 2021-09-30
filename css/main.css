@@ -2779,6 +2779,12 @@ ul li.slick-active button {
           box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
 }
 
+@media screen and (max-width: 767px) {
+  .our-cliens__decoration-circle--green {
+    display: none;
+  }
+}
+
 .gallery {
   background-color: #f2f2f2;
   padding-top: 88px;

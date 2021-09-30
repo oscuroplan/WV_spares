@@ -82,4 +82,7 @@
   border-radius: 50%;
   border: 15px solid #14bf69;
   box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
