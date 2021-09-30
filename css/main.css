@@ -3839,9 +3839,10 @@ ul li.slick-active button {
   width: 136px;
   margin: 38px auto;
   position: relative;
-  z-index: 1;
   -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
           box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
+  z-index: initial;
+  background-color: white;
 }
 
 .we-work__wrap::after {
