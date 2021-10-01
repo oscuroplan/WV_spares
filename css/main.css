@@ -4169,12 +4169,6 @@ ul li.slick-active button {
   }
 }
 
-.circle-green-big {
-  z-index: 50;
-  width: 82px;
-  height: 82px;
-}
-
 .catalog {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -4200,7 +4194,7 @@ ul li.slick-active button {
 
 .catalog-breadcrumbs span {
   margin-right: 3px;
-  color: #14bf69;
+  color: #15bf69;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -4299,16 +4293,18 @@ ul li.slick-active button {
   height: 460px;
   border-radius: 20px;
   background-color: #f2f2f2;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .catalog-card:hover {
   -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
           box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
-  background-color: #14bf69;
+  background-color: #15bf69;
 }
 
 .catalog-card:hover a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .catalog-card:hover .catalog-card__label--color {
@@ -4323,7 +4319,7 @@ ul li.slick-active button {
   position: absolute;
   width: 100%;
   height: 10px;
-  background-color: #14bf69;
+  background-color: #15bf69;
   top: 0;
   left: 0;
 }
@@ -4376,6 +4372,8 @@ ul li.slick-active button {
   letter-spacing: normal;
   line-height: 1.8;
   text-align: left;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .catalog-card__product a:hover {
@@ -4455,11 +4453,13 @@ ul li.slick-active button {
   border-radius: 10px;
   background-color: transparent;
   cursor: pointer;
+  -webkit-transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear;
 }
 
 .catalog-filter__button:hover, .catalog-filter__button:focus {
   background-color: #e8faf1;
-  color: #14bf69;
+  color: #15bf69;
 }
 
 .section-products {
@@ -4559,7 +4559,7 @@ ul li.slick-active button {
 }
 
 .catalog-product__button {
-  color: #14bf69;
+  color: #15bf69;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -4576,8 +4576,8 @@ ul li.slick-active button {
 }
 
 .catalog-product__button:hover, .catalog-product__button:focus {
-  background-color: #14bf69;
-  color: #fff;
+  background-color: #15bf69;
+  color: #ffffff;
 }
 
 .catalog-pagging {
@@ -4704,36 +4704,56 @@ ul li.slick-active button {
 }
 
 .catalog-circle--gb {
+  border-radius: 50%;
   width: 82px;
   height: 82px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
   top: 680px;
   left: -255px;
 }
 
 .catalog-circle--gb2 {
+  border-radius: 50%;
   width: 82px;
   height: 82px;
-  top: 2520px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+  top: 2533px;
   left: -295px;
 }
 
 .catalog-circle--ob {
+  border-radius: 50%;
   width: 88px;
   height: 88px;
+  border: 15px solid #f59701;
+  -webkit-box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+          box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
   top: 1760px;
   left: -200px;
 }
 
 .catalog-circle--gs {
+  border-radius: 50%;
   width: 44px;
   height: 44px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
   top: 2290px;
   left: 1390px;
 }
 
 .catalog-circle--os {
+  border-radius: 50%;
   width: 60px;
   height: 60px;
+  border: 15px solid #f59701;
+  -webkit-box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+          box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
   top: 1000px;
   left: 1320px;
 }
@@ -5278,7 +5298,7 @@ input:focus {
 }
 
 .card__discripion--green {
-  color: #14bf69;
+  color: #15bf69;
 }
 
 .card__discripion {
@@ -5321,23 +5341,22 @@ input:focus {
 }
 
 .card__button--buy {
-  background-color: #14bf69;
+  background-color: #15bf69;
   color: #ffffff;
   margin-right: 10px;
+  -webkit-transition: 250ms background-color linear;
+  transition: 250ms background-color linear;
 }
 
 .card__button--buy:hover, .card__button--buy:focus {
-  background-color: #1baa62;
+  background-color: #19ad62;
 }
 
 .card__button--order {
   background-color: #e8faf1;
-  color: #14bf69;
-}
-
-.card__button--order:hover, .card__button--order:focus {
-  background-color: #14bf69;
-  color: #ffffff;
+  color: #15bf69;
+  -webkit-transition: 250ms background-color linear;
+  transition: 250ms background-color linear;
 }
 
 .card__picture {
@@ -5418,11 +5437,45 @@ input:focus {
 }
 
 .card-slider__item a img:hover {
-  border: 2px solid #14bf69;
+  border: 2px solid #15bf69;
 }
 
 .recomendation__container {
   padding-bottom: 117px;
+}
+
+.recomendation__title {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 33px;
+  letter-spacing: normal;
+  line-height: 1.23;
+  text-align: center;
+}
+
+.recomendation__title::before {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translateY(-127%);
+          transform: translateY(-127%);
+  margin-right: 24px;
+  width: 36px;
+  height: 7px;
+  background-color: #f59701;
+}
+
+@media screen and (min-width: 768px) {
+  .recomendation__title {
+    margin-bottom: 72px;
+    font-size: 43px;
+  }
+  .recomendation__title::before {
+    width: 46px;
+    height: 9px;
+  }
 }
 
 .recomendation-slider .slick-list {
@@ -5476,7 +5529,6 @@ input:focus {
 }
 
 .recomendation-product {
-  width: 271px;
   height: auto;
   border-radius: 10px;
   border: 1px solid #cdcece;
@@ -5519,7 +5571,7 @@ input:focus {
 }
 
 .recomendation-product__wrap a {
-  color: #14bf69;
+  color: #15bf69;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -5536,7 +5588,7 @@ input:focus {
 }
 
 .recomendation-product__wrap a:hover, .recomendation-product__wrap a:focus {
-  background-color: #14bf69;
+  background-color: #15bf69;
   color: #fff;
 }
 
@@ -5575,29 +5627,45 @@ input:focus {
 }
 
 .card-circle--gb {
+  border-radius: 50%;
   width: 82px;
   height: 82px;
-  top: 520px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+  top: 594px;
   left: -230px;
 }
 
 .card-circle--ob {
+  border-radius: 50%;
   width: 88px;
   height: 88px;
-  top: 1695px;
+  border: 15px solid #f59701;
+  -webkit-box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+          box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+  top: 1719px;
   left: -200px;
 }
 
 .card-circle--gs {
+  border-radius: 50%;
   width: 44px;
   height: 44px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
   top: 1295px;
   left: 1350px;
 }
 
 .card-circle--os {
+  border-radius: 50%;
   width: 60px;
   height: 60px;
+  border: 15px solid #f59701;
+  -webkit-box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+          box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
   top: 0px;
   left: 1120px;
 }
@@ -6407,7 +6475,7 @@ input:focus {
   padding-bottom: 22px;
   padding-left: 20px;
   color: #ffffff;
-  background-color: #14bf69;
+  background-color: #15bf69;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-family: "Gilroy", sans-serif;
@@ -6429,16 +6497,18 @@ input:focus {
   letter-spacing: normal;
   line-height: 2.4;
   text-align: left;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .sidebar a.current {
   font-weight: 700;
-  color: #14bf69;
+  color: #15bf69;
 }
 
 .sidebar a:hover, .sidebar a:focus {
   font-weight: 700;
-  color: #14bf69;
+  color: #15bf69;
 }
 
 .sidebar__link {
@@ -6570,40 +6640,60 @@ input:focus {
 
 .category-circle {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
 }
 
 .category-circle--gb {
+  border-radius: 50%;
   width: 82px;
   height: 82px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
   top: 660px;
   left: -255px;
 }
 
 .category-circle--gb2 {
+  border-radius: 50%;
   width: 82px;
   height: 82px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
   top: 2590px;
   left: -295px;
 }
 
 .category-circle--ob {
+  border-radius: 50%;
   width: 88px;
   height: 88px;
+  border: 15px solid #f59701;
+  -webkit-box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+          box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
   top: 100px;
   left: 1130px;
 }
 
 .category-circle--gs {
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  top: 1970px;
+  border: 16px solid #15bf69;
+  -webkit-box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+          box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+  top: 1950px;
   left: 1390px;
 }
 
 .category-circle--os {
+  border-radius: 50%;
   width: 60px;
   height: 60px;
+  border: 15px solid #f59701;
+  -webkit-box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+          box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
   top: 1470px;
   left: 90px;
 }

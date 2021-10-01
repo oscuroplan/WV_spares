@@ -1,3 +1,4 @@
+// Страница-категория товара
 .category__section {
   padding-top: 28px;
   padding-bottom: 108px;
@@ -38,19 +39,18 @@
   padding: 0;
   width: 271px;
   height: 413px;
-  background-color: #e8faf1;
+  background-color: getColor("backgroundBtn");
   border-radius: 10px;
   position: absolute;
   z-index: 100;
 }
 
 .sidebar__title {
-  //   padding: 25px 80px 22px 20px;
   padding-top: 25px;
   padding-bottom: 22px;
   padding-left: 20px;
-  color: #ffffff;
-  background-color: #14bf69;
+  color: getColor("ligthText");
+  background-color: getColor("accent");
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-family: "Gilroy", sans-serif;
@@ -64,7 +64,7 @@
 .sidebar a {
   display: block;
 
-  color: #000000;
+  color: getColor("darkText");
   font-family: Gilroy, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -72,15 +72,16 @@
   letter-spacing: normal;
   line-height: 2.4;
   text-align: left;
+  transition: color 250ms linear;
 
   &.current {
     font-weight: 700;
-    color: #14bf69;
+    color: getColor("accent");
   }
   &:hover,
   &:focus {
     font-weight: 700;
-    color: #14bf69;
+    color: getColor("accent");
   }
 }
 .sidebar__link {
@@ -164,15 +165,15 @@
 
   z-index: 100;
   opacity: 0.08;
-  color: #f59701;
+  color: getColor("secondaryAccent");
   font-family: "Gilroy";
   font-weight: 900;
   font-size: 88px;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-
   text-transform: uppercase;
+
   @media screen and (max-width: 1200px) {
     display: none;
   }
@@ -183,34 +184,54 @@
 }
 .category-circle {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   &--gb {
+    border-radius: 50%;
     width: 82px;
     height: 82px;
+    border: 16px solid getColor("accent");
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
     top: 660px;
     left: -255px;
   }
   &--gb2 {
+    border-radius: 50%;
     width: 82px;
     height: 82px;
+    border: 16px solid getColor("accent");
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
     top: 2590px;
     left: -295px;
   }
   &--ob {
+    border-radius: 50%;
     width: 88px;
     height: 88px;
+    border: 15px solid getColor("secondaryAccent");
+    box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+
     top: 100px;
     left: 1130px;
   }
   &--gs {
+    border-radius: 50%;
     width: 44px;
     height: 44px;
-    top: 1970px;
+    border: 16px solid getColor("accent");
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
+    top: 1950px;
     left: 1390px;
   }
   &--os {
+    border-radius: 50%;
     width: 60px;
     height: 60px;
+    border: 15px solid getColor("secondaryAccent");
+    box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+
     top: 1470px;
     left: 90px;
   }
