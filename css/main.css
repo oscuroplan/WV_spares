@@ -2715,16 +2715,6 @@ ul li.slick-active button {
   }
 }
 
-.our-cliens__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .our-cliens__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2781,6 +2771,12 @@ ul li.slick-active button {
 
 @media screen and (max-width: 767px) {
   .our-cliens__decoration-circle--green {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 721px) {
+  .ourClientsSlider ul li.slick-active button {
     display: none;
   }
 }
